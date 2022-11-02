@@ -1,0 +1,136 @@
+course,outcome rating,outcome score
+ARDE3950,Minimum,4
+ARDE3950,Target,11
+BIBL1100,Exemplary,2
+BIBL1100,No Data Collected,174
+BIOL1060,Exemplary,3
+BIOL1060,Fail,1
+BIOL1060,No Data Collected,5
+BIOL1060,Target,16
+BIOL4980,Exemplary,10
+BIOL4980,Target,7
+CHEM1210L,Exemplary,7
+CHEM1210L,Minimum,2
+CHEM1210L,No Data Collected,1
+CHEM1210L,Target,37
+CLTA1550,Exemplary,4
+CLTA1550,Fail,1
+CLTA1550,Minimum,11
+CLTA1550,No Data Collected,1
+CLTA1550,Target,27
+COMM1210,Exemplary,23
+COMM1210,Minimum,1
+COMM1210,No Data Collected,42
+COMM1210,Target,19
+COMM2030,Exemplary,12
+COMM2030,Fail,1
+COMM2030,Minimum,6
+COMM2030,Target,8
+COMM3200,Exemplary,2
+COMM3200,Fail,1
+COMM3200,Minimum,4
+COMM3200,No Data Collected,9
+COMM3200,Target,27
+COMP4980,Exemplary,7
+CRIM4010,Exemplary,8
+CRIM4010,Target,1
+EDUC2250,Target,11
+EDUC3310,Target,6
+EDUC4950,Exemplary,18
+EDUC4950,Target,12
+ENGL1030B,Exemplary,16
+ENGL1030B,Fail,2
+ENGL1030B,Minimum,3
+ENGL1030B,Target,9
+ENGL1035,Exemplary,2
+ENGL1035,Minimum,1
+ENGL1035,Target,5
+ENGL2410W,Exemplary,18
+ENGL2410W,Minimum,3
+ENGL2410W,No Data Collected,3
+ENGL2410W,Target,27
+ENGL3015C,Exemplary,9
+ENGL3015C,Minimum,1
+ENGL3015C,No Data Collected,2
+ENGL3015C,Target,12
+ENGL3094A,Exemplary,5
+ENGL3094A,Fail,3
+ENGL3094A,Minimum,8
+ENGL3094A,Target,4
+ENGL3510,Exemplary,8
+ENGL3510,Fail,1
+ENGL3510,Minimum,9
+ENGL3510,Target,16
+HIST1070,Exemplary,12
+HIST1070,Fail,3
+HIST1070,Minimum,11
+HIST1070,Target,25
+HIST2040,Exemplary,8
+HIST2040,Minimum,7
+HIST2040,Target,17
+HIST3480,Exemplary,18
+HIST3480,Minimum,6
+HIST3480,No Data Collected,6
+HIST3480,Target,21
+HNRS2560,Exemplary,10
+HNRS2560,Fail,2
+HNRS2560,Minimum,2
+HNRS2560,Target,5
+HNRS3560,Exemplary,4
+HNRS3560,Target,8
+HUMN1020,Exemplary,4
+HUMN1020,Target,9
+KINE1000L,Exemplary,22
+KINE1000L,Fail,4
+KINE1000L,Minimum,7
+KINE1000L,No Data Collected,28
+KINE1000L,Target,25
+KINE1005,Exemplary,1
+KINE1005,Minimum,1
+KINE1005,No Data Collected,1
+KINE1005,Target,17
+MUSC1010,Exemplary,34
+MUSC1010,No Data Collected,9
+MUSC1010,Target,3
+NURS4040,Exemplary,37
+PHIL2030,Exemplary,21
+PHIL2030,Invalid Entry - Distinguished/Commendable,28
+PHIL2030,Minimum,3
+PHIL2030,Target,44
+PHIL3080,Exemplary,10
+PHIL3080,Minimum,9
+PHIL3080,Target,10
+PHIL3620,Exemplary,7
+PHIL3620,Minimum,1
+PHIL3620,Target,5
+PHIL4520,Exemplary,4
+PHIL4520,Invalid Entry - Distinguished/Commendable,14
+PHIL4520,Target,8
+PHYS1060,No Data Collected,7
+PHYS1060,Target,11
+PHYS1120,Exemplary,1
+PHYS1120,Target,4
+PHYS2110,Fail,7
+PHYS2110,Target,27
+PHYS2110L,No Data Collected,28
+PRTH2420,Target,2
+PRTH3820,Exemplary,4
+PRTH3820,Minimum,1
+PRTH3820,Target,46
+PRTH4960,Exemplary,9
+PRTH4960,Target,5
+PSYC1550,Exemplary,16
+PSYC1550,Fail,11
+PSYC1550,Minimum,2
+PSYC1550,Target,10
+PSYC4010,Minimum,1
+PSYC4010,Target,5
+THEO2100,Exemplary,13
+THEO2100,Minimum,6
+THEO2100,Target,16
+THEO3620,Exemplary,1
+THEO3620,Minimum,5
+THEO3620,No Data Collected,1
+THEO3620,Target,8
+THEO4900,Exemplary,8
+THEO4900,Target,4
