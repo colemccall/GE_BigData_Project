@@ -37,6 +37,31 @@ This project can be divided into 5 categories:
 5. Jupyter Notebooks (code) - Various scripts used to wrangle or extract features from the data.
 
 ## Project Details
+- Run `GE_Data_Cleaning_Script.ipynb` to clean the input data
+- Run `GE_Features_Script.ipynb` to query and create reports
+- Launch PowerBi project `Test_10_28.pbix` located in `4_Production`
+- View Dashboards
+
+### Dashboards
+**Dashboard 1: Overall University Compliance**
+![image](https://user-images.githubusercontent.com/94725863/200230690-04aa14a6-6c08-4732-add3-dc3e12b7eec8.png)
+NOTE: missing all entries where the outcome was not attached to an assignment
+
+**Dashboard 2: Compliance by College**
+![image](https://user-images.githubusercontent.com/94725863/200230966-d59d673e-32ba-4e59-84cc-47d28ae058ee.png)
+NOTE: missing all entries where the outcome was not attached to an assignment
+
+
+**Dashboard 3: Compliance by Course**
+![image](https://user-images.githubusercontent.com/94725863/200231050-6cdf78a2-b79a-47d8-af11-80d3c21d81d6.png)
+NOTE: missing all entries where the outcome was not attached to an assignment
+
+
+**Dashboard 4: Outcomes by Course**
+![image](https://user-images.githubusercontent.com/94725863/200231072-61f2c250-8f7c-497f-b712-e976eac78050.png)
+NOTE: missing all entries where the outcome was not attached to an assignment
+
+
 
 
 
