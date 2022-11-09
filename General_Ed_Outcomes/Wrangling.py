@@ -1,12 +1,5 @@
 import pandas as pd
 
-def loadDataFrame(datapath):
-
-    data = pd.read_csv(datapath)
-    return pd.DataFrame(data)
-
-    
-
 
 def cleanDataFrame(dataframe):
     student_ids = []            #index=1
@@ -155,3 +148,37 @@ def cleanDataFrame(dataframe):
 
 
     return new_frame, clean_frame
+
+
+
+def loadDataFrame(datapath):
+    data = pd.read_csv(datapath)
+    return pd.DataFrame(data)
+
+
+def readCourseInfo(datapath, cleanFrame):
+    ge_alignment = pd.read_excel(datapath)
+
+    list_of_courses = []
+
+    for (index_label, row_series) in ge_alignment.iterrows():
+        for value in row_series.values:
+            if(len(str(value)) > 4 and len(str(value)) < 12):
+                if str(value) not in list_of_courses:
+                    list_of_courses.append(str(value))
+
+    assessed_courses = []
+
+    for (index_label, row_series) in cleanFrame.iterrows():
+        if(row_series[4] in list_of_courses and row_series[4] not in assessed_courses):
+            assessed_courses.append(str(row_series[4]))
+
+    print(list_of_courses)
+    print(assessed_courses)
+
+    print(str(len(assessed_courses)) + ' out of ' + str(len(list_of_courses)) + ' courses have been assessed')
+
+    return ge_alignment
+
+def test():
+    return ("Test successful")
