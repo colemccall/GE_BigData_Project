@@ -151,13 +151,20 @@ def cleanDataFrame(dataframe):
 
 
 
+
+
 def loadDataFrame(datapath):
     data = pd.read_csv(datapath)
     return pd.DataFrame(data)
 
 
-def readCourseInfo(datapath, cleanFrame):
-    ge_alignment = pd.read_excel(datapath)
+
+
+
+
+def readCourseInfo(alighnmentPath, cleanFrame):
+    ge_alignment = pd.read_excel(alighnmentPath)
+    #cleanFrame = pd.read_csv(cleanPath)
 
     list_of_courses = []
 
@@ -168,10 +175,10 @@ def readCourseInfo(datapath, cleanFrame):
                     list_of_courses.append(str(value))
 
     assessed_courses = []
-
+    
     for (index_label, row_series) in cleanFrame.iterrows():
-        if(row_series[4] in list_of_courses and row_series[4] not in assessed_courses):
-            assessed_courses.append(str(row_series[4]))
+        if(row_series[5] in list_of_courses and row_series[5] not in assessed_courses):
+            assessed_courses.append(str(row_series[5]))
 
     print(list_of_courses)
     print(assessed_courses)
@@ -180,5 +187,3 @@ def readCourseInfo(datapath, cleanFrame):
 
     return ge_alignment
 
-def test():
-    return ("Test successful")
