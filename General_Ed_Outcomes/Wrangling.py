@@ -28,7 +28,6 @@ def cleanDataFrame(dataframe):
         submission_dates.append(str(rows[6]).split('T')[0])
 
         ## Manipulate the learning outcome name, seperating into code and year
-        ## NOTE: I NEED TO CHECK WHETHER THE CODE STARTS WITH GE
         learning_outcome_name = rows[8].split('_')
         if(len(learning_outcome_name) > 2):
             if(learning_outcome_name[0] == 'GE'):
@@ -143,8 +142,8 @@ def cleanDataFrame(dataframe):
     new_frame = pd.DataFrame(list(zip(submission_dates, assignments, learning_outcome_codes, learning_outcome_years, course_sis_ids, semesters, course_names, section_names, learning_outcome_rating, learning_outcome_points, adjusted_learning_outcomes, final_outcome_info, college, compliance))
     ,index = student_ids, columns=('submission_date', 'assignment', 'outcome code', 'outcome year', 'course_id', 'semester', 'course', 'section', 'outcome rating', 'outcome score', 'corrected outcome score', 'corrected outcome rating', 'college' , 'compliance'))
 
-    clean_frame = pd.DataFrame(list(zip(submission_dates, assignments, learning_outcome_codes, learning_outcome_years, semesters, course_names, section_names, adjusted_learning_outcomes, final_outcome_info, college, compliance))
-    ,index = student_ids, columns=('submission_date', 'assignment code', 'outcome code', 'outcome year', 'semester', 'course', 'section', 'outcome score', 'outcome rating', 'college', 'compliance'))
+    clean_frame = pd.DataFrame(list(zip(submission_dates, assignments, learning_outcome_codes, learning_outcome_years, course_sis_ids,semesters, course_names, section_names, adjusted_learning_outcomes, final_outcome_info, college, compliance))
+    ,index = student_ids, columns=('submission_date', 'assignment code', 'outcome code', 'outcome year', 'course_id', 'semester', 'course', 'section', 'outcome score', 'outcome rating', 'college', 'compliance'))
 
 
     return new_frame, clean_frame
@@ -158,32 +157,4 @@ def loadDataFrame(datapath):
     return pd.DataFrame(data)
 
 
-
-
-
-
-def readCourseInfo(alighnmentPath, cleanFrame):
-    ge_alignment = pd.read_excel(alighnmentPath)
-    #cleanFrame = pd.read_csv(cleanPath)
-
-    list_of_courses = []
-
-    for (index_label, row_series) in ge_alignment.iterrows():
-        for value in row_series.values:
-            if(len(str(value)) > 4 and len(str(value)) < 12):
-                if str(value) not in list_of_courses:
-                    list_of_courses.append(str(value))
-
-    assessed_courses = []
-    
-    for (index_label, row_series) in cleanFrame.iterrows():
-        if(row_series[5] in list_of_courses and row_series[5] not in assessed_courses):
-            assessed_courses.append(str(row_series[5]))
-
-    print(list_of_courses)
-    print(assessed_courses)
-
-    print(str(len(assessed_courses)) + ' out of ' + str(len(list_of_courses)) + ' courses have been assessed')
-
-    return ge_alignment
 
