@@ -133,9 +133,9 @@ def cleanDataFrame(dataframe):
         or adjusted_learning_outcomes[index] == 1 or adjusted_learning_outcomes[index] == 0):
             compliance.append('Outcome assessed')
         elif (adjusted_learning_outcomes[index] == -2):
-            compliance.append('Outcome attached, no assessment')
+            compliance.append('Outcome attached - no assessment')
         elif (adjusted_learning_outcomes[index] == -1):
-            compliance.append('Outcome attached, invalid assessment')
+            compliance.append('Outcome attached - invalid assessment')
         else:
             compliance.append('OUtcome not attached')
 
