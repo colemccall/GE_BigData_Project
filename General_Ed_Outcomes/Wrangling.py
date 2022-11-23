@@ -156,5 +156,28 @@ def loadDataFrame(datapath):
     data = pd.read_csv(datapath)
     return pd.DataFrame(data)
 
+def combineCanvas():
+    import os, pandas as pd
+
+    ## Set the canvas landing path
+    canvas_path = os.getcwd() + '\\1_Landing\\Canvas'
+    canvas_files = os.listdir(canvas_path)
+
+    frames = []
+
+    ## Create a dataframe for each file in the canvas landing path
+    for name in canvas_files:
+        file_path = (canvas_path + '\\' + name)
+        df = pd.read_csv(file_path)
+        frames.append(df)
+
+
+    ## Combine dataframes from each semester and show it
+    result = pd.concat(frames)
+    semester_canvas_data_path = os.getcwd() + '\\2_Staging\\Combined\\All_Semesters.csv'
+    result.to_csv(semester_canvas_data_path)
+    return semester_canvas_data_path
+    
+
 
 
