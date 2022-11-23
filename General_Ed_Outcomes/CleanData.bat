@@ -3,4 +3,5 @@ set python_script=C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\Gener
 rem set input_datapath="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\General_Ed_Outcomes\1_Landing\Canvas\Spring 2022 Outcome Report.csv"
 rem set output_datapath="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\General_Ed_Outcomes\2_Staging\Cleaned\Spring 2022 Outcome Report Cleaned.csv"
 
-%python_path% %python_script% rem %input_datapath% %output_datapath%
+%python_path% %python_script% 
+rem %input_datapath% %output_datapath%

@@ -28,7 +28,7 @@ def cleanDataFrame(dataframe):
         submission_dates.append(str(rows[6]).split('T')[0])
 
         ## Manipulate the learning outcome name, seperating into code and year
-        learning_outcome_name = rows[8].split('_')
+        learning_outcome_name = str(rows[8]).split('_')
         if(len(learning_outcome_name) > 2):
             if(learning_outcome_name[0] == 'GE'):
                 learning_outcome_years.append(learning_outcome_name[2].split(' ')[0])
@@ -62,16 +62,17 @@ def cleanDataFrame(dataframe):
         
         
         # Leave points as is, maybe convert to int
-        outcome_points = rows[26]
+        outcome_points = (rows[26])
         learning_outcome_points.append(outcome_points)
 
 
         # Calculate an adjusted learning outcome score
-        if outcome_points > 0 and outcome_points <= 3.0:
-            adjusted_learning_outcomes.append(outcome_points)
-        elif outcome_points > 3.0 and outcome_points <= 5.0:
-            adjusted_learning_outcomes.append(-1)
-        else:
+        try:
+            if int(outcome_points) > 0 and int(outcome_points) <= 3.0:
+                adjusted_learning_outcomes.append(int(outcome_points))
+            elif int(outcome_points) > 3.0 and int(outcome_points) <= 5.0:
+                adjusted_learning_outcomes.append(-1)
+        except:
             if(outcome_rating == 'Exemplary'):
                 adjusted_learning_outcomes.append(3.0)
             elif (outcome_rating == 'Target'):
