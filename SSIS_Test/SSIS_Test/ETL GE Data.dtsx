@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="41"
-  DTS:VersionGUID="{C7F6AE3A-F280-4EBF-BB37-0A5DB231B8CE}">
+  DTS:VersionBuild="50"
+  DTS:VersionGUID="{FF778BDB-FE64-4F06-9C51-8ADDAD22EF14}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -122,7 +122,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\General_Ed_Outcomes\2_Staging\Cleaned\Spring 2022 Outcome Report Cleaned.csv">
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\General_Ed_Outcomes\2_Staging\Cleaned\Cleaned_Canvas_Data.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -130,7 +130,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="student_id"
-              DTS:DTSID="{0995D7FE-E05C-41A2-A85E-36A1F6A26115}"
+              DTS:DTSID="{0A8435CB-0F44-4BDE-91DA-D41D11C83113}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -139,16 +139,16 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="submission_date"
-              DTS:DTSID="{F6621102-766E-4A61-8E95-72601A01D555}"
+              DTS:DTSID="{84F3A71D-95F4-402C-A983-D45C245E9398}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="200"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="assignment code"
-              DTS:DTSID="{DABFBA45-7E1D-448E-B42B-B5400D0F2BCB}"
+              DTS:DTSID="{E585E56D-A09B-47D2-B31E-50F3734E22A1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -157,7 +157,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="outcome code"
-              DTS:DTSID="{775E7004-E96E-49D6-A6AE-7FFD91DBE934}"
+              DTS:DTSID="{8ACD9AF9-C42A-4A3E-9316-121248FA40E4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -166,7 +166,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="outcome year"
-              DTS:DTSID="{5407A9C5-1146-478A-9458-976A3CBEFA4F}"
+              DTS:DTSID="{B391BBF1-E440-403F-A7CF-290B5E2F2538}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -175,7 +175,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="course_id"
-              DTS:DTSID="{CD8E17EC-AAEB-4798-97C4-16A42DC51544}"
+              DTS:DTSID="{F26939D2-F699-464F-B73F-0AA9C8B1DE46}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -184,7 +184,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="semester"
-              DTS:DTSID="{BBAC4389-DE78-4380-939C-96C5557AB825}"
+              DTS:DTSID="{015390A8-DB1F-4045-BC55-051734CF74EB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -193,7 +193,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="course"
-              DTS:DTSID="{4D382DBF-2973-42A4-921E-1F4542778733}"
+              DTS:DTSID="{346769B5-745C-47DE-B80E-F6DE8466A7D5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -202,7 +202,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="section"
-              DTS:DTSID="{60BA80C2-A466-4DC5-8DCE-149FDE77B876}"
+              DTS:DTSID="{AB167DB9-FBF8-46A2-9861-80EAB4C6A3CF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -210,7 +210,7 @@
               DTS:DataType="4"
               DTS:TextQualified="True"
               DTS:ObjectName="outcome score"
-              DTS:DTSID="{3CD1F743-87B1-4E56-8CCA-3D9EA253552C}"
+              DTS:DTSID="{2432CA79-B2C7-481B-9A44-8FD42EFA0EF4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -219,7 +219,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="outcome rating"
-              DTS:DTSID="{7BDFD212-C4F6-465D-885A-9CCB856DE1F2}"
+              DTS:DTSID="{3318EA44-F6BD-4E1C-8C2C-1AB8757641A0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -228,7 +228,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="college"
-              DTS:DTSID="{D250BE1F-4466-42B4-9179-387BC9E95F9F}"
+              DTS:DTSID="{1D26F0BB-B33B-40A0-B642-430A7F8A8E42}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -237,7 +237,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="compliance"
-              DTS:DTSID="{46A34995-D2EC-4EB7-9147-31CE129274C3}"
+              DTS:DTSID="{E2AE25EF-113C-43FA-B255-89D954BD3037}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1929,7 +1929,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[assignment code]"
-                      length="50"
+                      length="200"
                       lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[assignment code]"
                       name="assignment code"
                       truncationRowDisposition="FailComponent">
@@ -2168,7 +2168,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                     <externalMetadataColumn
                       refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[assignment code]"
                       dataType="wstr"
-                      length="50"
+                      length="200"
                       name="assignment code" />
                     <externalMetadataColumn
                       refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[outcome code]"
@@ -2374,7 +2374,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                     <inputColumn
                       refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].Columns[assignment code]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="200"
                       cachedName="assignment code"
                       externalMetadataColumnId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[assignment_id]"
                       lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[assignment code]" />
@@ -2453,8 +2453,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                       name="student_id" />
                     <externalMetadataColumn
                       refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[assignment_id]"
-                      dataType="wstr"
-                      length="50"
+                      dataType="nText"
                       name="assignment_id" />
                     <externalMetadataColumn
                       refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[outcome_code]"
@@ -3970,7 +3969,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package\Upload Data">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="177,42"
           Id="Package\Upload Data\Registrar Upload"
@@ -4006,9 +4005,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4030,9 +4027,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

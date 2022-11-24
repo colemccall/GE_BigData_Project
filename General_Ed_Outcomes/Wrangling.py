@@ -21,14 +21,14 @@ def cleanDataFrame(dataframe):
     ## Read data from the dataframe
     ## For some columns, the information will be manipulated
     for index, rows in dataframe.iterrows():
-        student_ids.append(rows[1])
-        assignments.append(rows[4])
+        student_ids.append(rows[2])
+        assignments.append(rows[5])
 
         ## Manipulate the date, so that we only get YYYY-MM-DD
-        submission_dates.append(str(rows[6]).split('T')[0])
+        submission_dates.append(str(rows[7]).split('T')[0])
 
         ## Manipulate the learning outcome name, seperating into code and year
-        learning_outcome_name = str(rows[8]).split('_')
+        learning_outcome_name = str(rows[9]).split('_')
         if(len(learning_outcome_name) > 2):
             if(learning_outcome_name[0] == 'GE'):
                 learning_outcome_years.append(learning_outcome_name[2].split(' ')[0])
@@ -45,7 +45,7 @@ def cleanDataFrame(dataframe):
 
         ## Original method, but just duplicates the same information 3 times
         #course_names.append(rows[14])
-        course_sis_ids.append(rows[16])
+        course_sis_ids.append(rows[17])
         #section_names.append(rows[17])
 
 
