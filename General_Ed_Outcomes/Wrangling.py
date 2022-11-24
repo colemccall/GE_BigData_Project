@@ -158,6 +158,8 @@ def loadDataFrame(datapath):
     return pd.DataFrame(data)
 
 
+
+
 def combineCanvas():
     import os, pandas as pd
 
@@ -177,9 +179,34 @@ def combineCanvas():
 
     ## Combine dataframes from each semester and show it
     result = pd.concat(frames)
-    semester_canvas_data_path = 'C:\\Users\\colem\\Desktop\\Senior\\BigData\\GE_BigData_Project\\General_Ed_Outcomes\\2_Staging\\Combined\\All_Semesters.csv'
+    semester_canvas_data_path = 'C:\\Users\\colem\\Desktop\\Senior\\BigData\\GE_BigData_Project\\General_Ed_Outcomes\\2_Staging\\Combined\\All_Semesters_Canvas.csv'
     result.to_csv(semester_canvas_data_path)
     return semester_canvas_data_path
+
+
+
+
+
+def combineRegistrar():
+    import os, pandas as pd
+
+    ## Set the canvas registrar path
+    registrar_path = 'C:\\Users\\colem\\Desktop\\Senior\\BigData\\GE_BigData_Project\\General_Ed_Outcomes\\1_Landing\\Registrar'
+    registrar_files = os.listdir(registrar_path)
+
+    frames = []
+
+    ## Create a dataframe for each file in the canvas landing path
+    for name in registrar_files:
+        file_path = (registrar_path + '\\' + name)
+        df = pd.read_csv(file_path)
+        frames.append(df)
+
+
+    ## Combine dataframes from each semester and show it
+    result = pd.concat(frames)
+    semester_registrar_data_path = 'C:\\Users\\colem\\Desktop\\Senior\\BigData\\GE_BigData_Project\\General_Ed_Outcomes\\2_Staging\\Combined\\All_Semesters_Registrar.csv'
+    result.to_csv(semester_registrar_data_path)
     
 
 

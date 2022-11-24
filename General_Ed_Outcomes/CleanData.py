@@ -1,7 +1,10 @@
-from Wrangling import loadDataFrame, cleanDataFrame, combineCanvas
+from Wrangling import loadDataFrame, cleanDataFrame, combineCanvas, combineRegistrar
 import sys, os
 
 if(len(sys.argv) == 1):
+    ## This function combines the registrar data from each semester
+    combineRegistrar()
+
     ## This function creates the combined canvas table, then returns the path for where it is saved
     input_path = combineCanvas()
 
