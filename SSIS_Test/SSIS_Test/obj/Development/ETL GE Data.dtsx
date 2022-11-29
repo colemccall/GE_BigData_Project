@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="65"
-  DTS:VersionGUID="{AA272B5B-BF02-4493-8BCD-54C8F28E9922}">
+  DTS:VersionBuild="67"
+  DTS:VersionGUID="{6783AE34-53C4-4B9F-83AA-9227C6CCA672}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -262,11 +262,19 @@
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Index"
+              DTS:DTSID="{AB629F84-B46C-4D87-9E58-CCA3594389C2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Course_sis_id"
-              DTS:DTSID="{9D6313EC-8246-462A-A94C-F77547772A1C}"
+              DTS:DTSID="{5420C99E-E981-4768-A929-F1DBC20F598A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -275,7 +283,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Course_name"
-              DTS:DTSID="{F5806B05-2C5F-4C0C-AC89-345F62857589}"
+              DTS:DTSID="{B7D48892-7BD4-488F-9847-5E15FEAEBC92}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -283,7 +291,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Number_of_students"
-              DTS:DTSID="{C570B79A-D3C5-47EE-962F-0872FB20172A}"
+              DTS:DTSID="{34F4784E-8C32-4BEF-B726-4C739E235152}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -292,7 +300,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Outcome 1"
-              DTS:DTSID="{2B5DB91E-7035-4795-AE09-9AD8EA051DA6}"
+              DTS:DTSID="{F0211612-0AAA-423B-87C7-6398B7BC8662}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -301,7 +309,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Outcome 2"
-              DTS:DTSID="{15AC04AD-7F4A-4870-9AF9-71027C013929}"
+              DTS:DTSID="{91353245-A563-422E-9D2E-16EA5EA4914C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -309,7 +317,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#1_ID"
-              DTS:DTSID="{3B8B39B5-14C1-499F-BB51-C0F4C9664652}"
+              DTS:DTSID="{D9C894FF-4430-40D3-A110-C4B72FE503D4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -318,7 +326,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#1_name"
-              DTS:DTSID="{604BEE3D-3EB2-4B91-9C91-AA95025B9672}"
+              DTS:DTSID="{8B04DE1C-F5E8-4CA8-985B-97A2D0E1AD85}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -327,7 +335,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#1_email"
-              DTS:DTSID="{49AEBC28-B14D-47C1-8BFB-FA86E9741143}"
+              DTS:DTSID="{7BEFBB11-E9D1-4C52-B21E-B572D938F9A8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -335,7 +343,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#2_ID"
-              DTS:DTSID="{C518E414-626B-4BB1-B5BF-0260585BAD28}"
+              DTS:DTSID="{F4B338D8-854F-416D-AC16-D6130DD4F0D8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -344,7 +352,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#2_name"
-              DTS:DTSID="{DA5C4511-DBC3-4C52-B64F-961CD83084F1}"
+              DTS:DTSID="{745A4DE4-78E6-42B4-93C2-B491D0822D58}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -353,7 +361,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#2_email"
-              DTS:DTSID="{F01C5B44-5C47-4730-B3B3-B35E1344EA53}"
+              DTS:DTSID="{3F1C6867-1E74-4A38-9C71-186D52F6ED72}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -361,7 +369,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#3_ID"
-              DTS:DTSID="{C21D65B9-1BBA-44CF-B188-07B5DFD544E1}"
+              DTS:DTSID="{397C3F15-3494-4D97-8F6E-F891D769F7C9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -370,7 +378,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#3_name"
-              DTS:DTSID="{58A706EA-7A13-47D5-B6F0-7B9B8F4407F0}"
+              DTS:DTSID="{EC4C28A7-C473-4746-9CE3-07C1F7843D6E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -379,7 +387,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#3_email"
-              DTS:DTSID="{0D22DCC8-C9EA-4333-8F40-70B216EB7610}"
+              DTS:DTSID="{C35AFDF2-5EC9-43E7-954C-E2E3D1802315}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -387,7 +395,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#4_ID"
-              DTS:DTSID="{144F6008-A3E0-4882-9685-9510E067AD0F}"
+              DTS:DTSID="{2B309F47-FFFD-485B-B070-DB7F221EF16F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -396,7 +404,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#4_name"
-              DTS:DTSID="{12A1B2D9-D8DD-43D0-8808-39AB4387B1F7}"
+              DTS:DTSID="{5A1D9A9A-8FF6-4D55-B29E-FF9DFC5006CE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -405,7 +413,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#4_email"
-              DTS:DTSID="{1E497D42-5670-46B7-B7CC-224860D7B9B2}"
+              DTS:DTSID="{BC44BA22-DA94-42CB-A4C6-2A4FDD99FA5B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -413,7 +421,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#5_ID"
-              DTS:DTSID="{A6F2AA2A-9618-4918-BD1E-A9390FC40D0C}"
+              DTS:DTSID="{A38CDEA9-6F5C-4995-9A6D-6B2C97B1A762}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -422,7 +430,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#5_name"
-              DTS:DTSID="{BC0C0D71-E61D-474F-AA0F-2548BDFA6825}"
+              DTS:DTSID="{C282AD75-0148-4DBD-9532-1658B286ED1A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -431,7 +439,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#5_email"
-              DTS:DTSID="{B7EFE132-A573-4BD2-A026-B544821FD6CC}"
+              DTS:DTSID="{67C8BA44-1E29-4B80-A2BD-D1193E05CA91}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -439,7 +447,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#6_ID"
-              DTS:DTSID="{F6383F82-F2CA-4388-9AC1-966C15E0456C}"
+              DTS:DTSID="{FEEA66CA-5876-4F5C-A4E6-4492A393F866}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -448,7 +456,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#6_name"
-              DTS:DTSID="{88527EF3-8BAD-4B56-9A29-27EB914FA6CE}"
+              DTS:DTSID="{FB64073A-98A6-4236-8A21-F8B0DFE6015A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -457,7 +465,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#6_email"
-              DTS:DTSID="{794DF39F-2A74-4402-AF4B-7CFEC4ECDAA1}"
+              DTS:DTSID="{AD6BD344-AB1C-4D12-A5D4-8DCBFD52C782}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -465,7 +473,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#7_ID"
-              DTS:DTSID="{9D574C4C-6C96-4D50-BB01-0A9E8BBA20D5}"
+              DTS:DTSID="{4801ABB3-DD61-4F74-9EBB-8ECBA4D745D6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -474,7 +482,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#7_name"
-              DTS:DTSID="{600A6C28-EE79-4398-BBC4-12877E2BA9BF}"
+              DTS:DTSID="{643CC7A8-9545-4726-AC5B-7DC9256D9744}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -483,7 +491,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#7_email"
-              DTS:DTSID="{A12CDC78-98B5-4938-A438-345E50741C08}"
+              DTS:DTSID="{3746AA48-FF41-4A7F-A957-D4C69AF296F3}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -552,7 +560,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Drop Existing, Create New Canvas SQL Table"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -569,7 +577,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Drop Existing, Create New Registrar SQL Table"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -602,7 +610,7 @@
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
       DTS:ObjectName="Python - Canvas Data Wrangler"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:LoggingOptions
         DTS:LoggingMode="1" />
@@ -620,7 +628,7 @@
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
       DTS:ObjectName="Python - Registrar Data Wrangler"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:LoggingOptions
         DTS:LoggingMode="1" />
@@ -1866,6 +1874,28 @@
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Index]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Index]"
+                      length="255"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Index]"
+                      name="Index"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1991,6 +2021,12 @@
                       dataType="wstr"
                       length="50"
                       name="Teacher_#7_email" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Index]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Index" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -2505,7 +2541,7 @@
           Id="Package\Drop Existing, Create New Canvas SQL Table"
           TopLeft="98,189" />
         <NodeLayout
-          Size="253,42"
+          Size="311,42"
           Id="Package\Drop Existing, Create New Registrar SQL Table"
           TopLeft="559,181" />
         <NodeLayout
@@ -2556,9 +2592,9 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="211.5,51"
+              EndConnector="240.5,51"
               Start="0,0"
-              End="211.5,43.5">
+              End="240.5,43.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2569,13 +2605,13 @@
                     Point2="0,20.6465256797583"
                     Point3="4,20.6465256797583" />
                   <mssgle:LineSegment
-                    End="207.5,20.6465256797583" />
+                    End="236.5,20.6465256797583" />
                   <mssgle:CubicBezierSegment
-                    Point1="207.5,20.6465256797583"
-                    Point2="211.5,20.6465256797583"
-                    Point3="211.5,24.6465256797583" />
+                    Point1="236.5,20.6465256797583"
+                    Point2="240.5,20.6465256797583"
+                    Point3="240.5,24.6465256797583" />
                   <mssgle:LineSegment
-                    End="211.5,43.5" />
+                    End="240.5,43.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2668,18 +2704,30 @@
           TopLeft="558,279" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="682.25,223">
+          TopLeft="714.5,223">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,56"
+              EndConnector="-35.5,56"
               Start="0,0"
-              End="0,48.5">
+              End="-35.5,48.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,48.5" />
+                    End="0,24" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24"
+                    Point2="0,28"
+                    Point3="-4,28" />
+                  <mssgle:LineSegment
+                    End="-31.5,28" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-31.5,28"
+                    Point2="-35.5,28"
+                    Point3="-35.5,32" />
+                  <mssgle:LineSegment
+                    End="-35.5,48.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

@@ -57,22 +57,23 @@ def cleanDataFrame(dataframe):
         
 
         # Manipulate the rating, getting rid of everything except for the actual value
-        outcome_rating = str(rows[25]).split(':')[0]
+        outcome_rating = str(rows[26]).split(':')[0]
         learning_outcome_rating.append(outcome_rating)
+        #print(outcome_rating)
         
-        
+         
         # Leave points as is, maybe convert to int
-        outcome_points = (rows[26])
+        outcome_points = (rows[27])
         learning_outcome_points.append(outcome_points)
+        #print(outcome_points)
 
 
         # Calculate an adjusted learning outcome score
-        try:
-            if int(outcome_points) > 0 and int(outcome_points) <= 3.0:
-                adjusted_learning_outcomes.append(int(outcome_points))
-            elif int(outcome_points) > 3.0 and int(outcome_points) <= 5.0:
-                adjusted_learning_outcomes.append(-1)
-        except:
+        if outcome_points > 0 and outcome_points <= 3.0:
+            adjusted_learning_outcomes.append(outcome_points)
+        elif outcome_points > 3.0 and outcome_points <= 5.0:
+            adjusted_learning_outcomes.append(-1)
+        else:
             if(outcome_rating == 'Exemplary'):
                 adjusted_learning_outcomes.append(3.0)
             elif (outcome_rating == 'Target'):
@@ -82,7 +83,7 @@ def cleanDataFrame(dataframe):
             elif (outcome_rating == 'Outcome Not Met' or outcome_rating == 'Outcome not met.'):
                 adjusted_learning_outcomes.append(0.0)
             else:
-                adjusted_learning_outcomes.append(-2)
+                adjusted_learning_outcomes.append(-2.0)
 
 
         # Based on the outcome score, provide an actual rating
@@ -138,7 +139,7 @@ def cleanDataFrame(dataframe):
         elif (adjusted_learning_outcomes[index] == -1):
             compliance.append('Outcome attached - invalid assessment')
         else:
-            compliance.append('OUtcome not attached')
+            compliance.append('Outcome not attached')
 
     new_frame = pd.DataFrame(list(zip(submission_dates, assignments, learning_outcome_codes, learning_outcome_years, course_sis_ids, semesters, course_names, section_names, learning_outcome_rating, learning_outcome_points, adjusted_learning_outcomes, final_outcome_info, college, compliance))
     ,index = student_ids, columns=('submission_date', 'assignment', 'outcome code', 'outcome year', 'course_id', 'semester', 'course', 'section', 'outcome rating', 'outcome score', 'corrected outcome score', 'corrected outcome rating', 'college' , 'compliance'))
