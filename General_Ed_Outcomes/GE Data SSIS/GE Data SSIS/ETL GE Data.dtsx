@@ -1,0 +1,2859 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="11/21/2022 5:34:49 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="COLESLAPTOP"
+  DTS:CreatorName="COLESLAPTOP\colem"
+  DTS:DTSID="{552B59A0-C3DB-4B27-9C92-848B74990DF9}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.948.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="68"
+  DTS:VersionGUID="{49F61BDA-1C9B-4D9D-B696-FEF9F4D9C572}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BigData DB]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{D57E6D4E-A50C-4E12-A765-29B1A209B5E8}"
+      DTS:ObjectName="BigData DB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=BigData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{D57E6D4E-A50C-4E12-A765-29B1A209B5E8}localhost.BigData;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Create_Registrar_Table.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{F082CF19-4F0A-4328-AF13-CC334DB43FAF}"
+      DTS:ObjectName="Create_Registrar_Table.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\Create_Registrar_Table.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Create_Tables.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{CC7DB325-A736-4E78-9044-58B4DCB43BA8}"
+      DTS:ObjectName="Create_Tables.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\Create_Tables.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Drop_Registrar_Table.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{9855A9D4-D021-4245-86B1-81A0043696A8}"
+      DTS:ObjectName="Drop_Registrar_Table.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\Drop_Registrar_Table.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Drop_Tables.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{76B5CF4B-16A5-4C6F-B933-BD8B83E0D0A6}"
+      DTS:ObjectName="Drop_Tables.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\Drop_Tables.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Join_Tables.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{248BF4BB-A675-4D34-BC86-524FD38FA04B}"
+      DTS:ObjectName="Join_Tables.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\Join_Tables.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost]"
+      DTS:CreationName="ADO.NET:SQL"
+      DTS:DTSID="{0C5DF5BA-735A-4EE7-AB4B-1A6AFDF511F2}"
+      DTS:ObjectName="localhost">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=.;Integrated Security=SSPI;Connect Timeout=30;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Reset_Canvas_Tables.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{368E3E12-43A8-40B3-8193-50E807B222D7}"
+      DTS:ObjectName="Reset_Canvas_Tables.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\Reset_Canvas_Tables.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Reset_Registrar_Tables.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{16D54230-DE5A-4FE4-8344-410C9B595125}"
+      DTS:ObjectName="Reset_Registrar_Tables.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\Reset_Registrar_Tables.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Upload CSV Data]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{BC8FD20A-F068-4B16-90EE-551BFD80FD0A}"
+      DTS:ObjectName="Upload CSV Data">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\General_Ed_Outcomes\2_Staging\Cleaned\Cleaned_Canvas_Data.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="student_id"
+              DTS:DTSID="{6BEFBDDE-3A29-4143-8FB5-28553BD4D09C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="submission_date"
+              DTS:DTSID="{8C248441-9376-443E-A32A-2A5443AA7092}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="assignment code"
+              DTS:DTSID="{6A61947F-396B-4285-925F-1B3E404DFEC5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="outcome code"
+              DTS:DTSID="{5FDB7D2A-4C19-46C4-91D2-1B766AF343C2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="outcome year"
+              DTS:DTSID="{EBFBEAA2-76FB-4E66-97CD-36F206D75DFC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="19"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="course_id"
+              DTS:DTSID="{180574E1-3B18-40FF-9AF1-3912E41F8FAC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="6"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="semester"
+              DTS:DTSID="{EB580E4D-8F49-4654-818A-DDCB3362EEE8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="9"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="course"
+              DTS:DTSID="{C01F3184-3D1F-4782-AD0E-460EA36C92CD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="section"
+              DTS:DTSID="{0FE15C70-2FAA-4C96-9B02-FE405B1C237F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="outcome score"
+              DTS:DTSID="{DC51B5BC-9471-4AE2-8381-B5406381756A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="outcome rating"
+              DTS:DTSID="{4C5AFB4D-B566-4738-A997-BB46194B1AE1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="40"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="college"
+              DTS:DTSID="{A439A387-E077-4C1B-822A-BF2701FFFD1A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="compliance"
+              DTS:DTSID="{98F782CC-6E80-4F98-B245-99DB4BA6A172}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Upload Registrar Data]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{F66E2549-DEFC-40B6-B40B-18017B16BF1E}"
+      DTS:ObjectName="Upload Registrar Data">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\General_Ed_Outcomes\2_Staging\Combined\All_Semesters_Registrar.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Index"
+              DTS:DTSID="{F6C6805D-8E6E-4340-B9B4-4A67391C69E2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Course_sis_id"
+              DTS:DTSID="{9016D780-E8ED-4C1C-A60E-EAD6F2504C27}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Course_name"
+              DTS:DTSID="{AE7D0020-EAB9-4547-8FDF-4CA57EA1D7C6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number_of_students"
+              DTS:DTSID="{EBC4E2A6-D34E-40A7-B251-189FA1363B6F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Outcome 1"
+              DTS:DTSID="{A449FDFD-11EE-4035-9E91-9CE6E2156817}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Outcome 2"
+              DTS:DTSID="{A31DE4B1-C61A-444D-94A9-9655411D45C9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#1_ID"
+              DTS:DTSID="{99F58886-ECFE-4A1C-92E6-4A931B6CDEF0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#1_name"
+              DTS:DTSID="{B72B1BC8-F6F0-45D3-A640-FF0673551371}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#1_email"
+              DTS:DTSID="{326AD46E-6A96-4C69-96D0-10DB417498C7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#2_ID"
+              DTS:DTSID="{A9DE6E67-8BA1-4A42-90A6-36E4213D96BB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#2_name"
+              DTS:DTSID="{398BD97C-622D-4915-BD7F-2C7CA7DE63B4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#2_email"
+              DTS:DTSID="{7F906D10-0485-4C1E-B12B-AB914CAFB7A1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#3_ID"
+              DTS:DTSID="{54F40FE1-B08A-41D0-90F3-7B5BC0925615}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#3_name"
+              DTS:DTSID="{30FCA739-6658-4A2D-A3A9-E729B4FA971E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#3_email"
+              DTS:DTSID="{AB15C7C8-56DF-473D-8B99-F434E2B11236}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#4_ID"
+              DTS:DTSID="{3CDFF12B-2EB2-401C-8E3E-4B3F45451D8A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#4_name"
+              DTS:DTSID="{D11D3B87-A986-49AC-90D1-2F6A6375180D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#4_email"
+              DTS:DTSID="{3739ED26-A530-4994-ACBE-71DB3EB684A2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#5_ID"
+              DTS:DTSID="{FD38F4C8-C77D-4289-8CF6-36935AB8C22E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#5_name"
+              DTS:DTSID="{698C140B-F548-4B28-A0B0-527EE35BA8D6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#5_email"
+              DTS:DTSID="{04D08416-31AF-4632-94F8-F0FF9D50D23C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#6_ID"
+              DTS:DTSID="{399E76D3-7A0C-407B-99C4-7422076E4342}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#6_name"
+              DTS:DTSID="{88FFD53C-A3AC-49D9-B38E-3D6E037174CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#6_email"
+              DTS:DTSID="{39B3BF6C-32D3-462C-A95B-F3ECC9C8F983}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#7_ID"
+              DTS:DTSID="{ABFC414E-02C8-4252-8D1D-AA27F71A491D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#7_name"
+              DTS:DTSID="{9E2F228B-5290-4410-A615-00A8C4EF265E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Teacher_#7_email"
+              DTS:DTSID="{9BFD2159-6043-42EC-ACB5-C616DEB4B8D9}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Back Up Database Task"
+      DTS:CreationName="Microsoft.DbMaintenanceBackupTask"
+      DTS:Description="Back Up Database Task"
+      DTS:DTSID="{939A3278-DDB6-4EC3-90F1-F4A72A7BEA79}"
+      DTS:ExecutableType="Microsoft.DbMaintenanceBackupTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Back Up Database Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{0C5DF5BA-735A-4EE7-AB4B-1A6AFDF511F2}"
+          SQLTask:DatabaseSelectionType="4"
+          SQLTask:ServerVersion="15"
+          SQLTask:ExtendedLogging="True"
+          SQLTask:LocalConnectionForLogging=""
+          SQLTask:TaskName=""
+          SQLTask:IgnoreDatabasesInNotOnlineState="False"
+          SQLTask:BackupAction="0"
+          SQLTask:BackupIsIncremental="False"
+          SQLTask:BackupFileGroupsFiles=""
+          SQLTask:BackupDeviceType="2"
+          SQLTask:BackupPhysicalDestinationType="2"
+          SQLTask:BackupDestinationType="0"
+          SQLTask:BackupDestinationAutoFolderPath="C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Backup"
+          SQLTask:BackupActionForExistingBackups="0"
+          SQLTask:BackupCreateSubFolder="False"
+          SQLTask:BackupFileExtension=""
+          SQLTask:BackupVerifyIntegrity="False"
+          SQLTask:ExpireDate="2022-12-06T00:00:00"
+          SQLTask:RetainDays="14"
+          SQLTask:InDays="True"
+          SQLTask:UseExpiration="False"
+          SQLTask:BackupCompressionAction="0"
+          SQLTask:CopyOnlyBackup="False"
+          SQLTask:IgnoreReplicaType="False"
+          SQLTask:CredentialName=""
+          SQLTask:ContainerName=""
+          SQLTask:UrlPrefix=""
+          SQLTask:IsBackupEncrypted="False"
+          SQLTask:BackupEncryptionAlgorithm="0"
+          SQLTask:BackupEncryptorType="0"
+          SQLTask:BackupEncryptorName=""
+          SQLTask:Checksum="False"
+          SQLTask:ContinueOnError="False"
+          SQLTask:IsBlockSizeUsed="False"
+          SQLTask:IsMaxTransferSizeUsed="False" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:SelectedDatabases
+            SQLTask:DatabaseName="BigData" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Drop Existing, Create New Canvas SQL Table"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:DTSID="{3E0301F7-3886-40BA-968D-D3E53FFFBD9B}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Drop Existing, Create New Canvas SQL Table"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{D57E6D4E-A50C-4E12-A765-29B1A209B5E8}"
+          SQLTask:BypassPrepare="False"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="Reset_Canvas_Tables.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Drop Existing, Create New Registrar SQL Table"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:DTSID="{73696E10-0DC1-484C-AEDA-BB176015C119}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Drop Existing, Create New Registrar SQL Table"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{D57E6D4E-A50C-4E12-A765-29B1A209B5E8}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="Reset_Registrar_Tables.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Join Canvas and Registrar Data"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:DTSID="{B91279E7-5431-4F96-9B63-8BDEE2015F8E}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Join Canvas and Registrar Data"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{D57E6D4E-A50C-4E12-A765-29B1A209B5E8}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="Join_Tables.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Python - Canvas Data Wrangler"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{EF55A497-5296-4D20-AC9D-9E5B0BA48A70}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Python - Canvas Data Wrangler"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:LoggingMode="1" />
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\General_Ed_Outcomes\DataWrangling.bat"
+          WindowStyle="Maximized" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Python - Registrar Data Wrangler"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{20BA97FB-186F-4779-AB12-9E67DB54F76E}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Python - Registrar Data Wrangler"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:LoggingMode="1" />
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\General_Ed_Outcomes\RegistrarData.bat"
+          WindowStyle="Maximized" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Upload Data"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{001140D6-7B71-4277-B0F8-9CEA4D66C499}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:MaxErrorCount="2"
+      DTS:ObjectName="Upload Data"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Upload Data\Canvas CSV Selection"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Canvas CSV Selection"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Upload Data\Canvas CSV Selection.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Upload CSV Data]"
+                  connectionManagerRefId="Package.ConnectionManagers[Upload CSV Data]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[student_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[student_id]"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[student_id]"
+                      name="student_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[submission_date]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[submission_date]"
+                      length="50"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[submission_date]"
+                      name="submission_date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[assignment code]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[assignment code]"
+                      length="200"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[assignment code]"
+                      name="assignment code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[outcome code]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[outcome code]"
+                      length="20"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[outcome code]"
+                      name="outcome code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[outcome year]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[outcome year]"
+                      length="5"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[outcome year]"
+                      name="outcome year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[course_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[course_id]"
+                      length="19"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[course_id]"
+                      name="course_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[semester]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[semester]"
+                      length="6"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[semester]"
+                      name="semester"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[course]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[course]"
+                      length="9"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[course]"
+                      name="course"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[section]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[section]"
+                      length="2"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[section]"
+                      name="section"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[outcome score]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[outcome score]"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[outcome score]"
+                      name="outcome score"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[outcome rating]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[outcome rating]"
+                      length="50"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[outcome rating]"
+                      name="outcome rating"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[college]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[college]"
+                      length="40"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[college]"
+                      name="college"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[compliance]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[compliance]"
+                      length="50"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[compliance]"
+                      name="compliance"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[student_id]"
+                      dataType="i4"
+                      name="student_id" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[submission_date]"
+                      dataType="wstr"
+                      length="50"
+                      name="submission_date" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[assignment code]"
+                      dataType="wstr"
+                      length="200"
+                      name="assignment code" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[outcome code]"
+                      dataType="wstr"
+                      length="20"
+                      name="outcome code" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[outcome year]"
+                      dataType="wstr"
+                      length="5"
+                      name="outcome year" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[course_id]"
+                      dataType="wstr"
+                      length="19"
+                      name="course_id" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[semester]"
+                      dataType="wstr"
+                      length="6"
+                      name="semester" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[course]"
+                      dataType="wstr"
+                      length="9"
+                      name="course" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[section]"
+                      dataType="wstr"
+                      length="2"
+                      name="section" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[outcome score]"
+                      dataType="r4"
+                      name="outcome score" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[outcome rating]"
+                      dataType="wstr"
+                      length="50"
+                      name="outcome rating" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[college]"
+                      dataType="wstr"
+                      length="40"
+                      name="college" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[compliance]"
+                      dataType="wstr"
+                      length="50"
+                      name="compliance" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Upload Data\Canvas Upload"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Canvas Upload"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[canvas_data]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Upload Data\Canvas Upload.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[BigData DB]"
+                  connectionManagerRefId="Package.ConnectionManagers[BigData DB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].Columns[submission_date]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="submission_date"
+                      externalMetadataColumnId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[submission_date]"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[submission_date]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].Columns[course_id]"
+                      cachedDataType="wstr"
+                      cachedLength="19"
+                      cachedName="course_id"
+                      externalMetadataColumnId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[course_id]"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[course_id]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].Columns[semester]"
+                      cachedDataType="wstr"
+                      cachedLength="6"
+                      cachedName="semester"
+                      externalMetadataColumnId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[semester]"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[semester]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].Columns[course]"
+                      cachedDataType="wstr"
+                      cachedLength="9"
+                      cachedName="course"
+                      externalMetadataColumnId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[course]"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[course]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].Columns[section]"
+                      cachedDataType="wstr"
+                      cachedLength="2"
+                      cachedName="section"
+                      externalMetadataColumnId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[section]"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[section]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].Columns[college]"
+                      cachedDataType="wstr"
+                      cachedLength="40"
+                      cachedName="college"
+                      externalMetadataColumnId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[college]"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[college]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].Columns[compliance]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="compliance"
+                      externalMetadataColumnId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[compliance]"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[compliance]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].Columns[assignment code]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="assignment code"
+                      externalMetadataColumnId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[assignment_id]"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[assignment code]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].Columns[outcome code]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="outcome code"
+                      externalMetadataColumnId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[outcome_code]"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[outcome code]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].Columns[outcome rating]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="outcome rating"
+                      externalMetadataColumnId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[outcome_rating]"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[outcome rating]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].Columns[outcome score]"
+                      cachedDataType="r4"
+                      cachedName="outcome score"
+                      externalMetadataColumnId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[outcome_score]"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[outcome score]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].Columns[outcome year]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="outcome year"
+                      externalMetadataColumnId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[outcome_year]"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[outcome year]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].Columns[student_id]"
+                      cachedDataType="i4"
+                      cachedName="student_id"
+                      externalMetadataColumnId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[student_id]"
+                      lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[student_id]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[submission_date]"
+                      dataType="wstr"
+                      length="50"
+                      name="submission_date" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[course_id]"
+                      dataType="nText"
+                      name="course_id" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[semester]"
+                      dataType="wstr"
+                      length="50"
+                      name="semester" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[course]"
+                      dataType="wstr"
+                      length="50"
+                      name="course" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[section]"
+                      dataType="wstr"
+                      length="50"
+                      name="section" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[college]"
+                      dataType="nText"
+                      name="college" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[compliance]"
+                      dataType="nText"
+                      name="compliance" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[student_id]"
+                      dataType="wstr"
+                      length="50"
+                      name="student_id" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[assignment_id]"
+                      dataType="nText"
+                      name="assignment_id" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[outcome_code]"
+                      dataType="wstr"
+                      length="50"
+                      name="outcome_code" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[outcome_year]"
+                      dataType="wstr"
+                      length="50"
+                      name="outcome_year" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[outcome_score]"
+                      dataType="wstr"
+                      length="50"
+                      name="outcome_score" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[outcome_rating]"
+                      dataType="wstr"
+                      length="50"
+                      name="outcome_rating" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Upload Data\Canvas Upload.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Upload Data\Canvas Upload.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Upload Data\Canvas Upload.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Upload Data\Canvas Upload.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Upload Data\Canvas Upload.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Upload Data\Registrar CSV Selection"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Registrar CSV Selection"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Upload Data\Registrar CSV Selection.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Upload Registrar Data]"
+                  connectionManagerRefId="Package.ConnectionManagers[Upload Registrar Data]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Course_sis_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Course_sis_id]"
+                      length="50"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Course_sis_id]"
+                      name="Course_sis_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Course_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Course_name]"
+                      length="100"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Course_name]"
+                      name="Course_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Number_of_students]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Number_of_students]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Number_of_students]"
+                      name="Number_of_students"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Outcome 1]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Outcome 1]"
+                      length="50"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Outcome 1]"
+                      name="Outcome 1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Outcome 2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Outcome 2]"
+                      length="50"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Outcome 2]"
+                      name="Outcome 2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#1_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#1_ID]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#1_ID]"
+                      name="Teacher_#1_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#1_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#1_name]"
+                      length="50"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#1_name]"
+                      name="Teacher_#1_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#1_email]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#1_email]"
+                      length="50"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#1_email]"
+                      name="Teacher_#1_email"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#2_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#2_ID]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#2_ID]"
+                      name="Teacher_#2_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#2_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#2_name]"
+                      length="50"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#2_name]"
+                      name="Teacher_#2_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#2_email]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#2_email]"
+                      length="50"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#2_email]"
+                      name="Teacher_#2_email"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#3_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#3_ID]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#3_ID]"
+                      name="Teacher_#3_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#3_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#3_name]"
+                      length="50"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#3_name]"
+                      name="Teacher_#3_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#3_email]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#3_email]"
+                      length="50"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#3_email]"
+                      name="Teacher_#3_email"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#4_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#4_ID]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#4_ID]"
+                      name="Teacher_#4_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#4_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#4_name]"
+                      length="50"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#4_name]"
+                      name="Teacher_#4_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#4_email]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#4_email]"
+                      length="50"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#4_email]"
+                      name="Teacher_#4_email"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#5_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#5_ID]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#5_ID]"
+                      name="Teacher_#5_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#5_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#5_name]"
+                      length="50"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#5_name]"
+                      name="Teacher_#5_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#5_email]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#5_email]"
+                      length="50"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#5_email]"
+                      name="Teacher_#5_email"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#6_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#6_ID]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#6_ID]"
+                      name="Teacher_#6_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#6_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#6_name]"
+                      length="50"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#6_name]"
+                      name="Teacher_#6_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#6_email]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#6_email]"
+                      length="50"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#6_email]"
+                      name="Teacher_#6_email"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#7_ID]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#7_ID]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#7_ID]"
+                      name="Teacher_#7_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#7_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#7_name]"
+                      length="50"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#7_name]"
+                      name="Teacher_#7_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#7_email]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#7_email]"
+                      length="50"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#7_email]"
+                      name="Teacher_#7_email"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Index]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Index]"
+                      length="255"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Index]"
+                      name="Index"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Course_sis_id]"
+                      dataType="wstr"
+                      length="50"
+                      name="Course_sis_id" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Course_name]"
+                      dataType="wstr"
+                      length="100"
+                      name="Course_name" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Number_of_students]"
+                      dataType="i4"
+                      name="Number_of_students" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Outcome 1]"
+                      dataType="wstr"
+                      length="50"
+                      name="Outcome 1" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Outcome 2]"
+                      dataType="wstr"
+                      length="50"
+                      name="Outcome 2" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#1_ID]"
+                      dataType="i4"
+                      name="Teacher_#1_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#1_name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Teacher_#1_name" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#1_email]"
+                      dataType="wstr"
+                      length="50"
+                      name="Teacher_#1_email" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#2_ID]"
+                      dataType="i4"
+                      name="Teacher_#2_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#2_name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Teacher_#2_name" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#2_email]"
+                      dataType="wstr"
+                      length="50"
+                      name="Teacher_#2_email" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#3_ID]"
+                      dataType="i4"
+                      name="Teacher_#3_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#3_name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Teacher_#3_name" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#3_email]"
+                      dataType="wstr"
+                      length="50"
+                      name="Teacher_#3_email" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#4_ID]"
+                      dataType="i4"
+                      name="Teacher_#4_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#4_name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Teacher_#4_name" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#4_email]"
+                      dataType="wstr"
+                      length="50"
+                      name="Teacher_#4_email" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#5_ID]"
+                      dataType="i4"
+                      name="Teacher_#5_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#5_name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Teacher_#5_name" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#5_email]"
+                      dataType="wstr"
+                      length="50"
+                      name="Teacher_#5_email" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#6_ID]"
+                      dataType="i4"
+                      name="Teacher_#6_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#6_name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Teacher_#6_name" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#6_email]"
+                      dataType="wstr"
+                      length="50"
+                      name="Teacher_#6_email" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#7_ID]"
+                      dataType="i2"
+                      name="Teacher_#7_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#7_name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Teacher_#7_name" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Teacher_#7_email]"
+                      dataType="wstr"
+                      length="50"
+                      name="Teacher_#7_email" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].ExternalColumns[Index]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Index" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Upload Data\Registrar Upload"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Registrar Upload"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[registrar_data]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Upload Data\Registrar Upload.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[BigData DB]"
+                  connectionManagerRefId="Package.ConnectionManagers[BigData DB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Course_sis_id]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Course_sis_id"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[course_sis_id]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Course_sis_id]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Course_name]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Course_name"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[course_name]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Course_name]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Number_of_students]"
+                      cachedDataType="i4"
+                      cachedName="Number_of_students"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[number_of_students]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Number_of_students]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#1_ID]"
+                      cachedDataType="i4"
+                      cachedName="Teacher_#1_ID"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#1_ID]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#1_ID]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#1_name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Teacher_#1_name"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#1_name]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#1_name]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#1_email]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Teacher_#1_email"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#1_email]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#1_email]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#2_ID]"
+                      cachedDataType="i4"
+                      cachedName="Teacher_#2_ID"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#2_ID]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#2_ID]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#2_name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Teacher_#2_name"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#2_name]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#2_name]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#2_email]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Teacher_#2_email"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#2_email]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#2_email]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#3_ID]"
+                      cachedDataType="i4"
+                      cachedName="Teacher_#3_ID"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#3_ID]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#3_ID]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#3_name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Teacher_#3_name"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#3_name]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#3_name]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#3_email]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Teacher_#3_email"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#3_email]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#3_email]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#4_ID]"
+                      cachedDataType="i4"
+                      cachedName="Teacher_#4_ID"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#4_ID]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#4_ID]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#4_name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Teacher_#4_name"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#4_name]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#4_name]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#4_email]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Teacher_#4_email"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#4_email]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#4_email]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#5_ID]"
+                      cachedDataType="i4"
+                      cachedName="Teacher_#5_ID"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#5_ID]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#5_ID]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#5_name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Teacher_#5_name"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#5_name]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#5_name]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#5_email]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Teacher_#5_email"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#5_email]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#5_email]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#6_ID]"
+                      cachedDataType="i4"
+                      cachedName="Teacher_#6_ID"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#6_ID]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#6_ID]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#6_name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Teacher_#6_name"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#6_name]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#6_name]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#6_email]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Teacher_#6_email"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#6_email]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#6_email]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#7_ID]"
+                      cachedDataType="i2"
+                      cachedName="Teacher_#7_ID"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#7_ID]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#7_ID]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#7_name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Teacher_#7_name"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#7_name]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#7_name]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Teacher_#7_email]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Teacher_#7_email"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#7_email]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Teacher_#7_email]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Outcome 1]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Outcome 1"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[outcome_1]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Outcome 1]" />
+                    <inputColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].Columns[Outcome 2]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Outcome 2"
+                      externalMetadataColumnId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[outcome_2]"
+                      lineageId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output].Columns[Outcome 2]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[course_sis_id]"
+                      dataType="nText"
+                      name="course_sis_id" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[course_name]"
+                      dataType="nText"
+                      name="course_name" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[number_of_students]"
+                      dataType="i4"
+                      name="number_of_students" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[outcome_1]"
+                      dataType="wstr"
+                      length="50"
+                      name="outcome_1" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[outcome_2]"
+                      dataType="wstr"
+                      length="50"
+                      name="outcome_2" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#1_ID]"
+                      dataType="nText"
+                      name="teacher_#1_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#1_name]"
+                      dataType="nText"
+                      name="teacher_#1_name" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#1_email]"
+                      dataType="nText"
+                      name="teacher_#1_email" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#2_ID]"
+                      dataType="nText"
+                      name="teacher_#2_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#2_name]"
+                      dataType="nText"
+                      name="teacher_#2_name" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#2_email]"
+                      dataType="nText"
+                      name="teacher_#2_email" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#3_ID]"
+                      dataType="nText"
+                      name="teacher_#3_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#3_name]"
+                      dataType="nText"
+                      name="teacher_#3_name" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#3_email]"
+                      dataType="nText"
+                      name="teacher_#3_email" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#4_ID]"
+                      dataType="nText"
+                      name="teacher_#4_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#4_name]"
+                      dataType="nText"
+                      name="teacher_#4_name" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#4_email]"
+                      dataType="nText"
+                      name="teacher_#4_email" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#5_ID]"
+                      dataType="nText"
+                      name="teacher_#5_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#5_name]"
+                      dataType="nText"
+                      name="teacher_#5_name" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#5_email]"
+                      dataType="nText"
+                      name="teacher_#5_email" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#6_ID]"
+                      dataType="nText"
+                      name="teacher_#6_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#6_name]"
+                      dataType="nText"
+                      name="teacher_#6_name" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#6_email]"
+                      dataType="nText"
+                      name="teacher_#6_email" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#7_ID]"
+                      dataType="nText"
+                      name="teacher_#7_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#7_name]"
+                      dataType="nText"
+                      name="teacher_#7_name" />
+                    <externalMetadataColumn
+                      refId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input].ExternalColumns[teacher_#7_email]"
+                      dataType="nText"
+                      name="teacher_#7_email" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Upload Data\Registrar Upload.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar Upload.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Upload Data\Registrar Upload.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Upload Data\Registrar Upload.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Upload Data\Registrar Upload.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Upload Data.Paths[Flat File Source Output]"
+              endId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Upload Data.Paths[Flat File Source Output1]"
+              endId="Package\Upload Data\Registrar Upload.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Upload Data\Registrar CSV Selection.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{DE3E9511-738B-470A-9E00-A408991B6308}"
+      DTS:From="Package\Python - Canvas Data Wrangler"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Upload Data" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{26A9FD7D-31E1-475B-8A87-7BE6E2C68B22}"
+      DTS:From="Package\Back Up Database Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Drop Existing, Create New Canvas SQL Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{0B82716D-3968-4F10-A5EB-7C9322233056}"
+      DTS:From="Package\Drop Existing, Create New Registrar SQL Table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Python - Registrar Data Wrangler" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{8AE51F6C-929C-4F3E-86C2-19290D2D621E}"
+      DTS:From="Package\Back Up Database Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Drop Existing, Create New Registrar SQL Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{545F33B2-764C-409B-9123-35A69FD679C1}"
+      DTS:From="Package\Python - Registrar Data Wrangler"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Upload Data" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{D15FACED-B64E-4543-8A2D-267371C36A75}"
+      DTS:From="Package\Upload Data"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Join Canvas and Registrar Data" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 9]"
+      DTS:CreationName=""
+      DTS:DTSID="{260251EA-2740-4095-9FB7-446503441D23}"
+      DTS:From="Package\Drop Existing, Create New Canvas SQL Table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 9"
+      DTS:To="Package\Python - Canvas Data Wrangler" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="197,42"
+          Id="Package\Back Up Database Task"
+          TopLeft="344,88" />
+        <NodeLayout
+          Size="203,42"
+          Id="Package\Drop Existing, Create New Canvas SQL Table"
+          TopLeft="98,189" />
+        <NodeLayout
+          Size="311,42"
+          Id="Package\Drop Existing, Create New Registrar SQL Table"
+          TopLeft="559,181" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Join Canvas and Registrar Data"
+          TopLeft="366,489" />
+        <NodeLayout
+          Size="242,42"
+          Id="Package\Python - Canvas Data Wrangler"
+          TopLeft="81,292" />
+        <NodeLayout
+          Size="242,42"
+          Id="Package\Python - Registrar Data Wrangler"
+          TopLeft="591,280" />
+        <NodeLayout
+          Size="140,42"
+          Id="Package\Upload Data"
+          TopLeft="380,387" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="202,334">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="226,53"
+              Start="0,0"
+              End="226,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.4406779661017" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.4406779661017"
+                    Point2="0,31.4406779661017"
+                    Point3="4,31.4406779661017" />
+                  <mssgle:LineSegment
+                    End="222,31.4406779661017" />
+                  <mssgle:CubicBezierSegment
+                    Point1="222,31.4406779661017"
+                    Point2="226,31.4406779661017"
+                    Point3="226,35.4406779661017" />
+                  <mssgle:LineSegment
+                    End="226,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="411,130">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-211.5,59"
+              Start="0,0"
+              End="-211.5,51.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.8851963746224" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.8851963746224"
+                    Point2="0,23.8851963746224"
+                    Point3="-4,23.8851963746224" />
+                  <mssgle:LineSegment
+                    End="-207.5,23.8851963746224" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-207.5,23.8851963746224"
+                    Point2="-211.5,23.8851963746224"
+                    Point3="-211.5,27.8851963746224" />
+                  <mssgle:LineSegment
+                    End="-211.5,51.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="713.25,223">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,57"
+              Start="0,0"
+              End="0,49.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="474,130">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="240.5,51"
+              Start="0,0"
+              End="240.5,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.6465256797583" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.6465256797583"
+                    Point2="0,20.6465256797583"
+                    Point3="4,20.6465256797583" />
+                  <mssgle:LineSegment
+                    End="236.5,20.6465256797583" />
+                  <mssgle:CubicBezierSegment
+                    Point1="236.5,20.6465256797583"
+                    Point2="240.5,20.6465256797583"
+                    Point3="240.5,24.6465256797583" />
+                  <mssgle:LineSegment
+                    End="240.5,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="712,322">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-240,65"
+              Start="0,0"
+              End="-240,57.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5593220338983" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.5593220338983"
+                    Point2="0,38.5593220338983"
+                    Point3="-4,38.5593220338983" />
+                  <mssgle:LineSegment
+                    End="-236,38.5593220338983" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-236,38.5593220338983"
+                    Point2="-240,38.5593220338983"
+                    Point3="-240,42.5593220338983" />
+                  <mssgle:LineSegment
+                    End="-240,57.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="450.5,429">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 9]"
+          TopLeft="200.75,231">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61"
+              Start="0,0"
+              End="0,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Upload Data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Upload Data\Registrar Upload"
+          TopLeft="294,135" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Upload Data\Canvas CSV Selection"
+          TopLeft="47,40" />
+        <NodeLayout
+          Size="198,42"
+          Id="Package\Upload Data\Registrar CSV Selection"
+          TopLeft="282.5,35.5" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Upload Data\Canvas Upload"
+          TopLeft="47,130" />
+        <EdgeLayout
+          Id="Package\Upload Data.Paths[Flat File Source Output1]"
+          TopLeft="382,77.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,57.5"
+              Start="0,0"
+              End="0,50">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Upload Data.Paths[Flat File Source Output]"
+          TopLeft="128.75,82">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48"
+              Start="0,0"
+              End="0,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Upload Data\Registrar Upload">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Upload Data\Canvas Upload">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
