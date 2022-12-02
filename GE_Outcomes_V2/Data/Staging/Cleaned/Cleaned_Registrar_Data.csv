@@ -1,0 +1,278 @@
+,Unnamed: 0,Course_sis_id,Course_name,Number_of_students,Outcome 1,Outcome 2,Teacher_#1_ID,Teacher_#1_name,Teacher_#1_email,Teacher_#2_ID,Teacher_#2_name,Teacher_#2_email,Teacher_#3_ID,Teacher_#3_name,Teacher_#3_email,Teacher_#4_ID,Teacher_#4_name,Teacher_#4_email,Teacher_#5_ID,Teacher_#5_name,Teacher_#5_email,Teacher_#6_ID,Teacher_#6_name,Teacher_#6_email,Teacher_#7_ID,Teacher_#7_name,Teacher_#7_email,Semester,Course,Section,College
+0,0,FA2022_KINE1000_02,FUND OF WELLNESS FA2022_KINE1000_02,46,SC4,,371590,Kaydee Mick,KMick@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,KINE1000,02,College of Natural and Applied Sciences
+1,1,FA2022_BIBL1100_02,INTRO BIBLICAL STUDIES FA2022_BIBL1100_02,43,CF1,,128337,Grant Miller,GTMiller@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,BIBL1100,02,College of Theology & Christian Ministry
+2,2,FA2022_EDUC3410_01,ENG LANG LRNRS/CONTNT LIT SECNDR FA2022_EDUC3410_01,13,HU3,,10998,Jennifer Hill,JJHill@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,EDUC3410,01,College of Educaton
+3,3,FA2022_HIST3390_01,RECENT AMERICA FA2022_HIST3390_01,16,HU4,,669771,Matthew Millsap,MMillsap@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HIST3390,01,College of Arts and Humanites
+4,4,FA2022_PHYS1110_01,COLLEGE PHYSICS I FA2022_PHYS1110_01,24,SC1,,12433,Dan Lawrence,MDLawrence@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,PHYS1110,01,College of Natural and Applied Sciences
+5,5,FA2022_POLS1010_1U,AMERICAN NATIONAL POLITICS FA2022_POLS1010_1U,9,SC3,,125829,Stevi Nichols,SKnight@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,POLS1010,1U,College of Arts and Humanites
+6,6,FA2022_SPAN3310_01,HISPANIC CIVILIZATION FA2022_SPAN3310_01,3,HU3,,2692,Matthew Fraley,mfraley@libertycharterschool.com,,,,,,,,,,,,,,,,,,,FA2022,SPAN3310,01,College of Arts and Humanites
+7,7,FA2022_ECON3010_01,PERSONAL FINANCE/STEWARDSHIP FA2022_ECON3010_01,13,SC3,,800,Pete Crabb,PRCrabb@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ECON3010,01,College of Business
+8,8,FA2022_HNRS3550_01,SCIENCE AND SCIENCE FICTION FA2022_HNRS3550_01,13,SC1,HU1,12433,Dan Lawrence,MDLawrence@nnu.edu,194.0,Darrin Grinder,DLGrinder@nnu.edu,,,,,,,,,,,,,,,,FA2022,HNRS3550,01,College of Arts and Humanites
+9,9,FA2022_ENGL3020W_01,PRINC OF WRITING FA2022_ENGL3020W_01,24,IP2,,70009,Cathy Becker,CBecker@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL3020W,01,College of Arts and Humanites
+10,10,FA2022_ENGL3750_01,CHILDREN'S/YOUNG ADULT LIT FA2022_ENGL3750_01,27,HU1,,114142,Julie Straight,JNStraight@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL3750,01,College of Arts and Humanites
+11,11,FA2022_ENGL4270_01,MINORITY VOICES AMERICAN LIT FA2022_ENGL4270_01,6,HU1,HU3,194,Darrin Grinder,DLGrinder@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL4270,01,College of Arts and Humanites
+12,12,FA2022_HIST4970_01,SENIOR THESIS/CAPSTONE FA2022_HIST4970_01,2,HU2,,669771,Matthew Millsap,MMillsap@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HIST4970,01,College of Arts and Humanites
+13,13,FA2022_BIBL3155_1R,BIBLICAL INTERPRETATION FA2022_BIBL3155_1R,4,CF3,,98477,John Grant,JAGrant@nnu.edu,28636.0,Marty Michelson,MMichelson@nnu.edu,,,,,,,,,,,,,,,,FA2022,BIBL3155,1R,College of Theology & Christian Ministry
+14,14,FA2022_MATH4100_01,HISTORY MATH/CAPSTONE FA2022_MATH4100_01,2,HU2,,107,Ed Korntved,ECKorntved@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,MATH4100,01,We dont know
+15,15,FA2022_COMM1050_01,NON-VERBAL COMM IN CULTURE FA2022_COMM1050_01,13,HU3,,101387,Donna Allen,DMAllen@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,COMM1050,01,College of Arts and Humanites
+16,16,FA2022_MATH2240_1U,ELEM STATISTICS FA2022_MATH2240_1U,20,IP3,,353821,Jennifer King,JenniferKing@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,MATH2240,1U,We dont know
+17,17,FA2022_PHYS1110L_01,COLLEGE PHYSICS I LAB FA2022_PHYS1110L_01,24,SC2,,115424,Brice Allen,BEAllen@nnu.edu,12433.0,Dan Lawrence,MDLawrence@nnu.edu,,,,,,,,,,,,,,,,FA2022,PHYS1110L,01,College of Natural and Applied Sciences
+18,18,FA2022_EDUC2250_1L,CULTURAL DIVERSITY IN EDUCATION FA2022_EDUC2250_1L,11,HU3,,16420,Robert Sanchez,RobertSanchez@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,EDUC2250,1L,College of Educaton
+19,19,FA2022_ENGL4270W_01,MINORITY VOICES AMERICAN LIT FA2022_ENGL4270W_01,11,IP2,HU3,194,Darrin Grinder,DLGrinder@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL4270W,01,College of Arts and Humanites
+20,20,FA2022_PSYC3850L_01,BIOL FNDTNS OF BEHAVIOR LAB FA2022_PSYC3850L_01,19,SC2,,16265,Sarah DeBoard Marion,SDeBoardMarion@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,PSYC3850L,01,College of Behavior and Social Sciences
+21,21,FA2022_PHYS4970_01,RESEARCH FA2022_PHYS4970_01,1,HU2,,98817,Ben Pearson,BLPearson@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,PHYS4970,01,College of Natural and Applied Sciences
+22,22,FA2022_MATH2010_01,FUND MATH STRUCTURES I FA2022_MATH2010_01,11,IP3,,107,Ed Korntved,ECKorntved@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,MATH2010,01,We dont know
+23,23,FA2022_PSYC3850_01,BIOL FOUNDATIONS OF BEHAVIOR FA2022_PSYC3850_01,21,SC1,,16265,Sarah DeBoard Marion,SDeBoardMarion@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,PSYC3850,01,College of Behavior and Social Sciences
+24,24,FA2022_PHYS2120L_01,PHYSICS FOR SCI/ENGR II LAB FA2022_PHYS2120L_01,23,SC2,,98817,Ben Pearson,BLPearson@nnu.edu,115424.0,Brice Allen,BEAllen@nnu.edu,,,,,,,,,,,,,,,,FA2022,PHYS2120L,01,College of Natural and Applied Sciences
+25,25,FA2022_THEO2100_01,INTRO CHRISTIAN THEOLOGY FA2022_THEO2100_01,40,CF2,,22994,Scott Daniels,SDaniels@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,THEO2100,01,College of Theology & Christian Ministry
+26,26,FA2022_POLS1010_01,AMERICAN NATIONAL POLITICS FA2022_POLS1010_01,14,SC3,,460376,Justin Clardie,JClardie@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,POLS1010,01,College of Arts and Humanites
+27,27,FA2022_PHIL3600_01,CLINICAL ETHICS FA2022_PHIL3600_01,6,CF4,,521781,Richard Chamberlain,RChamberlain@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,PHIL3600,01,College of Theology & Christian Ministry
+28,28,FA2022_CHEM1210_01,PRINCIPLES ORG/BIO CHEMISTRY FA2022_CHEM1210_01,14,SC1,,2213,Tim Anstine,DTAnstine@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,CHEM1210,01,College of Natural and Applied Sciences
+29,29,FA2022_ECON2415_7X,PRINCIPLES OF MICROECONOMICS FA2022_ECON2415_7X,3,SC3,,289654,David Chaplin,DChaplin@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ECON2415,7X,College of Business
+30,30,FA2022_MATH2240_01,ELEM STATISTICS FA2022_MATH2240_01,16,IP3,,422874,Jason Colwell,JColwell@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,MATH2240,01,We dont know
+31,31,FA2022_EDUC4950_01,SEMINAR/CAPSTONE FA2022_EDUC4950_01,37,HU2,,1972,Whitney Ward,WTWard@nnu.edu,10998.0,Jennifer Hill,JJHill@nnu.edu,365913.0,Michelle Rowley,MRowley@nnu.edu,645802.0,Holly Ripley,HRipley@nnu.edu,689954.0,Marcella Enos,MEnos@nnu.edu,32427.0,Jennifer Cornell,JMCornell@nnu.edu,,,,FA2022,EDUC4950,01,College of Educaton
+32,32,FA2022_KINE1020V_01,HH:ADV FITNSS SNAKE RVR CROSSFIT FA2022_KINE1020V_01,7,SC4,,145777,Scott Kinnaman,SRKinnaman@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,KINE1020V,01,College of Natural and Applied Sciences
+33,33,FA2022_THEO2100_02,INTRO CHRISTIAN THEOLOGY FA2022_THEO2100_02,42,CF2,,195,Diane Leclerc,DKLeclerc@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,THEO2100,02,College of Theology & Christian Ministry
+34,34,FA2022_BSNS2330_01,BUSINESS STATISTICS FA2022_BSNS2330_01,10,IP3,,289654,David Chaplin,DChaplin@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,BSNS2330,01,College of Business
+35,35,FA2022_COMM1210_03,INTRO TO PUBLIC SPEAKING FA2022_COMM1210_03,23,IP1,,64672,Carly Bartlett,CBartlett@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,COMM1210,03,College of Arts and Humanites
+36,36,FA2022_KINE1005_1U,FUNDAMENTALS OF WELLNESS FA2022_KINE1005_1U,16,SC4,,145777,Scott Kinnaman,SRKinnaman@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,KINE1005,1U,College of Natural and Applied Sciences
+37,37,FA2022_KINE1020J_01,HH:WALKING/JOGGING FA2022_KINE1020J_01,29,SC4,,87577,Jess Haragos,JessHaragos@nnu.edu,691549.0,Tannor Kraus,TKraus@nnu.edu,,,,,,,,,,,,,,,,FA2022,KINE1020J,01,College of Natural and Applied Sciences
+38,38,FA2022_ARDE3340_01,DESIGN HS:INDSTRL REVL TO CNTMP FA2022_ARDE3340_01,16,HU1,,178342,R Kinsman,PKinsman@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ARDE3340,01,College of Arts and Humanites
+39,39,FA2022_GEOG1050_1U,INTRO TO GEOGRAPHY FA2022_GEOG1050_1U,17,SC3,,432733,Mark Haggard,mark.haggard@vallivue.org,,,,,,,,,,,,,,,,,,,FA2022,GEOG1050,1U,College of Arts and Humanites
+40,40,FA2022_BSNS4605_7X,GLOBAL BUSINESS STRATEGIES FA2022_BSNS4605_7X,11,HU3,,214421,Boyd Johnson,RBJohnson@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,BSNS4605,7X,College of Business
+41,41,FA2022_HIST1040_1U,THE WORLD & THE WEST II FA2022_HIST1040_1U,21,HU4,,81890,Thomas Luttrell,TLuttrell@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HIST1040,1U,College of Arts and Humanites
+42,42,FA2022_BIBL1100_04,INTRO BIBLICAL STUDIES FA2022_BIBL1100_04,42,CF1,,384229,Danny Atkins,DAtkins@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,BIBL1100,04,College of Theology & Christian Ministry
+43,43,FA2022_COMP3230_01,INTRO TO SPATIAL ANALYSIS FA2022_COMP3230_01,18,SC1,,385123,Dale Hamilton,DHamilton@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,COMP3230,01,College of Natural and Applied Sciences
+44,44,FA2022_HIST3480_01,MOD EUROPE (1800-PRESENT) FA2022_HIST3480_01,13,HU4,,526389,Stephen Morgan,StephenMorgan@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HIST3480,01,College of Arts and Humanites
+45,45,FA2022_SPAN1010_01,ELEMENTARY SPANISH FA2022_SPAN1010_01,15,HU3,,2692,Matthew Fraley,mfraley@libertycharterschool.com,,,,,,,,,,,,,,,,,,,FA2022,SPAN1010,01,College of Arts and Humanites
+46,46,FA2022_MATH2310_01,DISCRETE MATHEMATICS FA2022_MATH2310_01,23,IP3,,107,Ed Korntved,ECKorntved@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,MATH2310,01,We dont know
+47,47,FA2022_ENGL1030A_01,UNIVERSITY WRITING/RESEARCH A FA2022_ENGL1030A_01,15,IP4,,70009,Cathy Becker,CBecker@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL1030A,01,College of Arts and Humanites
+48,48,FA2022_BIBL1105_1U,INTRODUCTION TO BIBLICAL STUDIES FA2022_BIBL1105_1U,9,CF1,,154,Randy Bynum,WRBynum@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,BIBL1105,1U,College of Theology & Christian Ministry
+49,49,FA2022_BIBL3260_01,LIFE/TCHNGS OF JESUS FA2022_BIBL3260_01,13,CF3,,143718,Richard Thompson,RPThompson@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,BIBL3260,01,College of Theology & Christian Ministry
+50,50,FA2022_ENGL3250_01,THE AMERICAN NOVEL FA2022_ENGL3250_01,11,HU1,,194,Darrin Grinder,DLGrinder@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL3250,01,College of Arts and Humanites
+51,51,FA2022_HIST1030_02,THE WORLD AND THE WEST I FA2022_HIST1030_02,28,HU4,,526389,Stephen Morgan,StephenMorgan@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HIST1030,02,College of Arts and Humanites
+52,52,FA2022_KINE1020T_01,HH:FNDTN CROSSFIT SNAKE RVR CFIT FA2022_KINE1020T_01,7,SC4,,87577,Jess Haragos,JessHaragos@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,KINE1020T,01,College of Natural and Applied Sciences
+53,53,FA2022_COMM2030_01,INTERPERSONAL COMMUNICATION FA2022_COMM2030_01,15,SC3,,101387,Donna Allen,DMAllen@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,COMM2030,01,College of Arts and Humanites
+54,54,FA2022_HIST1030_01,THE WORLD AND THE WEST I FA2022_HIST1030_01,33,HU4,,526389,Stephen Morgan,StephenMorgan@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HIST1030,01,College of Arts and Humanites
+55,55,FA2022_SPAN2010_01,INTERM SPANISH FA2022_SPAN2010_01,6,HU3,,2692,Matthew Fraley,mfraley@libertycharterschool.com,,,,,,,,,,,,,,,,,,,FA2022,SPAN2010,01,College of Arts and Humanites
+56,56,FA2022_ENGL3015C_1U,TP:WRTG:TECH/PROF WRITING FA2022_ENGL3015C_1U,18,IP2,,26503,Melinda Hibbard,MSHibbard@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL3015C,1U,College of Arts and Humanites
+57,57,FA2022_PHIL2020_01,ETHICS FA2022_PHIL2020_01,38,CF4,,176641,Joe Bankard,JABankard@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,PHIL2020,01,College of Theology & Christian Ministry
+58,58,FA2022_PSYC2100_1U,LIFESPAN DVLPMT FA2022_PSYC2100_1U,9,SC3,,699471,Rebecca Carroll,RCarroll@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,PSYC2100,1U,College of Behavior and Social Sciences
+59,59,FA2022_ENGL2410_01,MAJ LIT WSTRN WRLD FA2022_ENGL2410_01,15,HU1,,114142,Julie Straight,JNStraight@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL2410,01,College of Arts and Humanites
+60,60,FA2022_BIOL2010L_01,HUMAN ANATOMY/PHYSIOLOGY I LAB FA2022_BIOL2010L_01,21,SC2,,16253,Kamela Lawrence,KMLawrence@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,BIOL2010L,01,College of Natural and Applied Sciences
+61,61,FA2022_HNRS2550_01,WESTERN INTELLECTUAL TRAD I FA2022_HNRS2550_01,17,CF4,HU2,689612,David Adkins,DAdkins@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HNRS2550,01,College of Arts and Humanites
+62,62,FA2022_MATH2510_01,CALCULUS I FA2022_MATH2510_01,27,IP3,,422874,Jason Colwell,JColwell@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,MATH2510,01,We dont know
+63,63,FA2022_BIOL1030_01,EARTH SCIENCE FA2022_BIOL1030_01,54,SC1,HU3,24588,David Hille,DHille@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,BIOL1030,01,College of Natural and Applied Sciences
+64,64,FA2022_PHYS1010L_1U,INTRO TO PHYSICAL SCI LAB FA2022_PHYS1010L_1U,10,SC2,,3112,Cynthia Lapp,CLLapp@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,PHYS1010L,1U,College of Natural and Applied Sciences
+65,65,FA2022_ENGL2210_01,AMER LIT:COL/CVL WAR FA2022_ENGL2210_01,28,HU1,,70009,Cathy Becker,CBecker@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL2210,01,College of Arts and Humanites
+66,66,FA2022_MILS2500_01,MILITARY STYLE FITNESS FA2022_MILS2500_01,7,SC4,,651009,Jordan Etchells,JEtchells@nnu.edu,666775.0,Juan Cisneros,JuanCisneros@nnu.edu,698080.0,Nathan Daniels,NDaniels@nnu.edu,,,,,,,,,,,,,FA2022,MILS2500,01,College of Natural and Applied Sciences
+67,67,FA2022_BIOL2220L_01,GENERAL BIOLOGY I LAB FA2022_BIOL2220L_01,39,SC2,,2119,Jennifer Chase,JRChase@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,BIOL2220L,01,College of Natural and Applied Sciences
+68,68,FA2022_THEO3740_01,THEOLGY/PRACTICE SPIRITL FORMTN FA2022_THEO3740_01,7,CF3,,60183,Mike Kipp,MAKipp@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,THEO3740,01,College of Theology & Christian Ministry
+69,69,FA2022_ENGL1030A_02,UNIVERSITY WRITING/RESEARCH A FA2022_ENGL1030A_02,19,IP4,,70009,Cathy Becker,CBecker@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL1030A,02,College of Arts and Humanites
+70,70,FA2022_POLS4970_01,SENIOR THESIS/CAPSTONE FA2022_POLS4970_01,2,HU2,,460376,Justin Clardie,JClardie@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,POLS4970,01,College of Arts and Humanites
+71,71,FA2022_BIOL2010L_02,HUMAN ANATOMY/PHYSIOLOGY I LAB FA2022_BIOL2010L_02,40,SC2,,512162,Ayokunle Hodonu,AHodonu@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,BIOL2010L,02,College of Natural and Applied Sciences
+72,72,FA2022_COMM1210_1U,INTRO TO PUBLIC SPEAKING FA2022_COMM1210_1U,18,IP1,,80,Dennis Waller,DRWaller@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,COMM1210,1U,College of Arts and Humanites
+73,73,FA2022_COMM1210_01,INTRO TO PUBLIC SPEAKING FA2022_COMM1210_01,23,IP1,,10702,Dean Matlock,DMatlock@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,COMM1210,01,College of Arts and Humanites
+74,74,FA2022_COMM3211_01,TECH COMM SCIENTISTS/ENGINEERS FA2022_COMM3211_01,19,IP1,,101387,Donna Allen,DMAllen@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,COMM3211,01,College of Arts and Humanites
+75,75,FA2022_PHYS1010_1U,INTRO TO PHYSICAL SCIENCE FA2022_PHYS1010_1U,12,SC1,,3112,Cynthia Lapp,CLLapp@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,PHYS1010,1U,College of Natural and Applied Sciences
+76,76,FA2022_THEO3590_01,THEOLOGY OF THE CHURCH FA2022_THEO3590_01,4,CF3,,698227,Timothy Hahn,THahn@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,THEO3590,01,College of Theology & Christian Ministry
+77,77,FA2022_CHEM1210L_01,PRINCIPLES ORG/BIO CHEM LAB FA2022_CHEM1210L_01,14,SC2,,1738,Dan Nogales,DFNogales@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,CHEM1210L,01,College of Natural and Applied Sciences
+78,78,FA2022_COMP1220_01,INTRO TO COMPUTER SCIENCE FA2022_COMP1220_01,15,IP3,,1240,Barry Myers,BLMyers@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,COMP1220,01,College of Natural and Applied Sciences
+79,79,FA2022_HUMN1060_1L,UNIVERSITY MISSIONS FA2022_HUMN1060_1L,11,HU3,,124939,Stephen Parke,SParke@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HUMN1060,1L,College of Arts and Humanites
+80,80,FA2022_MATH1300_01,COLLEGE ALGEBRA FA2022_MATH1300_01,24,IP3,,353821,Jennifer King,JenniferKing@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,MATH1300,01,We dont know
+81,81,FA2022_PHYS2120L_1L,PHYSICS FOR SCI/ENGR II LAB FA2022_PHYS2120L_1L,3,SC2,,124939,Stephen Parke,SParke@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,PHYS2120L,1L,College of Natural and Applied Sciences
+82,82,FA2022_NURS4040_01,TRANS/PROF NRSG PRACTICE/CAPSTNE FA2022_NURS4040_01,22,HU2,,677708,Georgianna Ainslie,GAinslie@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,NURS4040,01,College of Nursing
+83,83,FA2022_PHYS2120_1L,PHYSICS FOR SCI/ENGR II FA2022_PHYS2120_1L,3,SC1,,124939,Stephen Parke,SParke@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,PHYS2120,1L,College of Natural and Applied Sciences
+84,84,FA2022_HUMN1020_07,CORNERSTONE FA2022_HUMN1020_07,25,HU2,,167112,Mark Michaelson,markmichaelson@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HUMN1020,07,College of Arts and Humanites
+85,85,FA2022_MUSC1010_1U,A SURVEY OF ART/MUSIC FA2022_MUSC1010_1U,23,HU1,,24146,Julia Ganske,JGanske@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,MUSC1010,1U,College of Arts and Humanites
+86,86,FA2022_PHYS2120_01,PHYSICS FOR SCI/ENGR II FA2022_PHYS2120_01,22,SC1,,98817,Ben Pearson,BLPearson@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,PHYS2120,01,College of Natural and Applied Sciences
+87,87,FA2022_MUSC2020_01,SURVEY OF PERFORMING ARTS FA2022_MUSC2020_01,42,HU1,,689028,John Dally,JDally@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,MUSC2020,01,College of Arts and Humanites
+88,88,FA2022_PHIL2020_1U,ETHICS FA2022_PHIL2020_1U,15,CF4,,176641,Joe Bankard,JABankard@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,PHIL2020,1U,College of Theology & Christian Ministry
+89,89,FA2022_BIOL1030L_01,EARTH SCIENCE LAB FA2022_BIOL1030L_01,47,SC2,,24588,David Hille,DHille@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,BIOL1030L,01,College of Natural and Applied Sciences
+90,90,FA2022_ENGL1030A_04,UNIVERSITY WRITING/RESEARCH A FA2022_ENGL1030A_04,17,IP4,,167112,Mark Michaelson,markmichaelson@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL1030A,04,College of Arts and Humanites
+91,91,FA2022_ENGL3015F_1U,TP:WRTG:PSTMDRN THT LEWIS/PRST FA2022_ENGL3015F_1U,13,IP2,,25669,Tami Ponsford,TPonsford@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL3015F,1U,College of Arts and Humanites
+92,92,FA2022_BIOL2010_01,HUMAN ANATOMY/PHYSIOLOGY  I FA2022_BIOL2010_01,65,SC1,,826,John Cossel,JOCossel@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,BIOL2010,01,College of Natural and Applied Sciences
+93,93,FA2022_ENGL3320_01,SHAKESPEARE FA2022_ENGL3320_01,18,HU1,,689612,David Adkins,DAdkins@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL3320,01,College of Arts and Humanites
+94,94,FA2022_ENGL1035_1U,UNIVERSITY WRITING/RESEARCH FA2022_ENGL1035_1U,4,IP4,,97794,Amber Ford,ADFord@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL1035,1U,College of Arts and Humanites
+95,95,FA2022_BIOL2220_01,GENERAL BIOLOGY I FA2022_BIOL2220_01,37,SC1,,2119,Jennifer Chase,JRChase@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,BIOL2220,01,College of Natural and Applied Sciences
+96,96,FA2022_HIST2040_1U,CONFLCT/CONSNSUS:AM HS FROM 1877 FA2022_HIST2040_1U,18,HU4,,669771,Matthew Millsap,MMillsap@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HIST2040,1U,College of Arts and Humanites
+97,97,FA2022_ENGL1030B_01,UNIVERSITY WRITING/RESEARCH B FA2022_ENGL1030B_01,16,IP4,,167112,Mark Michaelson,markmichaelson@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL1030B,01,College of Arts and Humanites
+98,98,FA2022_MATH2010_1U,FUND MATH STRUCTURES I FA2022_MATH2010_1U,9,IP3,,76740,Tyson Beggs,TOBeggs@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,MATH2010,1U,We dont know
+99,99,FA2022_ECON2425_7X,PRINCIPLES OF MACROECONOMICS FA2022_ECON2425_7X,7,SC3,,698053,Simon Obwatho,SObwatho@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ECON2425,7X,College of Business
+100,100,FA2022_PSYC4112_01,HUMAN DIVERSITY FA2022_PSYC4112_01,17,HU3,,407598,Elizabeth List,EList@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,PSYC4112,01,College of Behavior and Social Sciences
+101,101,FA2022_ARDE3250_01,ART HISTORY 1 FA2022_ARDE3250_01,24,HU1,,162454,Jamie Tucker,JTucker@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ARDE3250,01,College of Arts and Humanites
+102,102,FA2022_ENGL3015E_01,TP:WRTG:CHRISTIANITY AND MONEY FA2022_ENGL3015E_01,19,IP2,,114142,Julie Straight,JNStraight@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL3015E,01,College of Arts and Humanites
+103,103,FA2022_PHIL3080_01,CRITICAL REASONING FA2022_PHIL3080_01,14,CF4,,176641,Joe Bankard,JABankard@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,PHIL3080,01,College of Theology & Christian Ministry
+104,104,FA2022_COMM4980_01,SR CAPSTONE SEMNR IN COMM FA2022_COMM4980_01,9,HU2,,101387,Donna Allen,DMAllen@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,COMM4980,01,College of Arts and Humanites
+105,105,FA2022_THEO2105_1U,INTRO CHRISTIAN THEOLOGY FA2022_THEO2105_1U,21,CF2,,384229,Danny Atkins,DAtkins@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,THEO2105,1U,College of Theology & Christian Ministry
+106,106,FA2022_PSYC2100_01,LIFESPAN DVLPMT FA2022_PSYC2100_01,43,SC3,,1446,Rebekah Hall,RHall@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,PSYC2100,01,College of Behavior and Social Sciences
+107,107,FA2022_PHIL2020_02,ETHICS FA2022_PHIL2020_02,32,CF4,,176641,Joe Bankard,JABankard@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,PHIL2020,02,College of Theology & Christian Ministry
+108,108,FA2022_THEO3710_01,CHURCH/CULTURE/CHRISTN LIVING FA2022_THEO3710_01,32,CF3,,195,Diane Leclerc,DKLeclerc@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,THEO3710,01,College of Theology & Christian Ministry
+109,109,FA2022_THEO3710_02,CHURCH/CULTURE/CHRISTN LIVING FA2022_THEO3710_02,13,CF3,,698227,Timothy Hahn,THahn@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,THEO3710,02,College of Theology & Christian Ministry
+110,110,FA2022_THEO3410_01,PHIL AND LIT OF EXISTENTIALISM FA2022_THEO3410_01,7,CF3,,176641,Joe Bankard,JABankard@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,THEO3410,01,College of Theology & Christian Ministry
+111,111,FA2022_ENGL3250W_01,THE AMERICAN NOVEL FA2022_ENGL3250W_01,9,IP2,,194,Darrin Grinder,DLGrinder@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL3250W,01,College of Arts and Humanites
+112,112,FA2022_PSYC1550_01,INTRO TO PSYCHOLOGY FA2022_PSYC1550_01,84,SC3,,407598,Elizabeth List,EList@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,PSYC1550,01,College of Behavior and Social Sciences
+113,113,FA2022_POLS1050_01,INTRO TO INTERNATIONAL RELATNS FA2022_POLS1050_01,7,SC3,,460376,Justin Clardie,JClardie@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,POLS1050,01,College of Arts and Humanites
+114,114,FA2022_HUMN1020_11,CORNERSTONE FA2022_HUMN1020_11,19,HU2,,124965,Bethany Schultz,BethanySchultz@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HUMN1020,11,College of Arts and Humanites
+115,115,FA2022_HUMN1020_10,CORNERSTONE FA2022_HUMN1020_10,24,HU2,,92644,Jeb Anderson,JEAnderson@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HUMN1020,10,College of Arts and Humanites
+116,116,FA2022_ECON2010_01,PRINCIPLES OF ECONOMICS FA2022_ECON2010_01,26,SC3,,289654,David Chaplin,DChaplin@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ECON2010,01,College of Business
+117,117,FA2022_KINE1020H_1U,HH:AEROBIC ACTIVITY FA2022_KINE1020H_1U,25,SC4,,91818,Benjamin Gall,BRGall@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,KINE1020H,1U,College of Natural and Applied Sciences
+118,118,FA2022_ARDE2020_01,SURVEY OF VISUAL ART FA2022_ARDE2020_01,36,HU1,,162454,Jamie Tucker,JTucker@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ARDE2020,01,College of Arts and Humanites
+119,119,FA2022_HIST2030_02,CONFLICT/CONSENSUS:AM HS TO 1877 FA2022_HIST2030_02,30,HU4,,669771,Matthew Millsap,MMillsap@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HIST2030,02,College of Arts and Humanites
+120,120,FA2022_BIOL4970_01,PRE-PHYSICAL THERAPY CAPSTONE FA2022_BIOL4970_01,3,HU2,,2043,Jamee Nixon,JNixon@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,BIOL4970,01,College of Natural and Applied Sciences
+121,121,FA2022_HUMN1020_02,CORNERSTONE FA2022_HUMN1020_02,25,HU2,,107750,Noah Daniels,NoahDaniels@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HUMN1020,02,College of Arts and Humanites
+122,122,FA2022_ENGL2310_01,BRT LIT:BEOWULF/REASON FA2022_ENGL2310_01,15,HU1,,689612,David Adkins,DAdkins@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL2310,01,College of Arts and Humanites
+123,123,FA2022_HUMN1020_09,CORNERSTONE FA2022_HUMN1020_09,27,HU2,,370156,Joe Willey,BWilley@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HUMN1020,09,College of Arts and Humanites
+124,124,FA2022_ENGL1030A_03,UNIVERSITY WRITING/RESEARCH A FA2022_ENGL1030A_03,20,IP4,,8153,Roslyn Carlson,RCarlson@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL1030A,03,College of Arts and Humanites
+125,125,FA2022_KINE1000_01,FUND OF WELLNESS FA2022_KINE1000_01,57,SC4,,91818,Benjamin Gall,BRGall@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,KINE1000,01,College of Natural and Applied Sciences
+126,126,FA2022_BIBL1100_01,INTRO BIBLICAL STUDIES FA2022_BIBL1100_01,43,CF1,,698235,Mary Schmitt,MSchmitt@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,BIBL1100,01,College of Theology & Christian Ministry
+127,127,FA2022_BIOL1040_1U,ENVIRONMENTAL SCIENCE FA2022_BIOL1040_1U,22,SC1,,826,John Cossel,JOCossel@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,BIOL1040,1U,College of Natural and Applied Sciences
+128,128,FA2022_PHIL2030_01,QUEST FOR THE GOOD LIFE FA2022_PHIL2030_01,31,CF4,,22994,Scott Daniels,SDaniels@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,PHIL2030,01,College of Theology & Christian Ministry
+129,129,FA2022_HIST2030_01,CONFLICT/CONSENSUS:AM HS TO 1877 FA2022_HIST2030_01,29,HU4,,669771,Matthew Millsap,MMillsap@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HIST2030,01,College of Arts and Humanites
+130,130,FA2022_EDUC3175_7A,TEACHING DIVERSE LEARNERS FA2022_EDUC3175/7543,27,HU3,,645802,Holly Ripley,HRipley@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,EDUC3175,7A,College of Educaton
+131,131,FA2022_BIBL1100_03,INTRO BIBLICAL STUDIES FA2022_BIBL1100_03,45,CF1,,698235,Mary Schmitt,MSchmitt@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,BIBL1100,03,College of Theology & Christian Ministry
+132,132,FA2022_HUMN1020_08,CORNERSTONE FA2022_HUMN1020_08,23,HU2,,18111,Rich Vasquez,RRVasquez@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HUMN1020,08,College of Arts and Humanites
+133,133,FA2022_HUMN1020_05,CORNERSTONE FA2022_HUMN1020_05,19,HU2,,16081,Jeffery Edmiston,JLEdmiston@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HUMN1020,05,College of Arts and Humanites
+134,134,FA2022_COMM1210_02,INTRO TO PUBLIC SPEAKING FA2022_COMM1210_02,16,IP1,,10702,Dean Matlock,DMatlock@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,COMM1210,02,College of Arts and Humanites
+135,135,FA2022_THEO2100_03,INTRO CHRISTIAN THEOLOGY FA2022_THEO2100_03,33,CF2,,22770,Joe Gorman,JTGorman@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,THEO2100,03,College of Theology & Christian Ministry
+136,136,FA2022_HUMN1020_06,CORNERSTONE FA2022_HUMN1020_06,23,HU2,,488791,Lance Howard,LanceHoward@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HUMN1020,06,College of Arts and Humanites
+137,137,FA2022_HUMN1020_04,CORNERSTONE FA2022_HUMN1020_04,23,HU2,,370156,Joe Willey,BWilley@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HUMN1020,04,College of Arts and Humanites
+138,138,FA2022_HUMN1020_03,CORNERSTONE FA2022_HUMN1020_03,22,HU2,,693999,Andrew Cornelius,ACornelius@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HUMN1020,03,College of Arts and Humanites
+139,139,FA2022_HUMN1025_1U,CORNERSTONE FA2022_HUMN1025_1U,5,HU2,,124965,Bethany Schultz,BethanySchultz@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,HUMN1025,1U,College of Arts and Humanites
+140,140,FA2022_ENGL3420_01,LITERATURE IN TRANSLATION FA2022_ENGL3420_01,8,HU1,,689612,David Adkins,DAdkins@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL3420,01,College of Arts and Humanites
+141,141,FA2022_KINE1000_03,FUND OF WELLNESS FA2022_KINE1000_03,56,SC4,,371590,Kaydee Mick,KMick@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,KINE1000,03,College of Natural and Applied Sciences
+142,142,FA2022_CHEM2210_01,GENERAL CHEMISTRY I FA2022_CHEM2210_01,24,SC1,,2213,Tim Anstine,DTAnstine@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,CHEM2210,01,College of Natural and Applied Sciences
+143,143,FA2022_CLTA1550_01,INTRO TO CULTURAL ANTHROPOLOGY FA2022_CLTA1550_01,24,SC3,HU3,1884,David Blowers,DRBlowers@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,CLTA1550,01,College of Arts and Humanites
+144,144,FA2022_CHEM2210L_01,GENERAL CHEMISTRY I LAB FA2022_CHEM2210L_01,24,SC2,,25955,Jerry Harris,JDHarris@nnu.edu,2213.0,Tim Anstine,DTAnstine@nnu.edu,,,,,,,,,,,,,,,,FA2022,CHEM2210L,01,College of Natural and Applied Sciences
+145,145,FA2022_EDUC2110_1L,EDUCATIONAL PSYCH FA2022_EDUC2110_1L,7,SC3,,12035,Lori Sanchez,LSanchez@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,EDUC2110,1L,College of Educaton
+146,146,FA2022_KINE2640E_01,KINE MJRS ONLY:SOCCER/TRACK FA2022_KINE2640E_01,17,SC4,,91818,Benjamin Gall,BRGall@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,KINE2640E,01,College of Natural and Applied Sciences
+147,147,FA2022_ENGL3210_1U,MAJOR AUTHORS AMERICAN LIT FA2022_ENGL3210_1U,12,HU1,,194,Darrin Grinder,DLGrinder@nnu.edu,,,,,,,,,,,,,,,,,,,FA2022,ENGL3210,1U,College of Arts and Humanites
+148,0,SP2022_MATH2240_01,ELEM STATISTICS SP2022_MATH2240_01,15,IP3,,422874,Jason Colwell,JColwell@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,MATH2240,01,We dont know
+149,1,SP2022_CLTA3180_01,RACE CLASS AND GENDER SP2022_CLTA3180_01,35,SC3,,526542,Cindy Anderson,CindyAnderson@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,CLTA3180,01,College of Arts and Humanites
+150,2,SP2022_BIBL1100_03,INTRO BIBLICAL STUDIES SP2022_BIBL1100_03,41,CF1,,143718,Richard Thompson,RPThompson@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,BIBL1100,03,College of Theology & Christian Ministry
+151,3,SP2022_THEO3620_01,SCIENCE AND CHRISTIAN FAITH SP2022_THEO3620_01,18,CF3,,176641,Joe Bankard,JABankard@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,THEO3620,01,College of Theology & Christian Ministry
+152,4,SP2022_HNRS3560_01,BEING HUMAN:THEO/PSYCH REFLCTNS SP2022_HNRS3560_01,13,CF3,SC3,27991,LeAnn Stensgaard,LRStensgaard@nnu.edu,176641.0,Joe Bankard,JABankard@nnu.edu,,,,,,,,,,,,,,,,SP2022,HNRS3560,01,College of Arts and Humanites
+153,5,SP2022_KINE1020H_1U,HH:AEROBIC ACTIVITY SP2022_KINE1020H_1U,24,SC4,,91818,Benjamin Gall,BRGall@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,KINE1020H,1U,College of Natural and Applied Sciences
+154,6,SP2022_ECON2010_01,PRINCIPLES OF ECONOMICS SP2022_ECON2010_01,18,SC3,,800,Pete Crabb,PRCrabb@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,ECON2010,01,College of Business
+155,7,SP2022_ENGL3015C_1U,TP:WRTG:TECH/PROF WRITING SP2022_ENGL3015C_1U,24,IP2,,26503,Melinda Hibbard,MSHibbard@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,ENGL3015C,1U,College of Arts and Humanites
+156,8,SP2022_ENGL3510_01,CONTEMPORARY POETRY SP2022_ENGL3510_01,15,HU1,,114142,Julie Straight,JNStraight@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,ENGL3510,01,College of Arts and Humanites
+157,9,SP2022_BIOL1060_1U,HUMAN BIOLOGY SP2022_BIOL1060_1U,25,SC1,,2043,Jamee Nixon,JNixon@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,BIOL1060,1U,College of Natural and Applied Sciences
+158,10,SP2022_COMM3200_01,INTERCULTURAL COMMUNICATION SP2022_COMM3200_01,43,SC3,HU3,101387,Donna Allen,DMAllen@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,COMM3200,01,College of Arts and Humanites
+159,11,SP2022_BIBL3260_1U,LIFE/TCHNGS OF JESUS SP2022_BIBL3260_1U,24,CF3,,473478,Ryan Hansen,RyanHansen@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,BIBL3260,1U,College of Theology & Christian Ministry
+160,12,SP2022_BIOL1060L_1U,HUMAN BIOLOGY LAB SP2022_BIOL1060L_1U,19,SC2,,2043,Jamee Nixon,JNixon@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,BIOL1060L,1U,College of Natural and Applied Sciences
+161,13,SP2022_POLS4970_01,SENIOR THESIS/CAPSTONE SP2022_POLS4970_01,3,HU2,,460376,Justin Clardie,JClardie@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,POLS4970,01,College of Arts and Humanites
+162,14,SP2022_BSNS4600_01,GLOBAL BUSINESS STRATEGIES SP2022_BSNS4600_01,30,HU3,,289654,David Chaplin,DChaplin@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,BSNS4600,01,College of Business
+163,15,SP2022_ARDE3950_01,MODERN/CONTEMPORARY ART HISTRY SP2022_ARDE3950_01,15,HU1,,178342,R Kinsman,PKinsman@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,ARDE3950,01,College of Arts and Humanites
+164,16,SP2022_COMP4980_01,SENIOR SEMINAR/CAPSTONE SP2022_COMP4980_01,7,HU2,,1240,Barry Myers,BLMyers@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,COMP4980,01,College of Natural and Applied Sciences
+165,17,SP2022_ENGL2220_01,AMER LIT:CVL WAR/PRESENT SP2022_ENGL2220_01,28,HU1,,70009,Cathy Becker,CBecker@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,ENGL2220,01,College of Arts and Humanites
+166,18,SP2022_NURS4040_01,TRANS/PROF NRSG PRACTICE/CAPSTNE SP2022_NURS4040_01,37,HU2,,677708,Georgianna Ainslie,GAinslie@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,NURS4040,01,College of Nursing
+167,19,SP2022_KINE1000_01,FUND OF WELLNESS SP2022_KINE1000_01,39,SC4,,91818,Benjamin Gall,BRGall@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,KINE1000,01,College of Natural and Applied Sciences
+168,20,SP2022_CHEM1210L_01,PRINCIPLES ORG/BIO CHEM LAB SP2022_CHEM1210L_01,50,SC2,,1738,Dan Nogales,DFNogales@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,CHEM1210L,01,College of Natural and Applied Sciences
+169,21,SP2022_BIOL2030L_01,HUMAN ANATOMY/PHYSIOLOGY II LAB SP2022_BIOL2030L_01,59,SC2,,16253,Kamela Lawrence,KMLawrence@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,BIOL2030L,01,College of Natural and Applied Sciences
+170,22,SP2022_EDUC2250_1U,CULTURAL DIVERSITY IN EDUCATION SP2022_EDUC2250_1U,4,HU3,,16420,Robert Sanchez,RobertSanchez@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,EDUC2250,1U,College of Educaton
+171,23,SP2022_ARDE4950_01,ART CAPSTONE:ENGAGING ART/FAITH SP2022_ARDE4950_01,11,HU2,,432409,Amy Gilles,AGilles@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,ARDE4950,01,College of Arts and Humanites
+172,24,SP2022_HIST2030_1U,CONFLICT/CONSENSUS:AM HS TO 1877 SP2022_HIST2030_1U,19,HU4,,165706,Mari Harris,MariHarris@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,HIST2030,1U,College of Arts and Humanites
+173,25,SP2022_SOWK4981_01,SEMINAR SOCIAL WORK II/CAPSTONE SP2022_SOWK4981_01,8,HU2,,661693,Steffanie Altenbern,SAltenbern@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,SOWK4981,01,College of Behavior and Social Sciences
+174,26,SP2022_EDUC2110_1L,EDUCATIONAL PSYCH SP2022_EDUC2110_1L,16,SC3,,12035,Lori Sanchez,LSanchez@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,EDUC2110,1L,College of Educaton
+175,27,SP2022_BIBL4445_1R,OLD TESTAMENT STUDIES SP2022_BIBL4445_1R,9,CF3,,154,Randy Bynum,WRBynum@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,BIBL4445,1R,College of Theology & Christian Ministry
+176,28,SP2022_EDUC2250_1L,CULTURAL DIVERSITY IN EDUCATION SP2022_EDUC2250_1L,7,HU3,,16420,Robert Sanchez,RobertSanchez@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,EDUC2250,1L,College of Educaton
+177,29,SP2022_PHIL2030_01,QUEST FOR THE GOOD LIFE SP2022_PHIL2030_01,34,CF4,,645521,Christina Smerick,CSmerick@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,PHIL2030,01,College of Theology & Christian Ministry
+178,30,SP2022_NURS4010_01,NRSNG DIVERSE POPULATION/COMM SP2022_NURS4010_01,26,HU3,,17564,Rebekkah Hulen,RebekkahHulen@nnu.edu,120508.0,Jane Weis,JWeis@nnu.edu,,,,,,,,,,,,,,,,SP2022,NURS4010,01,College of Nursing
+179,31,SP2022_CLTA1550_01,INTRO TO CULTURAL ANTHROPOLOGY SP2022_CLTA1550_01,50,SC3,HU3,1884,David Blowers,DRBlowers@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,CLTA1550,01,College of Arts and Humanites
+180,32,SP2022_PHYS1060_01,DESCRIPTIVE ASTRONOMY SP2022_PHYS1060_01,18,SC1,,12433,Dan Lawrence,MDLawrence@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,PHYS1060,01,College of Natural and Applied Sciences
+181,33,SP2022_SOWK2851_01,HBSE II:ISSUES OF DIVERSITY SP2022_SOWK2851_01,25,HU3,,27991,LeAnn Stensgaard,LRStensgaard@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,SOWK2851,01,College of Behavior and Social Sciences
+182,34,SP2022_PHYS4980_01,SENIOR SEMINAR/CAPSTONE SP2022_PHYS4980_01,1,HU2,,98817,Ben Pearson,BLPearson@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,PHYS4980,01,College of Natural and Applied Sciences
+183,35,SP2022_THEO2100_01,INTRO CHRISTIAN THEOLOGY SP2022_THEO2100_01,38,CF2,,22994,Scott Daniels,SDaniels@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,THEO2100,01,College of Theology & Christian Ministry
+184,36,SP2022_THEO3630_01,EXPLRNG WESTERN WRLD REL TRAD SP2022_THEO3630_01,29,CF3,HU3,645521,Christina Smerick,CSmerick@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,THEO3630,01,College of Theology & Christian Ministry
+185,37,SP2022_ENGL3015I_01,TP:WRTG:CREATIVE NON-FICTION SP2022_ENGL3015I_01,24,IP2,,25730,Devon Van Essen,DOVanessen@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,ENGL3015I,01,College of Arts and Humanites
+186,38,SP2022_THEO3730_01,THEOLOGY/PRACTICE OF COMPASSION SP2022_THEO3730_01,25,CF3,HU3,22770,Joe Gorman,JTGorman@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,THEO3730,01,College of Theology & Christian Ministry
+187,39,SP2022_BIOL4980_01,SENIOR SEMINAR/CAPSTONE SP2022_BIOL4980_01,17,HU2,,2119,Jennifer Chase,JRChase@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,BIOL4980,01,College of Natural and Applied Sciences
+188,40,SP2022_PHIL3600_01,CLINICAL ETHICS SP2022_PHIL3600_01,40,CF4,,521781,Richard Chamberlain,RChamberlain@nnu.edu,530120.0,Linda Valenzuela,LValenzuela@nnu.edu,,,,,,,,,,,,,,,,SP2022,PHIL3600,01,College of Theology & Christian Ministry
+189,41,SP2022_PSYC3640_01,EXP DS/STAT ANALYSIS SP2022_PSYC3640_01,9,IP3,,16265,Sarah DeBoard Marion,SDeBoardMarion@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,PSYC3640,01,College of Behavior and Social Sciences
+190,42,SP2022_EDUC4950_01,SEMINAR/CAPSTONE SP2022_EDUC4950_01,41,HU2,,10998,Jennifer Hill,JJHill@nnu.edu,1972.0,Whitney Ward,WTWard@nnu.edu,365913.0,Michelle Rowley,MRowley@nnu.edu,512102.0,Tracy Marshall,TMarshall@nnu.edu,645802.0,Holly Ripley,HRipley@nnu.edu,689954.0,Marcella Enos,MEnos@nnu.edu,32427.0,Jennifer Cornell,JMCornell@nnu.edu,SP2022,EDUC4950,01,College of Educaton
+191,43,SP2022_MILS2500_01,MILITARY STYLE FITNESS SP2022_MILS2500_01,15,SC4,,651009,Jordan Etchells,JEtchells@nnu.edu,666775.0,Juan Cisneros,JuanCisneros@nnu.edu,,,,,,,,,,,,,,,,SP2022,MILS2500,01,College of Natural and Applied Sciences
+192,44,SP2022_CHEM4980_01,SENIOR SEMINAR/CAPSTONE SP2022_CHEM4980_01,2,HU2,,1738,Dan Nogales,DFNogales@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,CHEM4980,01,College of Natural and Applied Sciences
+193,45,SP2022_PHIL3080_1U,CRITICAL REASONING SP2022_PHIL3080_1U,18,CF4,,176641,Joe Bankard,JABankard@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,PHIL3080,1U,College of Theology & Christian Ministry
+194,46,SP2022_HIST1030_1U,THE WORLD AND THE WEST I SP2022_HIST1030_1U,23,HU4,,147268,Travis Tarchione,TVTarchione@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,HIST1030,1U,College of Arts and Humanites
+195,47,SP2022_SPAN1020_01,ELEMENTARY SPANISH SP2022_SPAN1020_01,8,HU3,,2692,Matthew Fraley,mfraley@libertycharterschool.com,,,,,,,,,,,,,,,,,,,SP2022,SPAN1020,01,College of Arts and Humanites
+196,48,SP2022_BIBL1105_1U,INTRODUCTION TO BIBLICAL STUDIES SP2022_BIBL1105_1U,20,CF1,,473478,Ryan Hansen,RyanHansen@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,BIBL1105,1U,College of Theology & Christian Ministry
+197,49,SP2022_KINE1020Z_01,HH:INDOOR GAMES AND ACTIVITIES SP2022_KINE1020Z_01,36,SC4,,87577,Jess Haragos,JessHaragos@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,KINE1020Z,01,College of Natural and Applied Sciences
+198,50,SP2022_KINE1020S_01,HH:HALF MARATHON TRAINING SP2022_KINE1020S_01,10,SC4,,91818,Benjamin Gall,BRGall@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,KINE1020S,01,College of Natural and Applied Sciences
+199,51,SP2022_KINE1000_02,FUND OF WELLNESS SP2022_KINE1000_02,34,SC4,,371590,Kaydee Mick,KMick@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,KINE1000,02,College of Natural and Applied Sciences
+200,52,SP2022_THEO4900_01,RELIGION CAPSTONE SP2022_THEO4900_01,13,HU2,,195,Diane Leclerc,DKLeclerc@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,THEO4900,01,College of Theology & Christian Ministry
+201,53,SP2022_GEOG1050_01,INTRO TO GEOGRAPHY SP2022_GEOG1050_01,17,SC3,,460376,Justin Clardie,JClardie@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,GEOG1050,01,College of Arts and Humanites
+202,54,SP2022_NURS4114_1L,NURSING OF DVRS CMMNTS/POPLTNS SP2022_NURS4114_1L,2,HU3,,696469,Phyllis Morris,PMorris@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,NURS4114,1L,College of Nursing
+203,55,SP2022_CHEM2220L_01,GENERAL CHEMISTRY II LAB SP2022_CHEM2220L_01,24,SC2,,25955,Jerry Harris,JDHarris@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,CHEM2220L,01,College of Natural and Applied Sciences
+204,56,SP2022_CHEM2220_01,GENERAL CHEMISTRY II SP2022_CHEM2220_01,24,SC1,,25955,Jerry Harris,JDHarris@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,CHEM2220,01,College of Natural and Applied Sciences
+205,57,SP2022_PHYS2110L_01,PHYSICS FOR SCI/ENGR I LAB SP2022_PHYS2110L_01,33,SC2,,12433,Dan Lawrence,MDLawrence@nnu.edu,115424.0,Brice Allen,BEAllen@nnu.edu,,,,,,,,,,,,,,,,SP2022,PHYS2110L,01,College of Natural and Applied Sciences
+206,58,SP2022_THEO2100_03,INTRO CHRISTIAN THEOLOGY SP2022_THEO2100_03,39,CF2,,22770,Joe Gorman,JTGorman@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,THEO2100,03,College of Theology & Christian Ministry
+207,59,SP2022_COMM1210_02,INTRO TO PUBLIC SPEAKING SP2022_COMM1210_02,21,IP1,,10702,Dean Matlock,DMatlock@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,COMM1210,02,College of Arts and Humanites
+208,60,SP2022_KINE1020T_01,HH:FNDTN CROSSFIT SNAKE RVR CFIT SP2022_KINE1020T_01,14,SC4,,145777,Scott Kinnaman,SRKinnaman@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,KINE1020T,01,College of Natural and Applied Sciences
+209,61,SP2022_PRTH2405_1R,CHRISTIAN MISSIONS SP2022_PRTH2405_1R,6,HU3,,22770,Joe Gorman,JTGorman@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,PRTH2405,1R,College of Theology & Christian Ministry
+210,62,SP2022_MUSC3270_01,MUSIC HISTRY:CLASSIC/ROMANT/MOD SP2022_MUSC3270_01,9,HU1,,24146,Julia Ganske,JGanske@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,MUSC3270,01,College of Arts and Humanites
+211,63,SP2022_ENGL1030A_01,UNIVERSITY WRITING/RESEARCH A SP2022_ENGL1030A_01,18,IP4,,406424,Nicolette Clark,NicoletteClark@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,ENGL1030A,01,College of Arts and Humanites
+212,64,SP2022_CHEM1210_01,PRINCIPLES ORG/BIO CHEMISTRY SP2022_CHEM1210_01,51,SC1,,2213,Tim Anstine,DTAnstine@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,CHEM1210,01,College of Natural and Applied Sciences
+213,65,SP2022_ENGL3015C_01,TP:WRTG:TECH/PROF WRITING SP2022_ENGL3015C_01,24,IP2,,70009,Cathy Becker,CBecker@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,ENGL3015C,01,College of Arts and Humanites
+214,66,SP2022_KINE1020V_01,HH:ADV FITNSS SNAKE RVR CROSSFIT SP2022_KINE1020V_01,10,SC4,,145777,Scott Kinnaman,SRKinnaman@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,KINE1020V,01,College of Natural and Applied Sciences
+215,67,SP2022_PHYS2110_01,PHYSICS FOR SCI/ENGR I SP2022_PHYS2110_01,34,SC1,,12433,Dan Lawrence,MDLawrence@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,PHYS2110,01,College of Natural and Applied Sciences
+216,68,SP2022_HIST2040_01,CONFLCT/CONSNSUS:AM HS FROM 1877 SP2022_HIST2040_01,32,HU4,,669771,Matthew Millsap,MMillsap@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,HIST2040,01,College of Arts and Humanites
+217,69,SP2022_HNRS2560_01,WSTRN INTELLECTUAL TRAD II SP2022_HNRS2560_01,19,HU4,IP4,114142,Julie Straight,JNStraight@nnu.edu,526389.0,Stephen Morgan,StephenMorgan@nnu.edu,,,,,,,,,,,,,,,,SP2022,HNRS2560,01,College of Arts and Humanites
+218,70,SP2022_MATH1400_01,TRIGONOMETRY SP2022_MATH1400_01,9,IP3,,422874,Jason Colwell,JColwell@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,MATH1400,01,We dont know
+219,71,SP2022_THEO2105_1U,INTRO CHRISTIAN THEOLOGY SP2022_THEO2105_1U,26,CF2,,384229,Danny Atkins,DAtkins@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,THEO2105,1U,College of Theology & Christian Ministry
+220,72,SP2022_COMM1210_03,INTRO TO PUBLIC SPEAKING SP2022_COMM1210_03,23,IP1,,64672,Carly Bartlett,CBartlett@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,COMM1210,03,College of Arts and Humanites
+221,73,SP2022_POLS1030_01,FNDTNS POL:QST FOR PEACE/JUSTICE SP2022_POLS1030_01,20,SC3,,460376,Justin Clardie,JClardie@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,POLS1030,01,College of Arts and Humanites
+222,74,SP2022_COMM1210_01,INTRO TO PUBLIC SPEAKING SP2022_COMM1210_01,20,IP1,,1079,Brooke Adamson,MBAdamson@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,COMM1210,01,College of Arts and Humanites
+223,75,SP2022_ENGL2430_01,WORLD LIT:ENLIGHTENMENT/MODERN SP2022_ENGL2430_01,20,HU1,,689612,David Adkins,DAdkins@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,ENGL2430,01,College of Arts and Humanites
+224,76,SP2022_MUSC1010_1U,A SURVEY OF ART/MUSIC SP2022_MUSC1010_1U,26,HU1,,196,Barry Swanson,BWSwanson@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,MUSC1010,1U,College of Arts and Humanites
+225,77,SP2022_MATH2510_01,CALCULUS I SP2022_MATH2510_01,12,IP3,,353821,Jennifer King,JenniferKing@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,MATH2510,01,We dont know
+226,78,SP2022_ENGR3410_01,ENGINEERING ECONOMICS AND ETHICS SP2022_ENGR3410_01,12,SC3,,800,Pete Crabb,PRCrabb@nnu.edu,124939.0,Stephen Parke,SParke@nnu.edu,,,,,,,,,,,,,,,,SP2022,ENGR3410,01,College of Natural and Applied Sciences
+227,79,SP2022_ENGL1030A_02,UNIVERSITY WRITING/RESEARCH A SP2022_ENGL1030A_02,18,IP4,,689612,David Adkins,DAdkins@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,ENGL1030A,02,College of Arts and Humanites
+228,80,SP2022_BIOL2230L_01,GENERAL BIOLOGY II LAB SP2022_BIOL2230L_01,41,SC2,,24588,David Hille,DHille@nnu.edu,512162.0,Ayokunle Hodonu,AHodonu@nnu.edu,,,,,,,,,,,,,,,,SP2022,BIOL2230L,01,College of Natural and Applied Sciences
+229,81,SP2022_ENGL1030B_01,UNIVERSITY WRITING/RESEARCH B SP2022_ENGL1030B_01,16,IP4,,8153,Roslyn Carlson,RCarlson@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,ENGL1030B,01,College of Arts and Humanites
+230,82,SP2022_THEO3710_01,CHURCH/CULTURE/CHRISTN LIVING SP2022_THEO3710_01,23,CF3,,195,Diane Leclerc,DKLeclerc@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,THEO3710,01,College of Theology & Christian Ministry
+231,83,SP2022_BSNS2330_01,BUSINESS STATISTICS SP2022_BSNS2330_01,28,IP3,,82359,Mollie Sweet,MMSweet@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,BSNS2330,01,College of Business
+232,84,SP2022_BIOL2230_01,GENERAL BIOLOGY II SP2022_BIOL2230_01,42,SC1,,24588,David Hille,DHille@nnu.edu,512162.0,Ayokunle Hodonu,AHodonu@nnu.edu,,,,,,,,,,,,,,,,SP2022,BIOL2230,01,College of Natural and Applied Sciences
+233,85,SP2022_HIST1070_01,AMERICAN HISTORY SURVEY SP2022_HIST1070_01,51,HU4,,669771,Matthew Millsap,MMillsap@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,HIST1070,01,College of Arts and Humanites
+234,86,SP2022_BIOL2030_01,HUMAN ANATOMY/PHYSIOLOGY II SP2022_BIOL2030_01,62,SC1,,826,John Cossel,JOCossel@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,BIOL2030,01,College of Natural and Applied Sciences
+235,87,SP2022_BIBL1100_02,INTRO BIBLICAL STUDIES SP2022_BIBL1100_02,45,CF1,,384229,Danny Atkins,DAtkins@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,BIBL1100,02,College of Theology & Christian Ministry
+236,88,SP2022_THEO2100_02,INTRO CHRISTIAN THEOLOGY SP2022_THEO2100_02,37,CF2,,195,Diane Leclerc,DKLeclerc@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,THEO2100,02,College of Theology & Christian Ministry
+237,89,SP2022_BIBL1100_01,INTRO BIBLICAL STUDIES SP2022_BIBL1100_01,44,CF1,,381211,Stephen Riley,SRiley@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,BIBL1100,01,College of Theology & Christian Ministry
+238,90,SP2022_KINE4970_01,KINESLGY SENIOR CAPSTONE SP2022_KINE4970_01,14,HU2,,145777,Scott Kinnaman,SRKinnaman@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,KINE4970,01,College of Natural and Applied Sciences
+239,91,SP2022_PHIL3620_01,SCIENCE AND CHRISTIAN FAITH SP2022_PHIL3620_01,15,CF4,,176641,Joe Bankard,JABankard@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,PHIL3620,01,College of Theology & Christian Ministry
+240,92,SP2022_PHIL2020_01,ETHICS SP2022_PHIL2020_01,37,CF4,,645521,Christina Smerick,CSmerick@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,PHIL2020,01,College of Theology & Christian Ministry
+241,93,SP2022_COMM1210_04,INTRO TO PUBLIC SPEAKING SP2022_COMM1210_04,22,IP1,,64672,Carly Bartlett,CBartlett@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,COMM1210,04,College of Arts and Humanites
+242,94,SP2022_BIOL1010_01,INTRO TO BIOLOGY SP2022_BIOL1010_01,49,SC1,,512162,Ayokunle Hodonu,AHodonu@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,BIOL1010,01,College of Natural and Applied Sciences
+243,95,SP2022_BIOL1010L_01,INTRO TO BIOLOGY LAB SP2022_BIOL1010L_01,44,SC2,,512162,Ayokunle Hodonu,AHodonu@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,BIOL1010L,01,College of Natural and Applied Sciences
+244,96,SP2022_HIST3480_1U,MOD EUROPE (1800-PRESENT) SP2022_HIST3480_1U,20,HU4,,106196,Michelle Earwicker,MLEarwicker@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,HIST3480,1U,College of Arts and Humanites
+245,97,SP2022_SPAN2020_01,INTERM SPANISH SP2022_SPAN2020_01,6,HU3,,2692,Matthew Fraley,mfraley@libertycharterschool.com,,,,,,,,,,,,,,,,,,,SP2022,SPAN2020,01,College of Arts and Humanites
+246,98,SP2022_PSYC1550_01,INTRO TO PSYCHOLOGY SP2022_PSYC1550_01,39,SC3,,407598,Elizabeth List,EList@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,PSYC1550,01,College of Behavior and Social Sciences
+247,99,SP2022_KINE1000_3L,FUND OF WELLNESS SP2022_KINE1000_3L,35,SC4,,145777,Scott Kinnaman,SRKinnaman@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,KINE1000,3L,College of Natural and Applied Sciences
+248,100,SP2022_BSNS4980_01,SR SEMINAR IN BUSINESS CAPSTONE SP2022_BSNS4980_01,27,HU2,,289654,David Chaplin,DChaplin@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,BSNS4980,01,College of Business
+249,101,SP2022_HUMN1020_01,CORNERSTONE SP2022_HUMN1020_01,19,HU2,,370156,Joe Willey,BWilley@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,HUMN1020,01,College of Arts and Humanites
+250,102,SP2022_PHYS1060L_01,DESCRIPTIVE ASTRONOMY LAB SP2022_PHYS1060L_01,9,SC2,,98817,Ben Pearson,BLPearson@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,PHYS1060L,01,College of Natural and Applied Sciences
+251,103,SP2022_PSYC2100_01,LIFESPAN DVLPMT SP2022_PSYC2100_01,34,SC3,,28728,Ray Cammack,RCammack@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,PSYC2100,01,College of Behavior and Social Sciences
+252,104,SP2022_ENGL3510_1U,CONTEMPORARY POETRY SP2022_ENGL3510_1U,11,HU1,,530636,Ruth Salter,RSalter@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,ENGL3510,1U,College of Arts and Humanites
+253,105,SP2022_KINE1005_1U,FUNDAMENTALS OF WELLNESS SP2022_KINE1005_1U,22,SC4,,145777,Scott Kinnaman,SRKinnaman@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,KINE1005,1U,College of Natural and Applied Sciences
+254,106,SP2022_PRTH2420_01,MISSNL CHRCH I:INTRCLTRL/GLOBAL SP2022_PRTH2420_01,12,HU3,,22770,Joe Gorman,JTGorman@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,PRTH2420,01,College of Theology & Christian Ministry
+255,107,SP2022_ARDE2020_01,SURVEY OF VISUAL ART SP2022_ARDE2020_01,46,HU1,,663076,Jacob Amundson,JAmundson@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,ARDE2020,01,College of Arts and Humanites
+256,108,SP2022_ENGL1030A_03,UNIVERSITY WRITING/RESEARCH A SP2022_ENGL1030A_03,19,IP4,,689612,David Adkins,DAdkins@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,ENGL1030A,03,College of Arts and Humanites
+257,109,SP2022_HIST1040_01,THE WORLD & THE WEST II SP2022_HIST1040_01,31,HU4,,526389,Stephen Morgan,StephenMorgan@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,HIST1040,01,College of Arts and Humanites
+258,110,SP2022_MUSC2020_01,SURVEY OF PERFORMING ARTS SP2022_MUSC2020_01,24,HU1,,24146,Julia Ganske,JGanske@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,MUSC2020,01,College of Arts and Humanites
+259,111,SP2022_PHYS1120_01,COLLEGE PHYSICS II SP2022_PHYS1120_01,11,SC1,,98817,Ben Pearson,BLPearson@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,PHYS1120,01,College of Natural and Applied Sciences
+260,112,SP2022_COMM1210_1U,INTRO TO PUBLIC SPEAKING SP2022_COMM1210_1U,23,IP1,,80,Dennis Waller,DRWaller@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,COMM1210,1U,College of Arts and Humanites
+261,113,SP2022_HUMN4015_1U,CAPSTONE SP2022_HUMN4015_1U,7,HU2,,1067,Gary Waller,GLWaller@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,HUMN4015,1U,College of Arts and Humanites
+262,114,SP2022_HIST1040_02,THE WORLD & THE WEST II SP2022_HIST1040_02,34,HU4,,526389,Stephen Morgan,StephenMorgan@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,HIST1040,02,College of Arts and Humanites
+263,115,SP2022_BSNS4985_7X,SR SEMINAR IN BUSINESS SP2022_BSNS4985_7X,6,HU2,,427192,Kimber Russell,KimberRussell@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,BSNS4985,7X,College of Business
+264,116,SP2022_ENGL4980_01,SENIOR SEMINAR SP2022_ENGL4980_01,3,HU2,,70009,Cathy Becker,CBecker@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,ENGL4980,01,College of Arts and Humanites
+265,117,SP2022_ENGL1035_1U,UNIVERSITY WRITING/RESEARCH SP2022_ENGL1035_1U,11,IP4,,97794,Amber Ford,ADFord@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,ENGL1035,1U,College of Arts and Humanites
+266,118,SP2022_PSYC4010_01,CAPSTONE SP2022_PSYC4010_01,6,HU2,,407598,Elizabeth List,EList@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,PSYC4010,01,College of Behavior and Social Sciences
+267,119,SP2022_NURS4121_1L,HISTORY OF NURSING SP2022_NURS4121_1L,3,HU4,,677708,Georgianna Ainslie,GAinslie@nnu.edu,17564.0,Rebekkah Hulen,RebekkahHulen@nnu.edu,,,,,,,,,,,,,,,,SP2022,NURS4121,1L,College of Nursing
+268,120,SP2022_HIST4970_01,SENIOR THESIS/CAPSTONE SP2022_HIST4970_01,3,HU2,,669771,Matthew Millsap,MMillsap@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,HIST4970,01,College of Arts and Humanites
+269,121,SP2022_THEO4905_1R,SENIOR CAPSTONE IN MINISTRY SP2022_THEO4905_1R,7,HU2,,22770,Joe Gorman,JTGorman@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,THEO4905,1R,College of Theology & Christian Ministry
+270,122,SP2022_COMM2030_1U,INTERPERSONAL COMMUNICATION SP2022_COMM2030_1U,9,SC3,,115425,Rachel Cossel,RachelCossel@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,COMM2030,1U,College of Arts and Humanites
+271,123,SP2022_PHYS1120L_01,COLLEGE PHYSICS II LAB SP2022_PHYS1120L_01,11,SC2,,115424,Brice Allen,BEAllen@nnu.edu,98817.0,Ben Pearson,BLPearson@nnu.edu,,,,,,,,,,,,,,,,SP2022,PHYS1120L,01,College of Natural and Applied Sciences
+272,124,SP2022_EDUC3310_1L,TEACHING ENGLISH LANG LRNRS SP2022_EDUC3310_1L,6,HU3,,10998,Jennifer Hill,JJHill@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,EDUC3310,1L,College of Educaton
+273,125,SP2022_CRIM4010_01,CAPSTONE SP2022_CRIM4010_01,9,HU2,,10702,Dean Matlock,DMatlock@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,CRIM4010,01,College of Behavior and Social Sciences
+274,126,SP2022_ENGR4972_01,SENIOR DESIGN PROJ II/CAPSTONE SP2022_ENGR4972_01,12,HU2,,124939,Stephen Parke,SParke@nnu.edu,384174.0,Duke Bulanon,DBulanon@nnu.edu,,,,,,,,,,,,,,,,SP2022,ENGR4972,01,College of Natural and Applied Sciences
+275,127,SP2022_COMM2030_01,INTERPERSONAL COMMUNICATION SP2022_COMM2030_01,28,SC3,,101387,Donna Allen,DMAllen@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,COMM2030,01,College of Arts and Humanites
+276,128,SP2022_ENGL1030B_02,UNIVERSITY WRITING/RESEARCH B SP2022_ENGL1030B_02,16,IP4,,8153,Roslyn Carlson,RCarlson@nnu.edu,,,,,,,,,,,,,,,,,,,SP2022,ENGL1030B,02,College of Arts and Humanites

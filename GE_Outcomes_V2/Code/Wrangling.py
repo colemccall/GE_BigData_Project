@@ -212,3 +212,56 @@ def combineRegistrar():
 
 
 
+def cleanRegistrar():
+    file_path = 'C:\\Users\\colem\\Desktop\\Senior\\BigData\\GE_BigData_Project\\GE_Outcomes_V2\\Data\\Staging\\Combined\\All_Semesters_Registrar.csv'
+    dataframe = pd.DataFrame(pd.read_csv(file_path))
+
+    # Course Info
+    semester = []
+    course = []
+    section = []
+
+    # Colleges
+    college = []
+    theology = ['THEO', 'BIBL', 'PHIL', 'PRTH']
+    nat_sci = ['COMP', 'BIOL', 'CHEM', 'ENGR', 'PHYS', 'KINE', 'MILS']
+    art_hum = ['CLTA', 'COMM' , 'HUMN', 'ARDE', 'MUSC', 'ENGL', 'GEOG', 'POLS', 'HIST' , 'FREN', 'SPAN']
+    business = ['ECON', 'BSNS']
+    behav_social = ['PSYC', 'SOWK', 'CRIM']
+    education = ['EDUC']
+    nursing = ['NURS']
+
+    # For each of the rows
+    for index, rows in dataframe.iterrows():
+        course_id = rows[1].split('_')
+        
+        semester.append(course_id[0])
+        course.append(course_id[1])
+        section.append(course_id[2])
+        
+
+        course_code = course_id[1][0:4]
+        if(course_code in theology):
+            college.append('College of Theology & Christian Ministry')
+        elif(course_code in nat_sci):
+            college.append('College of Natural and Applied Sciences')
+        elif(course_code in art_hum or course_code == 'HNRS' or course_code == 'INTD'):
+            college.append('College of Arts and Humanites')
+        elif(course_code in business):
+            college.append('College of Business')
+        elif(course_code in behav_social):
+            college.append('College of Behavior and Social Sciences')
+        elif(course_code in education):
+            college.append('College of Educaton')
+        elif(course_code in nursing):
+            college.append('College of Nursing')
+        else:
+            college.append('We dont know')
+
+    dataframe['Semester'] = semester
+    dataframe['Course'] = course
+    dataframe['Section'] = section
+    dataframe['College'] = college
+
+    dataframe.to_csv('C:\\Users\\colem\\Desktop\\Senior\\BigData\\GE_BigData_Project\\GE_Outcomes_V2\\Data\\Staging\\Cleaned\\Cleaned_Registrar_Data.csv')
+
