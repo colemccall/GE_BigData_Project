@@ -1,4 +1,4 @@
-Use BigData
+Use GenEdData
 
 select course_id, count(compliance) as assignments, compliance from dbo.canvas_data
 where compliance = 'Outcome attached - no assessment'

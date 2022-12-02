@@ -192,7 +192,7 @@ def combineRegistrar():
     import os, pandas as pd
 
     ## Set the canvas registrar path
-    registrar_path = 'C:\\Users\\colem\\Desktop\\Senior\\BigData\\GE_BigData_Project\\GE_Repository\\Data\\Landing\\Registrar'
+    registrar_path = 'C:\\Users\\colem\\Desktop\\Senior\\BigData\\GE_BigData_Project\\GE_Outcomes_V2\\Data\\Landing\\Registrar'
     registrar_files = os.listdir(registrar_path)
 
     frames = []
@@ -206,7 +206,7 @@ def combineRegistrar():
 
     ## Combine dataframes from each semester and show it
     result = pd.concat(frames)
-    semester_registrar_data_path = 'C:\\Users\\colem\\Desktop\\Senior\\BigData\\GE_BigData_Project\\GE_Repository\\Data\\Staging\\Combined\\All_Semesters_Registrar.csv'
+    semester_registrar_data_path = 'C:\\Users\\colem\\Desktop\\Senior\\BigData\\GE_BigData_Project\\GE_Outcomes_V2\\Data\\Staging\\Combined\\All_Semesters_Registrar.csv'
     result.to_csv(semester_registrar_data_path)
     
 

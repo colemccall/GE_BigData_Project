@@ -1,4 +1,4 @@
-USE BigData
+USE GenEdData
 
 IF OBJECT_ID('tempdb.dbo.#Canvas_Stats') IS NOT NULL
     DROP TABLE #Canvas_Stats

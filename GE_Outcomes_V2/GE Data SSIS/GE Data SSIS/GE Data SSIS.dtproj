@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">COLESLAPTOP</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAgq+6atcNhUigqBtOh9BPTAAAAAACAAAAAAAQZgAAAAEAACAAAABDPBavnOHNZNI0wC3ad668Q4Ki5Faq19o5rLbA6PXgywAAAAAOgAAAAAIAACAAAACpbVE4BdmTQdg7rOnLkTFvcXLQRUm+u/cA+9CUQ6MsOJAAAAD1l4FW+YP1/L2fW/Hg4YPdMwg54cpdDwVET4qX78msMQPYrB3uo937uGvdFDQpAWfJeUwXuf5PApiZmlRGFhktAcuDKwvgpPLHde2tZhESdeoo1ybHKEe2fCKC+VVOOWO4wurdFEMzr4/H8/NwVRJmsqQsCwEvQIfm4RmSIb3Tflw/KXEQnyxLiW81sz5hyXtAAAAAq9eiZYmC2SRTazwNUaciyfYRtAxvPmF38GM1AheSnz1yXToJqb/bx1vJh6gfTIHZdrSloJWclNmrK0LPhCXe/A==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAgq+6atcNhUigqBtOh9BPTAAAAAACAAAAAAAQZgAAAAEAACAAAAA8o7DR18n9kj/1FCCB6/J0jXUuvP6oGZ1HVJgwx9cBbwAAAAAOgAAAAAIAACAAAABOg+621tPtV1mIaUpgQ01SN0wWCFTc5b5rasN7uk4tipAAAABRxSVFm/mGdacCa684NOTGiK16rIjMiWGp9DtTPDB3lH3gV4bv6Y78Qk3qVkF21HtWE5IelfqcPoc0NxYrm+rtohdcm8lTSpwoe3ygo5ASqz4XYnMISzlIauBL2+TKe5t1CLFm5JyY5MfUfN8PwnjBY+ujVvmpJ4nykEP0/JB59J3G04dfuX2mazNQMjvuv+lAAAAAoEJxUsGfU2EtYzkpUy+znBCgaIIErQoiLYMEOuHOMsRR8tDXI99v/i6zC/3T931a9HTJvEh2BgQZtZ7uifnrwg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,17 +42,17 @@
                 <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">72</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">75</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{C9C102B8-C97C-4223-9026-1C656D0E8398}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{8C952E3B-DB82-4DBD-A971-234CE10B7E53}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="CM.BigData DB.ConnectByProxy">
+                <SSIS:Parameter SSIS:Name="CM.Gen Ed Database.ConnectByProxy">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -67,7 +67,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.BigData DB.ConnectionString">
+                <SSIS:Parameter SSIS:Name="CM.Gen Ed Database.ConnectionString">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -78,11 +78,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=localhost;Initial Catalog=BigData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{D57E6D4E-A50C-4E12-A765-29B1A209B5E8}localhost.BigData;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=localhost;Initial Catalog=GenEdData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{D57E6D4E-A50C-4E12-A765-29B1A209B5E8}localhost.BigData;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.BigData DB.ConnectRetryCount">
+                <SSIS:Parameter SSIS:Name="CM.Gen Ed Database.ConnectRetryCount">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -97,7 +97,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.BigData DB.ConnectRetryInterval">
+                <SSIS:Parameter SSIS:Name="CM.Gen Ed Database.ConnectRetryInterval">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -112,7 +112,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.BigData DB.ConnectUsingManagedIdentity">
+                <SSIS:Parameter SSIS:Name="CM.Gen Ed Database.ConnectUsingManagedIdentity">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -127,7 +127,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.BigData DB.InitialCatalog">
+                <SSIS:Parameter SSIS:Name="CM.Gen Ed Database.InitialCatalog">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -138,11 +138,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">BigData</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">GenEdData</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.BigData DB.Password">
+                <SSIS:Parameter SSIS:Name="CM.Gen Ed Database.Password">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -156,7 +156,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.BigData DB.RetainSameConnection">
+                <SSIS:Parameter SSIS:Name="CM.Gen Ed Database.RetainSameConnection">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -171,7 +171,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.BigData DB.ServerName">
+                <SSIS:Parameter SSIS:Name="CM.Gen Ed Database.ServerName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -186,7 +186,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.BigData DB.UserName">
+                <SSIS:Parameter SSIS:Name="CM.Gen Ed Database.UserName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -226,7 +226,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\colem\Desktop\Senior\BigData\Join_Tables.sql</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Outcomes_V2\Queries\Join_Tables.sql</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -373,7 +373,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Repository\Queries\Reset_Canvas_Tables.sql</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Outcomes_V2\Queries\Reset_Canvas_Tables.sql</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -403,11 +403,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Repository\Queries\Reset_Registrar_Tables.sql</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Outcomes_V2\Queries\Reset_Registrar_Tables.sql</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Upload CSV Data.AlwaysCheckForRowDelimiters">
+                <SSIS:Parameter SSIS:Name="CM.Upload Canvas Data.AlwaysCheckForRowDelimiters">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -422,7 +422,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Upload CSV Data.CodePage">
+                <SSIS:Parameter SSIS:Name="CM.Upload Canvas Data.CodePage">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -437,7 +437,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Upload CSV Data.ColumnNamesInFirstDataRow">
+                <SSIS:Parameter SSIS:Name="CM.Upload Canvas Data.ColumnNamesInFirstDataRow">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -452,7 +452,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Upload CSV Data.ConnectByProxy">
+                <SSIS:Parameter SSIS:Name="CM.Upload Canvas Data.ConnectByProxy">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -467,7 +467,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Upload CSV Data.ConnectionString">
+                <SSIS:Parameter SSIS:Name="CM.Upload Canvas Data.ConnectionString">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -478,11 +478,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Repository\Data\Staging\Cleaned\Cleaned_Canvas_Data.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Outcomes_V2\Data\Staging\Cleaned\Cleaned_Canvas_Data.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Upload CSV Data.DataRowsToSkip">
+                <SSIS:Parameter SSIS:Name="CM.Upload Canvas Data.DataRowsToSkip">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -497,7 +497,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Upload CSV Data.Format">
+                <SSIS:Parameter SSIS:Name="CM.Upload Canvas Data.Format">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -512,7 +512,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Upload CSV Data.HeaderRowDelimiter">
+                <SSIS:Parameter SSIS:Name="CM.Upload Canvas Data.HeaderRowDelimiter">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -528,7 +528,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Upload CSV Data.HeaderRowsToSkip">
+                <SSIS:Parameter SSIS:Name="CM.Upload Canvas Data.HeaderRowsToSkip">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -543,7 +543,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Upload CSV Data.LocaleID">
+                <SSIS:Parameter SSIS:Name="CM.Upload Canvas Data.LocaleID">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -558,7 +558,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Upload CSV Data.RowDelimiter">
+                <SSIS:Parameter SSIS:Name="CM.Upload Canvas Data.RowDelimiter">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -574,7 +574,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Upload CSV Data.TextQualifier">
+                <SSIS:Parameter SSIS:Name="CM.Upload Canvas Data.TextQualifier">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -589,7 +589,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Upload CSV Data.Unicode">
+                <SSIS:Parameter SSIS:Name="CM.Upload Canvas Data.Unicode">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -675,7 +675,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Repository\Data\Staging\Combined\All_Semesters_Registrar.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Outcomes_V2\Data\Staging\Combined\All_Semesters_Registrar.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

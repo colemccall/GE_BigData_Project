@@ -1,10 +1,10 @@
-USE BigData
+USE GenEdData
 
 IF EXISTS(SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'dbo' AND name like 'canvas_data')  
 	DROP TABLE dbo.registrar_data; 
 
 
-CREATE TABLE BigData.dbo.registrar_data(
+CREATE TABLE dbo.registrar_data(
 	course_sis_id nvarchar(MAX)
 	, course_name nvarchar(MAX)
 	, number_of_students int
