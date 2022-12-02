@@ -28,5 +28,17 @@ WHERE C.num_of_assignments > D.number_of_students
 -- Queries a report that finds all the sections that did not have an assignment for every student
 SELECT C.course_id, C.num_of_assignments, D.number_of_students, D.outcome_1, D.outcome_2, D.teacher_#1_name, D.teacher_#1_email FROM #Student_Count as C
 INNER JOIN registrar_data AS D on C.course_id=D.course_sis_id
-WHERE C.num_of_assignments < D.number_of_students
+WHERE C.num_of_assignments < (0.7) * D.number_of_students
 
+
+-- The Nice List
+SELECT C.course_id, C.num_of_assignments, D.number_of_students,D.outcome_1, D.outcome_2, D.teacher_#1_name, D.teacher_#1_email FROM #Student_Count as C
+INNER JOIN registrar_data AS D on C.course_id=D.course_sis_id
+--INNER JOIN canvas_data AS Canvas on C.course_id = Canvas.course_id
+WHERE C.num_of_assignments >=  (0.7) * D.number_of_students
+AND C.num_of_assignments <= D.number_of_students
+
+
+
+
+select * from canvas_data

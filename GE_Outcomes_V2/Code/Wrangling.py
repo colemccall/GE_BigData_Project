@@ -166,7 +166,7 @@ def combineCanvas():
 
     ## Set the canvas landing path
     #canvas_path = os.getcwd() + '\\1_Landing\\Canvas'
-    canvas_path = 'C:\\Users\\colem\\Desktop\\Senior\\BigData\\GE_BigData_Project\\General_Ed_Outcomes\\1_Landing\\Canvas'
+    canvas_path = 'C:\\Users\\colem\\Desktop\\Senior\\BigData\\GE_BigData_Project\\GE_Outcome_V2\\Data\\Landing\\Canvas'
     canvas_files = os.listdir(canvas_path)
 
     frames = []
@@ -180,7 +180,7 @@ def combineCanvas():
 
     ## Combine dataframes from each semester and show it
     result = pd.concat(frames)
-    semester_canvas_data_path = 'C:\\Users\\colem\\Desktop\\Senior\\BigData\\GE_BigData_Project\\General_Ed_Outcomes\\2_Staging\\Combined\\All_Semesters_Canvas.csv'
+    semester_canvas_data_path = 'C:\\Users\\colem\\Desktop\\Senior\\BigData\\GE_BigData_Project\\GE_Outcome_V2\\Data\\Staging\\Combined\\All_Semesters_Canvas.csv'
     result.to_csv(semester_canvas_data_path)
     return semester_canvas_data_path
 
