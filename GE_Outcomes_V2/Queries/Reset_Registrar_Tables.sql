@@ -31,5 +31,9 @@ CREATE TABLE dbo.registrar_data(
 	, teacher_#7_ID nvarchar(MAX)
 	, teacher_#7_name nvarchar(MAX)
 	, teacher_#7_email nvarchar(MAX)
+	, semester nvarchar(MAX)
+	, course nvarchar(MAX)
+	, section nvarchar(MAX)
+	, college nvarchar(MAX)
 )
    

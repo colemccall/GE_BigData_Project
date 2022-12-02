@@ -53,7 +53,7 @@ WHERE outcome_1 is null
 
 UNION
 
-SELECT D.course_sis_id, '0' as  'Assignments', D.number_of_students as 'Students' , D.outcome_1, D.outcome_2, D.teacher_#1_name, D.teacher_#1_email, C.semester,C.course, C.section, C.college, 'Naughty - Nothing Attached in Canvas' as Compliance
+SELECT D.course_sis_id, '0' as  'Assignments', D.number_of_students as 'Students' , D.outcome_1, D.outcome_2, D.teacher_#1_name, D.teacher_#1_email, D.semester,D.course,D.section, D.college, 'Naughty - Nothing Attached in Canvas' as Compliance
 FROM #Student_Count as C
 RIGHT OUTER JOIN registrar_data AS D on C.course_id=D.course_sis_id
 
