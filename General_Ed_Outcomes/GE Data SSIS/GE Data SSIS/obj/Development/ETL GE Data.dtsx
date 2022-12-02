@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="11/21/2022 5:34:49 PM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="72"
-  DTS:VersionGUID="{C9C102B8-C97C-4223-9026-1C656D0E8398}">
+  DTS:VersionBuild="68"
+  DTS:VersionGUID="{49F61BDA-1C9B-4D9D-B696-FEF9F4D9C572}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -26,6 +26,46 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=localhost;Initial Catalog=BigData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{D57E6D4E-A50C-4E12-A765-29B1A209B5E8}localhost.BigData;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Create_Registrar_Table.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{F082CF19-4F0A-4328-AF13-CC334DB43FAF}"
+      DTS:ObjectName="Create_Registrar_Table.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\Create_Registrar_Table.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Create_Tables.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{CC7DB325-A736-4E78-9044-58B4DCB43BA8}"
+      DTS:ObjectName="Create_Tables.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\Create_Tables.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Drop_Registrar_Table.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{9855A9D4-D021-4245-86B1-81A0043696A8}"
+      DTS:ObjectName="Drop_Registrar_Table.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\Drop_Registrar_Table.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Drop_Tables.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{76B5CF4B-16A5-4C6F-B933-BD8B83E0D0A6}"
+      DTS:ObjectName="Drop_Tables.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\Drop_Tables.sql" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -55,7 +95,7 @@
       DTS:ObjectName="Reset_Canvas_Tables.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Repository\Queries\Reset_Canvas_Tables.sql" />
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\Reset_Canvas_Tables.sql" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -65,7 +105,7 @@
       DTS:ObjectName="Reset_Registrar_Tables.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Repository\Queries\Reset_Registrar_Tables.sql" />
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\Reset_Registrar_Tables.sql" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -82,7 +122,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Repository\Data\Staging\Cleaned\Cleaned_Canvas_Data.csv">
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\General_Ed_Outcomes\2_Staging\Cleaned\Cleaned_Canvas_Data.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -90,7 +130,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="student_id"
-              DTS:DTSID="{AFC5A0D2-7783-425E-8364-1B4006AB8CD8}"
+              DTS:DTSID="{6BEFBDDE-3A29-4143-8FB5-28553BD4D09C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -99,7 +139,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="submission_date"
-              DTS:DTSID="{409CB3BD-3994-4E65-9E3C-899CAAD6270F}"
+              DTS:DTSID="{8C248441-9376-443E-A32A-2A5443AA7092}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -108,7 +148,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="assignment code"
-              DTS:DTSID="{7C51B710-0A55-4E48-B0B2-805C362FC856}"
+              DTS:DTSID="{6A61947F-396B-4285-925F-1B3E404DFEC5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -117,7 +157,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="outcome code"
-              DTS:DTSID="{D1454E76-0F12-4A41-ABE5-8FF2C5DBA780}"
+              DTS:DTSID="{5FDB7D2A-4C19-46C4-91D2-1B766AF343C2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -126,7 +166,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="outcome year"
-              DTS:DTSID="{079C0B03-5745-4D9C-9793-C8CD1967D3D4}"
+              DTS:DTSID="{EBFBEAA2-76FB-4E66-97CD-36F206D75DFC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -135,7 +175,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="course_id"
-              DTS:DTSID="{97359B41-9A9E-43B4-8BE8-4873FFE59C09}"
+              DTS:DTSID="{180574E1-3B18-40FF-9AF1-3912E41F8FAC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -144,7 +184,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="semester"
-              DTS:DTSID="{89D4A188-6248-478E-BDA1-1419FCB18BCF}"
+              DTS:DTSID="{EB580E4D-8F49-4654-818A-DDCB3362EEE8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -153,7 +193,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="course"
-              DTS:DTSID="{6889E1E2-5492-4BD1-BA11-7156020DABE0}"
+              DTS:DTSID="{C01F3184-3D1F-4782-AD0E-460EA36C92CD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -162,7 +202,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="section"
-              DTS:DTSID="{2C5C08B9-A5D6-4FA4-AF9B-15597FEFF423}"
+              DTS:DTSID="{0FE15C70-2FAA-4C96-9B02-FE405B1C237F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -170,7 +210,7 @@
               DTS:DataType="4"
               DTS:TextQualified="True"
               DTS:ObjectName="outcome score"
-              DTS:DTSID="{257B46A1-FE0E-409A-915D-4F3E72E1EA1B}"
+              DTS:DTSID="{DC51B5BC-9471-4AE2-8381-B5406381756A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -179,7 +219,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="outcome rating"
-              DTS:DTSID="{421A43B0-DDD6-4B8B-844C-D84CA24445FD}"
+              DTS:DTSID="{4C5AFB4D-B566-4738-A997-BB46194B1AE1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -188,7 +228,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="college"
-              DTS:DTSID="{D8F78F9D-B473-488C-BF6F-8357942A5726}"
+              DTS:DTSID="{A439A387-E077-4C1B-822A-BF2701FFFD1A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -197,7 +237,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="compliance"
-              DTS:DTSID="{FA7C9186-0433-4685-81BE-0283CE7D9A98}"
+              DTS:DTSID="{98F782CC-6E80-4F98-B245-99DB4BA6A172}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -217,7 +257,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Repository\Data\Staging\Combined\All_Semesters_Registrar.csv">
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\General_Ed_Outcomes\2_Staging\Combined\All_Semesters_Registrar.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -225,7 +265,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Index"
-              DTS:DTSID="{7FD5266B-5014-4142-A0F3-831AF8E80353}"
+              DTS:DTSID="{F6C6805D-8E6E-4340-B9B4-4A67391C69E2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -234,7 +274,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Course_sis_id"
-              DTS:DTSID="{26E0583F-AA4A-4B68-8BFB-6935C039C4E5}"
+              DTS:DTSID="{9016D780-E8ED-4C1C-A60E-EAD6F2504C27}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -243,7 +283,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Course_name"
-              DTS:DTSID="{4F90033B-39D6-43DA-92A9-6B19D2522936}"
+              DTS:DTSID="{AE7D0020-EAB9-4547-8FDF-4CA57EA1D7C6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -251,7 +291,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Number_of_students"
-              DTS:DTSID="{949C9CFD-DAAA-4D94-B61B-AB08640B2F63}"
+              DTS:DTSID="{EBC4E2A6-D34E-40A7-B251-189FA1363B6F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -260,7 +300,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Outcome 1"
-              DTS:DTSID="{9271FD41-AA31-4C46-AE68-0DBDEABE78D9}"
+              DTS:DTSID="{A449FDFD-11EE-4035-9E91-9CE6E2156817}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -269,7 +309,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Outcome 2"
-              DTS:DTSID="{EA0E18C8-AE1E-4E66-96DA-4FB2C9406EA3}"
+              DTS:DTSID="{A31DE4B1-C61A-444D-94A9-9655411D45C9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -277,7 +317,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#1_ID"
-              DTS:DTSID="{34E3FC89-C6AD-428B-B4D4-5696EDB8ACF4}"
+              DTS:DTSID="{99F58886-ECFE-4A1C-92E6-4A931B6CDEF0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -286,7 +326,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#1_name"
-              DTS:DTSID="{9E048CA6-4C13-4126-B75B-1B80A74D20F1}"
+              DTS:DTSID="{B72B1BC8-F6F0-45D3-A640-FF0673551371}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -295,7 +335,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#1_email"
-              DTS:DTSID="{47B95972-F87D-408B-B1F9-7C1C02AF78D4}"
+              DTS:DTSID="{326AD46E-6A96-4C69-96D0-10DB417498C7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -303,7 +343,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#2_ID"
-              DTS:DTSID="{37CE87E0-EF9A-46BA-BC9E-8FF666FD63C0}"
+              DTS:DTSID="{A9DE6E67-8BA1-4A42-90A6-36E4213D96BB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -312,7 +352,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#2_name"
-              DTS:DTSID="{72638C2F-DA14-4C0F-94C2-A255A2B991AA}"
+              DTS:DTSID="{398BD97C-622D-4915-BD7F-2C7CA7DE63B4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -321,7 +361,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#2_email"
-              DTS:DTSID="{112CF23A-E66B-4541-88D3-05DC1E16D902}"
+              DTS:DTSID="{7F906D10-0485-4C1E-B12B-AB914CAFB7A1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -329,7 +369,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#3_ID"
-              DTS:DTSID="{3E6967E9-43CE-495B-83E6-9BA2D9706B89}"
+              DTS:DTSID="{54F40FE1-B08A-41D0-90F3-7B5BC0925615}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -338,7 +378,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#3_name"
-              DTS:DTSID="{1A8E3DCD-F39B-4319-947F-9B929759FBEC}"
+              DTS:DTSID="{30FCA739-6658-4A2D-A3A9-E729B4FA971E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -347,7 +387,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#3_email"
-              DTS:DTSID="{C7A04E54-47E8-45C3-945C-E38FF2CBE7A6}"
+              DTS:DTSID="{AB15C7C8-56DF-473D-8B99-F434E2B11236}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -355,7 +395,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#4_ID"
-              DTS:DTSID="{C59935DD-E18D-4879-A009-E8C76322F3E9}"
+              DTS:DTSID="{3CDFF12B-2EB2-401C-8E3E-4B3F45451D8A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -364,7 +404,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#4_name"
-              DTS:DTSID="{06FAA4AB-EC86-4BF9-963F-35AB2E116DEC}"
+              DTS:DTSID="{D11D3B87-A986-49AC-90D1-2F6A6375180D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -373,7 +413,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#4_email"
-              DTS:DTSID="{97CEC89B-0869-46DC-8CBF-F3F8BC13E41F}"
+              DTS:DTSID="{3739ED26-A530-4994-ACBE-71DB3EB684A2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -381,7 +421,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#5_ID"
-              DTS:DTSID="{EBF01645-51E6-4A3E-BD6B-33B971187D9C}"
+              DTS:DTSID="{FD38F4C8-C77D-4289-8CF6-36935AB8C22E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -390,7 +430,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#5_name"
-              DTS:DTSID="{BD01A464-5A12-40AF-BF03-55062406ADD2}"
+              DTS:DTSID="{698C140B-F548-4B28-A0B0-527EE35BA8D6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -399,7 +439,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#5_email"
-              DTS:DTSID="{EC2021FE-954E-462A-A100-9306C9FBC52F}"
+              DTS:DTSID="{04D08416-31AF-4632-94F8-F0FF9D50D23C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -407,7 +447,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#6_ID"
-              DTS:DTSID="{E5E2BD0B-B1C7-45BD-B632-B3A142BF4356}"
+              DTS:DTSID="{399E76D3-7A0C-407B-99C4-7422076E4342}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -416,7 +456,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#6_name"
-              DTS:DTSID="{7B5FAF67-DE26-46F9-9EE3-00B3BFBB9A69}"
+              DTS:DTSID="{88FFD53C-A3AC-49D9-B38E-3D6E037174CE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -425,7 +465,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#6_email"
-              DTS:DTSID="{ED7EACED-F910-4AB9-875A-C36582AF8C7A}"
+              DTS:DTSID="{39B3BF6C-32D3-462C-A95B-F3ECC9C8F983}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -433,7 +473,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#7_ID"
-              DTS:DTSID="{29A934D2-FE8B-4F61-A1A8-4407BB2BDB7F}"
+              DTS:DTSID="{ABFC414E-02C8-4252-8D1D-AA27F71A491D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -442,7 +482,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#7_name"
-              DTS:DTSID="{ADF103DC-4F5B-41CD-AB75-AB2B861C685D}"
+              DTS:DTSID="{9E2F228B-5290-4410-A615-00A8C4EF265E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -451,7 +491,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Teacher_#7_email"
-              DTS:DTSID="{275FA244-BBB1-4E44-8135-12BC67B56B8B}"
+              DTS:DTSID="{9BFD2159-6043-42EC-ACB5-C616DEB4B8D9}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -490,7 +530,7 @@
           SQLTask:BackupCreateSubFolder="False"
           SQLTask:BackupFileExtension=""
           SQLTask:BackupVerifyIntegrity="False"
-          SQLTask:ExpireDate="2022-12-15T00:00:00"
+          SQLTask:ExpireDate="2022-12-06T00:00:00"
           SQLTask:RetainDays="14"
           SQLTask:InDays="True"
           SQLTask:UseExpiration="False"
@@ -576,7 +616,7 @@
         DTS:LoggingMode="1" />
       <DTS:ObjectData>
         <ExecuteProcessData
-          Executable="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Repository\Code\DataWrangling.bat"
+          Executable="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\General_Ed_Outcomes\DataWrangling.bat"
           WindowStyle="Maximized" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -594,7 +634,7 @@
         DTS:LoggingMode="1" />
       <DTS:ObjectData>
         <ExecuteProcessData
-          Executable="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Repository\Code\RegistrarData.bat"
+          Executable="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\General_Ed_Outcomes\RegistrarData.bat"
           WindowStyle="Maximized" />
       </DTS:ObjectData>
     </DTS:Executable>
