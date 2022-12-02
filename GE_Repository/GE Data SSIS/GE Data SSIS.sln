@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "GE Data SSIS", "GE Data SSIS\GE Data SSIS.dtproj", "{138669FE-261A-49B1-AB3B-8686D016D771}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{138669FE-261A-49B1-AB3B-8686D016D771}.Development|Default.ActiveCfg = Development
+		{138669FE-261A-49B1-AB3B-8686D016D771}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DFD655B8-F5D9-404F-96BC-4A208ECC6D13}
+	EndGlobalSection
+EndGlobal
