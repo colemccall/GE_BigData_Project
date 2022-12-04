@@ -118,13 +118,13 @@ def cleanDataFrame(dataframe):
         elif(course_code in nat_sci):
             college.append('College of Natural and Applied Sciences')
         elif(course_code in art_hum or course_code == 'HNRS' or course_code == 'INTD'):
-            college.append('College of Arts and Humanites')
+            college.append('College of Arts and Humanities')
         elif(course_code in business):
             college.append('College of Business')
         elif(course_code in behav_social):
             college.append('College of Behavior and Social Sciences')
         elif(course_code in education):
-            college.append('College of Educaton')
+            college.append('College of Education')
         elif(course_code in nursing):
             college.append('College of Nursing')
         else:
@@ -246,13 +246,13 @@ def cleanRegistrar():
         elif(course_code in nat_sci):
             college.append('College of Natural and Applied Sciences')
         elif(course_code in art_hum or course_code == 'HNRS' or course_code == 'INTD'):
-            college.append('College of Arts and Humanites')
+            college.append('College of Arts and Humanities')
         elif(course_code in business):
             college.append('College of Business')
         elif(course_code in behav_social):
             college.append('College of Behavior and Social Sciences')
         elif(course_code in education):
-            college.append('College of Educaton')
+            college.append('College of Education')
         elif(course_code in nursing):
             college.append('College of Nursing')
         else:
