@@ -105,7 +105,7 @@ def cleanDataFrame(dataframe):
 
         ## Add in college code
         theology = ['THEO', 'BIBL', 'PHIL', 'PRTH']
-        nat_sci = ['COMP', 'BIOL', 'CHEM', 'ENGR', 'PHYS', 'KINE', 'MILS']
+        nat_sci = ['COMP', 'BIOL', 'CHEM', 'ENGR', 'PHYS', 'KINE', 'MILS', 'MATH']
         art_hum = ['CLTA', 'COMM' , 'HUMN', 'ARDE', 'MUSC', 'ENGL', 'GEOG', 'POLS', 'HIST' , 'FREN', 'SPAN']
         business = ['ECON', 'BSNS']
         behav_social = ['PSYC', 'SOWK', 'CRIM']
