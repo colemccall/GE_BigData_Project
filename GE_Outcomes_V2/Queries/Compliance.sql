@@ -57,14 +57,4 @@ SELECT D.course_sis_id, '0' as  'Assignments', D.number_of_students as 'Students
 FROM #Student_Count as C
 RIGHT OUTER JOIN registrar_data AS D on C.course_id=D.course_sis_id
 
---Compliance
-select teacher_#1_name, Compliance from compliance  
 
---semester
-select teacher_#1_name, semester from compliance 
- 
- --college
-select teacher_#1_name, teacher_#1_email, college from compliance 
- 
- --course
-select teacher_#1_name, course_id, Students, Assignments, outcome_1, outcome_2, course from compliance 
