@@ -114,7 +114,7 @@ def cleanDataFrame(dataframe):
 
         course_code = course_names[index][0:4]
         if(course_code in theology):
-            college.append('College of Theology & Christian Ministry')
+            college.append('College of Theology and Christian Ministry')
         elif(course_code in nat_sci):
             college.append('College of Natural and Applied Sciences')
         elif(course_code in art_hum or course_code == 'HNRS' or course_code == 'INTD'):
@@ -242,7 +242,7 @@ def cleanRegistrar():
 
         course_code = course_id[1][0:4]
         if(course_code in theology):
-            college.append('College of Theology & Christian Ministry')
+            college.append('College of Theology and Christian Ministry')
         elif(course_code in nat_sci):
             college.append('College of Natural and Applied Sciences')
         elif(course_code in art_hum or course_code == 'HNRS' or course_code == 'INTD'):

@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>GE Data SSIS</Name>
-    <LastWriteTime>2022-12-02T22:34:40.5457136Z</LastWriteTime>
+    <LastWriteTime>2022-12-04T23:21:44.429899Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>ETL GE Data.dtsx</Name>
-      <LastWriteTime>2022-12-02T22:37:55.9257257Z</LastWriteTime>
+      <LastWriteTime>2022-12-04T23:21:56.5063104Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

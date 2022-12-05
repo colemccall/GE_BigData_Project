@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="84"
-  DTS:VersionGUID="{BA022721-595F-49B0-9FFE-9005667EFD82}">
+  DTS:VersionBuild="86"
+  DTS:VersionGUID="{15BF7231-61B7-4F88-BD56-D9188A8870FE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -90,7 +90,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="student_id"
-              DTS:DTSID="{8272299B-AD95-46C9-939B-1D7D6A142D48}"
+              DTS:DTSID="{B5AF0CDD-6EB5-4438-9334-871B68002965}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -99,7 +99,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="submission_date"
-              DTS:DTSID="{94C577AE-D413-469D-B2A8-9FF42B3D26FC}"
+              DTS:DTSID="{A6BD05EE-381A-4FF7-B99E-0C67083F9892}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -108,7 +108,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="assignment code"
-              DTS:DTSID="{D6A020EC-55F8-4C99-8103-2D9592C90C92}"
+              DTS:DTSID="{325DF43F-844E-47D8-8FA9-D805EA1D42E0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -117,7 +117,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="outcome code"
-              DTS:DTSID="{9068A5C8-3135-4DF9-922B-BAFE5DFB5865}"
+              DTS:DTSID="{BF41E239-209E-4000-893C-8266F3156AE8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -126,7 +126,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="outcome year"
-              DTS:DTSID="{0AD884E4-86D5-40DC-B505-0ACD455940C2}"
+              DTS:DTSID="{9FB1C224-AA75-4A92-8B0F-CA7F7A65E936}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -135,7 +135,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="course_id"
-              DTS:DTSID="{3657100E-94D4-4EAA-A653-FE986D6BB8C9}"
+              DTS:DTSID="{989F33C0-3871-4F50-8FF9-EB2A39C6CF31}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -144,7 +144,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="semester"
-              DTS:DTSID="{7664809D-8817-4F25-862D-642D932BC872}"
+              DTS:DTSID="{DFD08F22-4B50-499A-A05D-14CB8F849601}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -153,7 +153,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="course"
-              DTS:DTSID="{784C71E3-7A2E-4C45-9FC3-C02CB4CB2D2D}"
+              DTS:DTSID="{01608D52-8CDF-4646-BB9C-0172B93102D5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -162,7 +162,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="section"
-              DTS:DTSID="{2E81B5E1-45F2-472C-BF25-4EFFB017B649}"
+              DTS:DTSID="{E9CBFA74-062E-4DE6-AE09-F3BB6C9796BB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -170,7 +170,7 @@
               DTS:DataType="4"
               DTS:TextQualified="True"
               DTS:ObjectName="outcome score"
-              DTS:DTSID="{4AFBDB22-94C3-435E-8553-9F5619EF74FA}"
+              DTS:DTSID="{F621E124-EFDB-4402-90EC-E3599CF2B2D2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -179,16 +179,16 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="outcome rating"
-              DTS:DTSID="{01BE254D-3178-4817-BE39-D73DFEB164BA}"
+              DTS:DTSID="{3FA47FE5-F5F2-4726-9E5A-B025F5BD97F0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="40"
+              DTS:MaximumWidth="50"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="college"
-              DTS:DTSID="{91228B3E-0E40-4472-90BB-394D082644E9}"
+              DTS:DTSID="{F1F7D827-D17D-45DD-BC48-732377A27757}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -197,7 +197,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="compliance"
-              DTS:DTSID="{093E3534-884C-4C5F-A333-BE547D48D6A3}"
+              DTS:DTSID="{076F7358-91B3-4D69-82D9-981C52CAAD39}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -942,7 +942,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[college]"
-                      length="40"
+                      length="50"
                       lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[college]"
                       name="college"
                       truncationRowDisposition="FailComponent">
@@ -1037,7 +1037,7 @@
                     <externalMetadataColumn
                       refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[college]"
                       dataType="wstr"
-                      length="40"
+                      length="50"
                       name="college" />
                     <externalMetadataColumn
                       refId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].ExternalColumns[compliance]"
@@ -1185,7 +1185,7 @@
                     <inputColumn
                       refId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].Columns[college]"
                       cachedDataType="wstr"
-                      cachedLength="40"
+                      cachedLength="50"
                       cachedName="college"
                       externalMetadataColumnId="Package\Upload Data\Canvas Upload.Inputs[OLE DB Destination Input].ExternalColumns[college]"
                       lineageId="Package\Upload Data\Canvas CSV Selection.Outputs[Flat File Source Output].Columns[college]" />
@@ -2696,6 +2696,10 @@
           Id="Package\Back Up Database Task"
           TopLeft="344,88" />
         <NodeLayout
+          Size="204,42"
+          Id="Package\Create Compliance Table"
+          TopLeft="344,470" />
+        <NodeLayout
           Size="203,42"
           Id="Package\Drop Existing, Create New Canvas SQL Table"
           TopLeft="98,189" />
@@ -2878,32 +2882,6 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 9]"
-          TopLeft="200.75,231">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,61"
-              Start="0,0"
-              End="0,53.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,53.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="204,42"
-          Id="Package\Create Compliance Table"
-          TopLeft="344,470" />
-        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
           TopLeft="448,429">
           <EdgeLayout.Curve>
@@ -2947,6 +2925,28 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 9]"
+          TopLeft="200.75,231">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61"
+              Start="0,0"
+              End="0,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -2960,7 +2960,7 @@
           Id="Package\Upload Data\Registrar Upload"
           TopLeft="294,135" />
         <NodeLayout
-          Size="171,42"
+          Size="190,42"
           Id="Package\Upload Data\Canvas CSV Selection"
           TopLeft="47,40" />
         <NodeLayout
@@ -2971,6 +2971,40 @@
           Size="156,42"
           Id="Package\Upload Data\Canvas Upload"
           TopLeft="47,130" />
+        <EdgeLayout
+          Id="Package\Upload Data.Paths[Flat File Source Output]"
+          TopLeft="142,82">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-17,48"
+              Start="0,0"
+              End="-17,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20"
+                    Point2="0,24"
+                    Point3="-4,24" />
+                  <mssgle:LineSegment
+                    End="-13,24" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-13,24"
+                    Point2="-17,24"
+                    Point3="-17,28" />
+                  <mssgle:LineSegment
+                    End="-17,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Upload Data.Paths[Flat File Source Output1]"
           TopLeft="382,77.5">
@@ -2985,28 +3019,6 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,50" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Upload Data.Paths[Flat File Source Output]"
-          TopLeft="128.75,82">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,48"
-              Start="0,0"
-              End="0,40.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,40.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
