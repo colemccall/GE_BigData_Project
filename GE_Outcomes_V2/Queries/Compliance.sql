@@ -38,6 +38,13 @@ WHERE C.num_of_assignments < (0.7) * D.number_of_students
 
 UNION
 
+SELECT C.course_id, C.num_of_assignments as 'Assignments', D.number_of_students as 'Students',D.outcome_1, D.outcome_2, D.teacher_#1_name, D.teacher_#1_email, C.semester,C.course, C.section, C.college, 'Unsure' as Compliance, 'Error with registrar data' as Reason
+FROM #Student_Count as C
+LEFT OUTER JOIN registrar_data AS D on C.course_id=D.course_sis_id
+WHERE outcome_1 is null
+
+UNION
+
 SELECT C.course_id, C.num_of_assignments as 'Assignments', D.number_of_students as 'Students' ,D.outcome_1, D.outcome_2, D.teacher_#1_name, D.teacher_#1_email, C.semester,C.course, C.section, C.college, 'Nice' as Compliance, 'Compliant' as Reason
 FROM #Student_Count as C
 INNER JOIN registrar_data AS D on C.course_id=D.course_sis_id
@@ -46,16 +53,19 @@ AND C.num_of_assignments <= D.number_of_students
 
 UNION
 
-SELECT C.course_id, C.num_of_assignments as 'Assignments', D.number_of_students as 'Students',D.outcome_1, D.outcome_2, D.teacher_#1_name, D.teacher_#1_email, C.semester,C.course, C.section, C.college, 'Unsure' as Compliance, 'Error with registrar data' as Reason
+SELECT C.course_id, C.num_of_assignments as 'Assignments', D.number_of_students as 'Students' ,D.outcome_1, D.outcome_2, D.teacher_#1_name, D.teacher_#1_email, C.semester,C.course, C.section, C.college, 'Nice' as Compliance, 'Compliant' as Reason
 FROM #Student_Count as C
-LEFT OUTER JOIN registrar_data AS D on C.course_id=D.course_sis_id
-WHERE outcome_1 is null
+INNER JOIN registrar_data AS D on C.course_id=D.course_sis_id
+WHERE C.num_of_assignments >= (0.7) * D.number_of_students
+AND C.num_of_assignments <= D.number_of_students
 
 UNION
 
-SELECT D.course_sis_id, '0' as  'Assignments', D.number_of_students as 'Students' , D.outcome_1, D.outcome_2, D.teacher_#1_name, D.teacher_#1_email, D.semester,D.course,D.section, D.college, 'Naughty' as Compliance, 'Nothing Attached in Canvas' as Reason
+SELECT D.course_sis_id, '0' as 'Assignments', D.number_of_students as 'Students' , D.outcome_1, D.outcome_2, D.teacher_#1_name, D.teacher_#1_email, D.semester,D.course,D.section, D.college, 'Naughty' as Compliance, 'Nothing Attached in Canvas' as Reason
 FROM #Student_Count as C
 RIGHT OUTER JOIN registrar_data AS D on C.course_id=D.course_sis_id
+where C.num_of_assignments is NULL
+
 
 
 select * from compliance
