@@ -1,7 +1,7 @@
 # NNU General Education Outcomes Big Data Management Project
 
 This project was created in the Fall Semester of 2022 as part of the Advanced Database/Big Data Management Course at Northwest Nazarene University. 
-This project intends to provide NNU's GE council with useful statistics, visualizations, and other information regarding the GE outcomes compliance status. 
+This project intends to provide NNU's Gen Ed council with useful statistics, visualizations, and other information regarding the GE outcomes compliance status. 
 Essentially, this project will aim to:
 - **Use historical (Spring 2022) Canvas data to determine university compliance**
   - Scrape GE assignment data from Canvas
@@ -12,9 +12,6 @@ Essentially, this project will aim to:
   - Scrape GE assignment data from Canvas
   - Determine which course sections have attached GE outcomes
   - Visualize reports (& potentially make predictions)
-- **Analyze qualtrics data to gather insight into GE outcomes process**
-  - Acquire qualtrics data
-  - Apply NLP
 
 ## Project Information
 
@@ -24,42 +21,31 @@ Date: November 2022
 
 
 ## Project Requirements
-- Python
-- Jupyter
-- Pandas
+- VS Code
+  - Python
+  - Jupyter
+  - Pandas
+- Visual Studio 2019
+  - SSIS
+- SQL Server Management Studio
+- PowerBI
+
+
 
 ## Project Overview
-This project can be divided into 5 categories:
-1. Landing directory - Holds raw, untouched acquired data. **Acquire, import, do not touch.**
-2. Staging directory - Holds data that has been wrangled. Missing values filled in, useless features removed.
-3. Features directory - Holds reports/queries of the wrangled data. Valuable information from the data
-4. Production directory - Location of PowerBi dashboards that display the reports.
-5. Jupyter Notebooks (code) - Various scripts used to wrangle or extract features from the data.
+This project has been overhauled several times and now has a new format.
+- GE_Outcomes_V0: This directory was created in the first weeks of the project, used simply for testing out different options. As a team, we explored using C#, Python, SQL, Jupyter, Hadoop, PowerBI, and more. This directory is not supported
+- GE_Outcomes_V1: This directory was primarily used to clean data. In the process of cleaning the data, we realized more work was needed, which was completed in Version 2. THis directory is not very well supported
+- GE_Outcomes_V2: This directory contains all of the current working code and projects. 
 
-## Project Details
-- Run `GE_Data_Cleaning_Script.ipynb` to clean the input data
-- Run `GE_Features_Script.ipynb` to query and create reports
-- Launch PowerBi project `Test_10_28.pbix` located in `4_Production`
-- View Dashboards
-
-### Dashboards
-**Dashboard 1: Overall University Compliance**
-![image](https://user-images.githubusercontent.com/94725863/200230690-04aa14a6-6c08-4732-add3-dc3e12b7eec8.png)
-NOTE: missing all entries where the outcome was not attached to an assignment
-
-**Dashboard 2: Compliance by College**
-![image](https://user-images.githubusercontent.com/94725863/200230966-d59d673e-32ba-4e59-84cc-47d28ae058ee.png)
-NOTE: missing all entries where the outcome was not attached to an assignment
+## GE_Outcomes_V2 Project Details
+Cole adds here
 
 
-**Dashboard 3: Compliance by Course**
-![image](https://user-images.githubusercontent.com/94725863/200231050-6cdf78a2-b79a-47d8-af11-80d3c21d81d6.png)
-NOTE: missing all entries where the outcome was not attached to an assignment
+## Future Work
+- Incorporate Qualtrics Data into the Data Pipeline, maybe applying NLP to the answers
+- Setup up SSIS, SQL, and PowerBI on a school machine (or server), as these features can be automated but are currently on localhosts.
 
-
-**Dashboard 4: Outcomes by Course**
-![image](https://user-images.githubusercontent.com/94725863/200231072-61f2c250-8f7c-497f-b712-e976eac78050.png)
-NOTE: missing all entries where the outcome was not attached to an assignment
 
 
 
