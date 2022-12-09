@@ -2,7 +2,7 @@ USE GenEdData
 GO
 
 select * from compliance
-order by compliance
+
 
 --University Complaince by College
 select college, compliance, reason, semester, count(compliance) as courses from compliance 
