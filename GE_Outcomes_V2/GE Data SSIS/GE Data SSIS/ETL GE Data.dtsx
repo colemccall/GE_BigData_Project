@@ -11,11 +11,154 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="86"
-  DTS:VersionGUID="{15BF7231-61B7-4F88-BD56-D9188A8870FE}">
+  DTS:VersionBuild="97"
+  DTS:VersionGUID="{A93769A4-37F7-48BA-8490-1630C29727F9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Compliance Data]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{D252DE08-111B-4C53-9BA3-A22E1E877097}"
+      DTS:ObjectName="Compliance Data">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Outcomes_V2\Data\Compliance\GE_Compliance.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
+              DTS:TextQualified="True"
+              DTS:ObjectName="course_id"
+              DTS:DTSID="{6D9C88D3-F57A-4959-988D-0B269D3A1558}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Assignments"
+              DTS:DTSID="{E3E710BF-821F-4F7C-B4DF-013C24F4AD2A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Students"
+              DTS:DTSID="{2DDB8572-C72A-4A28-9A98-A80C2238180D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="outcome_1"
+              DTS:DTSID="{4661EED0-6729-475E-A571-6C85FC5456F4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="outcome_2"
+              DTS:DTSID="{A0529B61-9503-4DAC-9699-8A6B2040D64D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
+              DTS:TextQualified="True"
+              DTS:ObjectName="teacher_#1_name"
+              DTS:DTSID="{0637CE5E-0CF8-4345-B687-F38AC59B58C4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
+              DTS:TextQualified="True"
+              DTS:ObjectName="teacher_#1_email"
+              DTS:DTSID="{BF5E6924-2DEA-4516-AA47-46456203F7B3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
+              DTS:TextQualified="True"
+              DTS:ObjectName="semester"
+              DTS:DTSID="{C9AF4093-CDDD-486E-AA4E-BEAB6DE7CA48}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
+              DTS:TextQualified="True"
+              DTS:ObjectName="course"
+              DTS:DTSID="{167856FB-18F3-4B45-8866-958156B4094D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
+              DTS:TextQualified="True"
+              DTS:ObjectName="section"
+              DTS:DTSID="{A9CD903F-34FD-4074-A296-542EEEAE3981}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
+              DTS:TextQualified="True"
+              DTS:ObjectName="college"
+              DTS:DTSID="{573F9CE8-845F-4903-A900-3207569F4676}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="7"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Compliance"
+              DTS:DTSID="{A98B9712-1447-4387-BF2B-EC66353C32B4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="26"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Reason"
+              DTS:DTSID="{B5FEDE9F-79DA-46CF-8CBD-D982F2439425}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{AE7A6F21-61C7-4902-A99D-FB0D3BFB1C65}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{9E8BF0EF-2070-405F-85D1-08C174FF5E8E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[compliance.sql]"
       DTS:CreationName="FILE"
@@ -24,6 +167,155 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Outcomes_V2\Queries\Compliance.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{6C678318-D557-4E7D-90A2-6D9E215BCE97}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Outcomes_V2\Data\Compliance\SQL_Compliance.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Export Compliance]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{03C0B12B-D6CC-41D1-8B92-ECF5ED539DD2}"
+      DTS:ObjectName="Export Compliance">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Outcomes_V2\Data\Compliance\GE_Compliance.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="course_id"
+              DTS:DTSID="{8E2403D9-43E4-412F-9334-BE8A8B29B408}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="11"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Assignments"
+              DTS:DTSID="{C1B9F137-26AD-43DA-952E-B28E7CF26F60}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="11"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Students"
+              DTS:DTSID="{A67DAFAE-C0DD-402E-9452-D17DC79A0421}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="outcome_1"
+              DTS:DTSID="{D13AFE00-37E9-48C1-99C1-33B2C8354C37}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="outcome_2"
+              DTS:DTSID="{D888322B-9714-47F0-A08D-D30BABFBE183}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="-1"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="teacher_#1_name"
+              DTS:DTSID="{FED2C9EB-AD0B-4D68-A20D-52B1BE9BA601}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="-1"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="teacher_#1_email"
+              DTS:DTSID="{8E87C05C-C6C9-4232-93B6-B8AB583BA158}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="-1"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="semester"
+              DTS:DTSID="{9B2F6B97-6C27-4838-8470-E9453AFCD341}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="-1"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="course"
+              DTS:DTSID="{DB63B77E-676A-4686-A743-C54C23CA3EDF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="-1"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="section"
+              DTS:DTSID="{F980B1CC-E1AB-482C-AB63-AA631AB7C68D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="-1"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="college"
+              DTS:DTSID="{D57CBE63-7FB0-4594-B624-364B2157D396}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="7"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Compliance"
+              DTS:DTSID="{8F02EAEE-B7C6-4FA3-ABC5-317D7ADC6D39}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="26"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Reason"
+              DTS:DTSID="{2AD52FCE-9011-44C8-BEF3-1C4F94F42E63}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -66,6 +358,18 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Outcomes_V2\Queries\Reset_Registrar_Tables.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SourceConnectionOLEDB]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B4F89652-8BDC-4441-A55B-75644A57451D}"
+      DTS:ObjectName="SourceConnectionOLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=GenEdData;Provider=SQLNCLI11;Integrated Security=SSPI;Auto Translate=false;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -581,7 +885,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Drop Existing, Create New Canvas SQL Table"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -598,13 +902,983 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Drop Existing, Create New Registrar SQL Table"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{D57E6D4E-A50C-4E12-A765-29B1A209B5E8}"
           SQLTask:SqlStmtSourceType="FileConnection"
           SQLTask:SqlStatementSource="Reset_Registrar_Tables.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Export Compliance Data"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:DelayValidation="True"
+      DTS:DTSID="{65f8e251-c882-4b17-8ccd-fa33fb5d50c3}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Export Compliance Data"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          defaultBufferSize="3145728"
+          version="1">
+          <components>
+            <component
+              refId="Package\Export Compliance Data\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Export Compliance Data\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Inputs[Data Conversion Input].Columns[course_id]"
+                      cachedDataType="nText"
+                      cachedName="course_id"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[course_id]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Inputs[Data Conversion Input].Columns[Assignments]"
+                      cachedDataType="i4"
+                      cachedName="Assignments"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[Assignments]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Inputs[Data Conversion Input].Columns[Students]"
+                      cachedDataType="i4"
+                      cachedName="Students"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[Students]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Inputs[Data Conversion Input].Columns[outcome_1]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="outcome_1"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[outcome_1]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Inputs[Data Conversion Input].Columns[outcome_2]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="outcome_2"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[outcome_2]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Inputs[Data Conversion Input].Columns[teacher_#1_name]"
+                      cachedDataType="nText"
+                      cachedName="teacher_#1_name"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[teacher_#1_name]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Inputs[Data Conversion Input].Columns[teacher_#1_email]"
+                      cachedDataType="nText"
+                      cachedName="teacher_#1_email"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[teacher_#1_email]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Inputs[Data Conversion Input].Columns[semester]"
+                      cachedDataType="nText"
+                      cachedName="semester"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[semester]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Inputs[Data Conversion Input].Columns[course]"
+                      cachedDataType="nText"
+                      cachedName="course"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[course]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Inputs[Data Conversion Input].Columns[section]"
+                      cachedDataType="nText"
+                      cachedName="section"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[section]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Inputs[Data Conversion Input].Columns[college]"
+                      cachedDataType="nText"
+                      cachedName="college"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[college]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Inputs[Data Conversion Input].Columns[Compliance]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="7"
+                      cachedName="Compliance"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[Compliance]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Inputs[Data Conversion Input].Columns[Reason]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="26"
+                      cachedName="Reason"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[Reason]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Export Compliance Data\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of course_id]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of course_id]"
+                      name="Copy of course_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[course_id]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Assignments]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Assignments]"
+                      name="Copy of Assignments"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[Assignments]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Students]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Students]"
+                      name="Copy of Students"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[Students]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of outcome_1]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of outcome_1]"
+                      name="Copy of outcome_1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[outcome_1]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of outcome_2]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of outcome_2]"
+                      name="Copy of outcome_2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[outcome_2]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of teacher_#1_name]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of teacher_#1_name]"
+                      name="Copy of teacher_#1_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[teacher_#1_name]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of teacher_#1_email]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of teacher_#1_email]"
+                      name="Copy of teacher_#1_email"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[teacher_#1_email]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of semester]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of semester]"
+                      name="Copy of semester"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[semester]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of course]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of course]"
+                      name="Copy of course"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[course]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of section]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of section]"
+                      name="Copy of section"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[section]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of college]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of college]"
+                      name="Copy of college"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[college]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Compliance]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="7"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Compliance]"
+                      name="Copy of Compliance"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[Compliance]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reason]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="26"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reason]"
+                      name="Copy of Reason"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[Reason]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Export Compliance Data\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Export Compliance Data\Export Compliance Data to CSV"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Export Compliance Data to CSV"
+              validateExternalMetadata="False"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Export Compliance Data\Export Compliance Data to CSV.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Export Compliance]"
+                  connectionManagerRefId="Package.ConnectionManagers[Export Compliance]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].Columns[Copy of course_id]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="Copy of course_id"
+                      externalMetadataColumnId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[course_id]"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of course_id]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].Columns[Copy of Assignments]"
+                      cachedDataType="i4"
+                      cachedName="Copy of Assignments"
+                      externalMetadataColumnId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[Assignments]"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Assignments]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].Columns[Copy of Students]"
+                      cachedDataType="i4"
+                      cachedName="Copy of Students"
+                      externalMetadataColumnId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[Students]"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Students]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].Columns[Copy of outcome_1]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of outcome_1"
+                      externalMetadataColumnId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[outcome_1]"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of outcome_1]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].Columns[Copy of outcome_2]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of outcome_2"
+                      externalMetadataColumnId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[outcome_2]"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of outcome_2]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].Columns[Copy of teacher_#1_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="Copy of teacher_#1_name"
+                      externalMetadataColumnId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[teacher_#1_name]"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of teacher_#1_name]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].Columns[Copy of teacher_#1_email]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="Copy of teacher_#1_email"
+                      externalMetadataColumnId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[teacher_#1_email]"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of teacher_#1_email]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].Columns[Copy of semester]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="Copy of semester"
+                      externalMetadataColumnId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[semester]"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of semester]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].Columns[Copy of course]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="Copy of course"
+                      externalMetadataColumnId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[course]"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of course]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].Columns[Copy of section]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="Copy of section"
+                      externalMetadataColumnId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[section]"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of section]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].Columns[Copy of college]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="Copy of college"
+                      externalMetadataColumnId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[college]"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of college]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].Columns[Copy of Compliance]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="7"
+                      cachedName="Copy of Compliance"
+                      externalMetadataColumnId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[Compliance]"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Compliance]" />
+                    <inputColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].Columns[Copy of Reason]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="26"
+                      cachedName="Copy of Reason"
+                      externalMetadataColumnId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[Reason]"
+                      lineageId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reason]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[course_id]"
+                      dataType="wstr"
+                      length="100"
+                      name="course_id" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[Assignments]"
+                      dataType="i4"
+                      name="Assignments" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[Students]"
+                      dataType="i4"
+                      name="Students" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[outcome_1]"
+                      dataType="wstr"
+                      length="50"
+                      name="outcome_1" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[outcome_2]"
+                      dataType="wstr"
+                      length="50"
+                      name="outcome_2" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[teacher_#1_name]"
+                      dataType="wstr"
+                      length="-1"
+                      name="teacher_#1_name" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[teacher_#1_email]"
+                      dataType="wstr"
+                      length="-1"
+                      name="teacher_#1_email" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[semester]"
+                      dataType="wstr"
+                      length="-1"
+                      name="semester" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[course]"
+                      dataType="wstr"
+                      length="-1"
+                      name="course" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[section]"
+                      dataType="wstr"
+                      length="-1"
+                      name="section" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[college]"
+                      dataType="wstr"
+                      length="-1"
+                      name="college" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[Compliance]"
+                      codePage="1252"
+                      dataType="str"
+                      length="7"
+                      name="Compliance" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input].ExternalColumns[Reason]"
+                      codePage="1252"
+                      dataType="str"
+                      length="26"
+                      name="Reason" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Export Compliance Data\Set SQL Compliance Data Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Set SQL Compliance Data Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[compliance]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Gen Ed Database]"
+                  connectionManagerRefId="Package.ConnectionManagers[Gen Ed Database]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[course_id]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[course_id]"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[course_id]"
+                      name="course_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[Assignments]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[Assignments]"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[Assignments]"
+                      name="Assignments"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[Students]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[Students]"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[Students]"
+                      name="Students"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[outcome_1]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[outcome_1]"
+                      length="50"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[outcome_1]"
+                      name="outcome_1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[outcome_2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[outcome_2]"
+                      length="50"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[outcome_2]"
+                      name="outcome_2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[teacher_#1_name]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[teacher_#1_name]"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[teacher_#1_name]"
+                      name="teacher_#1_name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[teacher_#1_email]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[teacher_#1_email]"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[teacher_#1_email]"
+                      name="teacher_#1_email"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[semester]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[semester]"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[semester]"
+                      name="semester"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[course]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[course]"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[course]"
+                      name="course"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[section]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[section]"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[section]"
+                      name="section"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[college]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[college]"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[college]"
+                      name="college"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[Compliance]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[Compliance]"
+                      length="7"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[Compliance]"
+                      name="Compliance"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[Reason]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[Reason]"
+                      length="26"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].Columns[Reason]"
+                      name="Reason"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[course_id]"
+                      dataType="nText"
+                      name="course_id" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[Assignments]"
+                      dataType="i4"
+                      name="Assignments" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[Students]"
+                      dataType="i4"
+                      name="Students" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[outcome_1]"
+                      dataType="wstr"
+                      length="50"
+                      name="outcome_1" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[outcome_2]"
+                      dataType="wstr"
+                      length="50"
+                      name="outcome_2" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[teacher_#1_name]"
+                      dataType="nText"
+                      name="teacher_#1_name" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[teacher_#1_email]"
+                      dataType="nText"
+                      name="teacher_#1_email" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[semester]"
+                      dataType="nText"
+                      name="semester" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[course]"
+                      dataType="nText"
+                      name="course" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[section]"
+                      dataType="nText"
+                      name="section" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[college]"
+                      dataType="nText"
+                      name="college" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[Compliance]"
+                      codePage="1252"
+                      dataType="str"
+                      length="7"
+                      name="Compliance" />
+                    <externalMetadataColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output].ExternalColumns[Reason]"
+                      codePage="1252"
+                      dataType="str"
+                      length="26"
+                      name="Reason" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[course_id]"
+                      dataType="nText"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[course_id]"
+                      name="course_id" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[Assignments]"
+                      dataType="i4"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[Assignments]"
+                      name="Assignments" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[Students]"
+                      dataType="i4"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[Students]"
+                      name="Students" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[outcome_1]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[outcome_1]"
+                      name="outcome_1" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[outcome_2]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[outcome_2]"
+                      name="outcome_2" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[teacher_#1_name]"
+                      dataType="nText"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[teacher_#1_name]"
+                      name="teacher_#1_name" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[teacher_#1_email]"
+                      dataType="nText"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[teacher_#1_email]"
+                      name="teacher_#1_email" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[semester]"
+                      dataType="nText"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[semester]"
+                      name="semester" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[course]"
+                      dataType="nText"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[course]"
+                      name="course" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[section]"
+                      dataType="nText"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[section]"
+                      name="section" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[college]"
+                      dataType="nText"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[college]"
+                      name="college" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[Compliance]"
+                      codePage="1252"
+                      dataType="str"
+                      length="7"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[Compliance]"
+                      name="Compliance" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[Reason]"
+                      codePage="1252"
+                      dataType="str"
+                      length="26"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[Reason]"
+                      name="Reason" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Export Compliance Data.Paths[Data Conversion Output]"
+              endId="Package\Export Compliance Data\Export Compliance Data to CSV.Inputs[Flat File Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Export Compliance Data\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Export Compliance Data.Paths[OLE DB Source Output]"
+              endId="Package\Export Compliance Data\Data Conversion.Inputs[Data Conversion Input]"
+              name="OLE DB Source Output"
+              startId="Package\Export Compliance Data\Set SQL Compliance Data Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -633,7 +1907,7 @@
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
       DTS:ObjectName="Python - Canvas Data Wrangler"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:LoggingOptions
         DTS:LoggingMode="1" />
@@ -651,7 +1925,7 @@
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
       DTS:ObjectName="Python - Registrar Data Wrangler"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:LoggingOptions
         DTS:LoggingMode="1" />
@@ -2665,10 +3939,18 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
       DTS:CreationName=""
-      DTS:DTSID="{251948BA-1DEB-4849-B92C-E8C78CDE64D8}"
+      DTS:DTSID="{163F8E13-9A5B-4299-8518-4EDC479ECC51}"
       DTS:From="Package\Create Compliance Table"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Export Compliance Data" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{14DF39D1-1F1C-4FCB-847D-3714691DEBA0}"
+      DTS:From="Package\Export Compliance Data"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 7"
       DTS:To="Package\Open PowerBI Dashboard" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 9]"
@@ -2690,7 +3972,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="197,42"
           Id="Package\Back Up Database Task"
@@ -2708,9 +3990,13 @@
           Id="Package\Drop Existing, Create New Registrar SQL Table"
           TopLeft="559,181" />
         <NodeLayout
-          Size="242,42"
+          Size="198,42"
+          Id="Package\Export Compliance Data"
+          TopLeft="346.5,550" />
+        <NodeLayout
+          Size="207,42"
           Id="Package\Open PowerBI Dashboard"
-          TopLeft="326,553" />
+          TopLeft="341,628" />
         <NodeLayout
           Size="242,42"
           Id="Package\Python - Canvas Data Wrangler"
@@ -2905,18 +4191,40 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="446.5,512">
+          TopLeft="445.75,512">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,41"
+              EndConnector="0,38"
               Start="0,0"
-              End="0,33.5">
+              End="0,30.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.5" />
+                    End="0,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="445,592">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36"
+              Start="0,0"
+              End="0,28.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2951,10 +4259,87 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Upload Data">
+    design-time-name="Package\Export Compliance Data">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="245,42"
+          Id="Package\Export Compliance Data\Set SQL Compliance Data Source"
+          TopLeft="50.5,31" />
+        <NodeLayout
+          Size="246,42"
+          Id="Package\Export Compliance Data\Export Compliance Data to CSV"
+          TopLeft="52,182" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Export Compliance Data\Data Conversion"
+          TopLeft="90,108" />
+        <EdgeLayout
+          Id="Package\Export Compliance Data.Paths[OLE DB Source Output]"
+          TopLeft="171.75,73">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35"
+              Start="0,0"
+              End="0,27.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Export Compliance Data.Paths[Data Conversion Output]"
+          TopLeft="172.75,150">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32"
+              Start="0,0"
+              End="0,24.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Export Compliance Data\Set SQL Compliance Data Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Upload Data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="177,42"
           Id="Package\Upload Data\Registrar Upload"
@@ -3002,7 +4387,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3024,7 +4411,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
