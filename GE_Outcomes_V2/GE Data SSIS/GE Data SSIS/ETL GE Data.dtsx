@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="99"
-  DTS:VersionGUID="{C4A1EE44-3F6E-415C-85C0-E74DA417DCAA}">
+  DTS:VersionBuild="100"
+  DTS:VersionGUID="{F10D8718-006D-4AEF-A6C8-8C7911B9C6D4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1882,6 +1882,24 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Open Machine Learning Notebook"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{9f082b40-4f02-4a15-92ba-7af0fea00972}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Open Machine Learning Notebook"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:LoggingMode="1" />
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Users\colem\Desktop\Senior\BigData\GE_BigData_Project\GE_Outcomes_V2\Code\OpenPredictionNotebook.bat"
+          WindowStyle="Maximized" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Open PowerBI Dashboard"
       DTS:CreationName="Microsoft.ExecuteProcess"
       DTS:Description="Execute Process Task"
@@ -1889,7 +1907,7 @@
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
       DTS:ObjectName="Open PowerBI Dashboard"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:LoggingOptions
         DTS:LoggingMode="1" />
@@ -3960,6 +3978,14 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 8"
       DTS:To="Package\Upload Data" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 9]"
+      DTS:CreationName=""
+      DTS:DTSID="{E21A0731-AB34-4C91-A24F-E7E67294F2DE}"
+      DTS:From="Package\Export Compliance Data"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 9"
+      DTS:To="Package\Open Machine Learning Notebook" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -3992,11 +4018,11 @@
         <NodeLayout
           Size="198,42"
           Id="Package\Export Compliance Data"
-          TopLeft="343.5,511" />
+          TopLeft="341.5,509" />
         <NodeLayout
           Size="207,42"
           Id="Package\Open PowerBI Dashboard"
-          TopLeft="338,589" />
+          TopLeft="200,599" />
         <NodeLayout
           Size="242,42"
           Id="Package\Python - Canvas Data Wrangler"
@@ -4033,29 +4059,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="442.75,473">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,38"
-              Start="0,0"
-              End="0,30.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 7]"
-          TopLeft="442,553">
+          TopLeft="441.75,473">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4067,6 +4071,40 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,28.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="408.833333333333,551">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-105.333333333333,48"
+              Start="0,0"
+              End="-105.333333333333,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.4308617234469" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.4308617234469"
+                    Point2="0,19.4308617234469"
+                    Point3="-4,19.4308617234469" />
+                  <mssgle:LineSegment
+                    End="-101.333333333333,19.4308617234469" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-101.333333333333,19.4308617234469"
+                    Point2="-105.333333333333,19.4308617234469"
+                    Point3="-105.333333333333,23.4308617234469" />
+                  <mssgle:LineSegment
+                    End="-105.333333333333,40.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4255,6 +4293,44 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="207,42"
+          Id="Package\Open Machine Learning Notebook"
+          TopLeft="475,601" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 9]"
+          TopLeft="472.166666666667,551">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="106.333333333333,50"
+              Start="0,0"
+              End="106.333333333333,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.2404809619239" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.2404809619239"
+                    Point2="0,20.2404809619239"
+                    Point3="4,20.2404809619239" />
+                  <mssgle:LineSegment
+                    End="102.333333333333,20.2404809619239" />
+                  <mssgle:CubicBezierSegment
+                    Point1="102.333333333333,20.2404809619239"
+                    Point2="106.333333333333,20.2404809619239"
+                    Point3="106.333333333333,24.2404809619239" />
+                  <mssgle:LineSegment
+                    End="106.333333333333,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -4264,10 +4340,6 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="245,42"
-          Id="Package\Export Compliance Data\Set SQL Compliance Data Source"
-          TopLeft="50.5,31" />
-        <NodeLayout
           Size="246,42"
           Id="Package\Export Compliance Data\Export Compliance Data to CSV"
           TopLeft="52,182" />
@@ -4275,28 +4347,10 @@
           Size="161,42"
           Id="Package\Export Compliance Data\Data Conversion"
           TopLeft="90,108" />
-        <EdgeLayout
-          Id="Package\Export Compliance Data.Paths[OLE DB Source Output]"
-          TopLeft="171.75,73">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,35"
-              Start="0,0"
-              End="0,27.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="245,42"
+          Id="Package\Export Compliance Data\Set SQL Compliance Data Source"
+          TopLeft="50.5,31" />
         <EdgeLayout
           Id="Package\Export Compliance Data.Paths[Data Conversion Output]"
           TopLeft="172.75,150">
@@ -4311,6 +4365,28 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,24.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Export Compliance Data.Paths[OLE DB Source Output]"
+          TopLeft="171.75,73">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35"
+              Start="0,0"
+              End="0,27.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
