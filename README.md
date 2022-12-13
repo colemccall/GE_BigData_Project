@@ -15,7 +15,7 @@ Essentially, this project will aim to:
 
 ## Project Information
 
-Authors: Cole McCall, Gabe Murphy, Cody Lirazan
+Authors: Cole McCall, Cody Lirazan, Gabe Murphy
 
 Date: November 2022
 
@@ -98,9 +98,34 @@ This folder `GE_Outcomes_V2/Dashboards/` was created to save the dashboards crea
 
 
 ### Data
+In the `GE_Outcomes_V2/Data/` directory, there are three primary folders.
+- Folder 1) `GE_Outcomes_V2/Landing`
+  * This folder has two subdirectories: Canvas and Registrar
+  * Within each directory, there should all of the semesters of respective data that is intended to be included in the study. The scripts that have been written take all of the files within these folders and create one master file. For example, if the `GE_Outcomes_V2/Landing/Canvas` folder contains Canvas data from FA21, SP22, and FA22, one master file will be created that takes the contents of all three files combined.
+  * To ensure this process is completed, any scraped data from the registrar or canvas should be placed directly in these folder
+  * In the future, additional tasks can be added to the SSIS package (before Step 1) to scrape Canvas or the registrar and place the resulting data directly in the landing folder.
+
+![image](https://user-images.githubusercontent.com/94725863/207451947-56f9d40f-5224-4b94-a693-4caec4fd6412.png)
+
+
+- Folder 2) `GE_Outcomes_V2/Staging`
+  * The staging folder contains two subdirectories, `Combined` and `Cleaned`. 
+  * `Combined` holds the combined datasets, whereas `Cleaned` stores a modified version of each file that has undergone through cleaning and wrangling.
+
+![image](https://user-images.githubusercontent.com/94725863/207451820-9c544fd0-c0f2-4b0e-b209-ed2350c4b824.png)
+
+
+- Folder 3) `GE_Outcomes_V2/Compliance`
+  * This folder is used to store the most recent compliance records
+  * The file stored in this directory can only be obtained by exporting the compliance table from the GenEd database in SQL Server and is used as inputs for the machine learning predictions
 
 
 ### Notebooks
+- Notebooks can be found in `GE_Outcomes_V2/Notebooks` and can be described as one of two types: Spiking notebooks or Machine Learning notebooks.
+  * Machine Learning: The notebooks in this folder are used to perform compliance predictions via machine learning. Currently, there is only one notebook for machine learning, but any new or copied notebooks should be saved here.
+  * Spiking: These notebooks were used to prototype functions and test out new ideas. Once the function was successfully created, it was saved as a function in one of the python modules located in `GE_Outcomes_V2/Code`. Most of these notebooks no longer run and were used in the beginning (spiking) phases of the project.
+
+![image](https://user-images.githubusercontent.com/94725863/207452645-fd00105c-1eb3-40fb-baee-9248b27c7342.png)
 
 
 ### Queries
