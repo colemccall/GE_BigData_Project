@@ -5,9 +5,7 @@ select * from compliance
 
 
 --University Complaince by College
-select college, compliance, reason, semester, count(compliance) as courses from compliance 
-group by semester, compliance, college, reason
-order by college
+
 
 
 

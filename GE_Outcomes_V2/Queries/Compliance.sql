@@ -3,6 +3,9 @@ USE GenEdData
 IF EXISTS(SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'dbo' AND name like 'compliance')  
 	DROP TABLE dbo.compliance
 
+IF EXISTS(SELECT * FROM sys.tables WHERE SCHEMA_NAME(schema_id) LIKE 'dbo' AND name like 'compliance_college')  
+	DROP TABLE dbo.compliance_college
+
 IF OBJECT_ID('tempdb.dbo.#Canvas_Stats') IS NOT NULL
     DROP TABLE #Canvas_Stats
 
@@ -69,3 +72,10 @@ where C.num_of_assignments is NULL
 
 
 select * from compliance
+
+select ID = IDENTITY(INT, 1, 1), college, compliance, reason, semester, count(compliance) as courses into compliance_college
+from compliance
+group by semester, compliance, college, reason
+order by college
+
+select * from compliance_college
